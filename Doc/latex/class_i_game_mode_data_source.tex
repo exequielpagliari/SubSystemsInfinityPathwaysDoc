@@ -1,0 +1,82 @@
+\doxysection{IGame\+Mode\+Data\+Source Class Reference}
+\hypertarget{class_i_game_mode_data_source}{}\label{class_i_game_mode_data_source}\index{IGameModeDataSource@{IGameModeDataSource}}
+
+
+{\ttfamily \#include $<$IGame\+Mode\+Data\+Source.\+h$>$}
+
+Inheritance diagram for IGame\+Mode\+Data\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_i_game_mode_data_source}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0}{Get\+Score}} ()
+\item 
+FText \mbox{\hyperlink{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353}{Get\+Totals\+Cells\+To\+Consume}} ()
+\item 
+FText \mbox{\hyperlink{class_i_game_mode_data_source_ac7c2ab79c2919db4057692dc19a0bcb7}{Get\+Cells\+Consumed}} ()
+\item 
+int \mbox{\hyperlink{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591}{Get\+Cube\+Step\+Count}} ()
+\item 
+FText \mbox{\hyperlink{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824}{Get\+Timer\+Value}} ()
+\item 
+FText \mbox{\hyperlink{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f}{Get\+Timer\+Minutes\+Value}} ()
+\item 
+uint8 \mbox{\hyperlink{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e}{Get\+Level\+Type\+Value}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Blueprint-\/native contract for reading gameplay values displayed by the HUD. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_game_mode_data_source_ac7c2ab79c2919db4057692dc19a0bcb7}\index{IGameModeDataSource@{IGameModeDataSource}!GetCellsConsumed@{GetCellsConsumed}}
+\index{GetCellsConsumed@{GetCellsConsumed}!IGameModeDataSource@{IGameModeDataSource}}
+\doxysubsubsection{\texorpdfstring{GetCellsConsumed()}{GetCellsConsumed()}}
+{\footnotesize\ttfamily \label{class_i_game_mode_data_source_ac7c2ab79c2919db4057692dc19a0bcb7} 
+FText IGame\+Mode\+Data\+Source\+::\+Get\+Cells\+Consumed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of consumed cells as display-\/ready text. \Hypertarget{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591}\index{IGameModeDataSource@{IGameModeDataSource}!GetCubeStepCount@{GetCubeStepCount}}
+\index{GetCubeStepCount@{GetCubeStepCount}!IGameModeDataSource@{IGameModeDataSource}}
+\doxysubsubsection{\texorpdfstring{GetCubeStepCount()}{GetCubeStepCount()}}
+{\footnotesize\ttfamily \label{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591} 
+int IGame\+Mode\+Data\+Source\+::\+Get\+Cube\+Step\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current cube step count. \Hypertarget{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e}\index{IGameModeDataSource@{IGameModeDataSource}!GetLevelTypeValue@{GetLevelTypeValue}}
+\index{GetLevelTypeValue@{GetLevelTypeValue}!IGameModeDataSource@{IGameModeDataSource}}
+\doxysubsubsection{\texorpdfstring{GetLevelTypeValue()}{GetLevelTypeValue()}}
+{\footnotesize\ttfamily \label{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e} 
+uint8 IGame\+Mode\+Data\+Source\+::\+Get\+Level\+Type\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current level type as its project-\/defined byte value. \Hypertarget{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0}\index{IGameModeDataSource@{IGameModeDataSource}!GetScore@{GetScore}}
+\index{GetScore@{GetScore}!IGameModeDataSource@{IGameModeDataSource}}
+\doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
+{\footnotesize\ttfamily \label{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0} 
+int IGame\+Mode\+Data\+Source\+::\+Get\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the current player score. \Hypertarget{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f}\index{IGameModeDataSource@{IGameModeDataSource}!GetTimerMinutesValue@{GetTimerMinutesValue}}
+\index{GetTimerMinutesValue@{GetTimerMinutesValue}!IGameModeDataSource@{IGameModeDataSource}}
+\doxysubsubsection{\texorpdfstring{GetTimerMinutesValue()}{GetTimerMinutesValue()}}
+{\footnotesize\ttfamily \label{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f} 
+FText IGame\+Mode\+Data\+Source\+::\+Get\+Timer\+Minutes\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the timer minutes component as display-\/ready text. \Hypertarget{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824}\index{IGameModeDataSource@{IGameModeDataSource}!GetTimerValue@{GetTimerValue}}
+\index{GetTimerValue@{GetTimerValue}!IGameModeDataSource@{IGameModeDataSource}}
+\doxysubsubsection{\texorpdfstring{GetTimerValue()}{GetTimerValue()}}
+{\footnotesize\ttfamily \label{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824} 
+FText IGame\+Mode\+Data\+Source\+::\+Get\+Timer\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the timer seconds component as display-\/ready text. \Hypertarget{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353}\index{IGameModeDataSource@{IGameModeDataSource}!GetTotalsCellsToConsume@{GetTotalsCellsToConsume}}
+\index{GetTotalsCellsToConsume@{GetTotalsCellsToConsume}!IGameModeDataSource@{IGameModeDataSource}}
+\doxysubsubsection{\texorpdfstring{GetTotalsCellsToConsume()}{GetTotalsCellsToConsume()}}
+{\footnotesize\ttfamily \label{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353} 
+FText IGame\+Mode\+Data\+Source\+::\+Get\+Totals\+Cells\+To\+Consume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the target number of cells as display-\/ready text. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Dev/\+Plugins/\+Sub\+Systems\+Infinity\+Pathways/\+Source/\+Sub\+Systems\+Infinity\+Pathways/\+Public/IGame\+Mode\+Data\+Source.\+h\end{DoxyCompactItemize}

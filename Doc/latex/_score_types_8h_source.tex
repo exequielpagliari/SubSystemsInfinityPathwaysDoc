@@ -1,0 +1,52 @@
+\doxysection{Score\+Types.\+h}
+\hypertarget{_score_types_8h_source}{}\label{_score_types_8h_source}\index{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/ScoreTypes.h@{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/ScoreTypes.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}ScoreTypes.generated.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00011\ \textcolor{comment}{class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ ScoreTypes}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\{}}
+\DoxyCodeLine{00013\ \textcolor{comment}{public:}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ \ \ \ ScoreTypes();}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ \ \ \ \string~ScoreTypes();}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\};}}
+\DoxyCodeLine{00017\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00020\ UENUM(BlueprintType)}
+\DoxyCodeLine{00021\ \textcolor{keyword}{enum\ class}\ EScoreGameMode\ :\ uint8}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ Classic\ \ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Classic"{}}),}
+\DoxyCodeLine{00026\ \ \ \ \ TimeTrial\ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Time\ Trial"{}}),}
+\DoxyCodeLine{00028\ \ \ \ \ Chezz\ \ \ \ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Chezz"{}}),}
+\DoxyCodeLine{00030\ \ \ \ \ Puzzle\ \ \ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Puzzle"{}}),}
+\DoxyCodeLine{00032\ \ \ \ \ Zen\ \ \ \ \ \ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Zen"{}})}
+\DoxyCodeLine{00033\ \};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ UENUM(BlueprintType)}
+\DoxyCodeLine{00038\ \textcolor{keyword}{enum\ class}\ EStreakLevel\ :\ uint8}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ None\ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}None"{}}),}
+\DoxyCodeLine{00043\ \ \ \ \ Level1\ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Level\ 1"{}}),}
+\DoxyCodeLine{00045\ \ \ \ \ Level2\ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Level\ 2"{}}),}
+\DoxyCodeLine{00047\ \ \ \ \ Level3\ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Level\ 3"{}})}
+\DoxyCodeLine{00048\ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00052\ UENUM(BlueprintType)}
+\DoxyCodeLine{00053\ \textcolor{keyword}{enum\ class}\ EScoreReason\ :\ uint8}
+\DoxyCodeLine{00054\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ None\ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}None"{}}),}
+\DoxyCodeLine{00058\ \ \ \ \ Cell\ \ \ \ \ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Cell"{}}),}
+\DoxyCodeLine{00060\ \ \ \ \ CellBonus\ \ \ \ \ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Cell\ Bonus"{}}),}
+\DoxyCodeLine{00062\ \ \ \ \ TimeBonus\ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Time\ Bonus"{}}),}
+\DoxyCodeLine{00064\ \ \ \ \ StepBonus\ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Step\ Bonus"{}}),}
+\DoxyCodeLine{00066\ \ \ \ \ ZenBonus\ \ \ \ UMETA(DisplayName\ =\ \textcolor{stringliteral}{"{}Zen\ Bonus"{}})}
+\DoxyCodeLine{00067\ \};}
+
+\end{DoxyCode}

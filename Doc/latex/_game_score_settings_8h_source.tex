@@ -1,0 +1,66 @@
+\doxysection{Game\+Score\+Settings.\+h}
+\hypertarget{_game_score_settings_8h_source}{}\label{_game_score_settings_8h_source}\index{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/GameScoreSettings.h@{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/GameScoreSettings.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Engine/DeveloperSettings.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}GameScoreSettings.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00010\ UCLASS(Config\ =\ Game,\ DefaultConfig,\ meta\ =\ (DisplayName\ =\ \textcolor{stringliteral}{"{}Game\ Score"{}}))}
+\DoxyCodeLine{00011\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_game_score_settings}{UGameScoreSettings}}\ :\ public\ UDeveloperSettings}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_u_game_score_settings_a3e265165df94afdfdcab2d092db9bf1a}{UPROPERTY}}(}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ Config,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ EditAnywhere,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ BlueprintReadOnly,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ Category\ =\ \textcolor{stringliteral}{"{}Score|Rules"{}},}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ meta\ =\ (ClampMin\ =\ \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{00024\ \ \ \ \ )}
+\DoxyCodeLine{00025\ \ \ \ \ int32\ TimeBonusPerSecond\ =\ 25;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_u_game_score_settings_a3e265165df94afdfdcab2d092db9bf1a}{UPROPERTY}}(}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Config,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ EditAnywhere,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ BlueprintReadOnly,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ Category\ =\ \textcolor{stringliteral}{"{}Score|Rules"{}},}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ meta\ =\ (ClampMin\ =\ \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{00034\ \ \ \ \ )}
+\DoxyCodeLine{00035\ \ \ \ \ int32\ StepBonusPerStep\ =\ 25;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_u_game_score_settings_a3e265165df94afdfdcab2d092db9bf1a}{UPROPERTY}}(}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ Config,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ EditAnywhere,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ BlueprintReadOnly,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ Category\ =\ \textcolor{stringliteral}{"{}Score|Rules"{}},}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ meta\ =\ (ClampMin\ =\ \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{00044\ \ \ \ \ )}
+\DoxyCodeLine{00045\ \ \ \ \ int32\ ZenBonusPerSecond\ =\ 1;}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_u_game_score_settings_a3e265165df94afdfdcab2d092db9bf1a}{UPROPERTY}}(}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ Config,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ EditAnywhere,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ BlueprintReadOnly,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ Category\ =\ \textcolor{stringliteral}{"{}Score|Rules"{}},}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ meta\ =\ (ClampMin\ =\ \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{00054\ \ \ \ \ )}
+\DoxyCodeLine{00055\ \ \ \ \ int32\ CellObjective\ =\ 50;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_u_game_score_settings_a3e265165df94afdfdcab2d092db9bf1a}{UPROPERTY}}(}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ Config,}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ EditAnywhere,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ BlueprintReadOnly,}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ Category\ =\ \textcolor{stringliteral}{"{}Score|Rules"{}},}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ meta\ =\ (ClampMin\ =\ \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{00064\ \ \ \ \ )}
+\DoxyCodeLine{00065\ \ \ \ \ int32\ CellBonus\ =\ 200;}
+\DoxyCodeLine{00066\ \};}
+
+\end{DoxyCode}

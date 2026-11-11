@@ -1,0 +1,29 @@
+\doxysection{IPGame\+User\+Settings.\+h}
+\hypertarget{_i_p_game_user_settings_8h_source}{}\label{_i_p_game_user_settings_8h_source}\index{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/IPGameUserSettings.h@{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/IPGameUserSettings.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Copyright\ Epic\ Games,\ Inc.\ All\ Rights\ Reserved.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}GameFramework/GameUserSettings.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}IPGameUserSettings.generated.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00010\ UCLASS(config=GameUserSettings,\ configdonotcheckdefaults)}
+\DoxyCodeLine{00011\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_i_p_game_user_settings}{UIPGameUserSettings}}\ :\ public\ UGameUserSettings}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ UPROPERTY(Config,\ EditAnywhere,\ BlueprintReadWrite,\ Category=\textcolor{stringliteral}{"{}Audio"{}},\ meta=(ClampMin=\textcolor{stringliteral}{"{}0.0"{}},\ ClampMax=\textcolor{stringliteral}{"{}1.0"{}}))}
+\DoxyCodeLine{00018\ \ \ \ \ float\ \mbox{\hyperlink{class_u_i_p_game_user_settings_a7b3b6734cab78ddc53400f16c9b034fe}{MasterVolume}}\ =\ 1.0f;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00021\ \ \ \ \ UPROPERTY(Config,\ EditAnywhere,\ BlueprintReadWrite,\ Category=\textcolor{stringliteral}{"{}Audio"{}},\ meta=(ClampMin=\textcolor{stringliteral}{"{}0.0"{}},\ ClampMax=\textcolor{stringliteral}{"{}1.0"{}}))}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_a6512de17e905da3ca892ea0fa27b2a14}{SFXVolume}}\ =\ 1.0f;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00025\ \ \ \ \ UPROPERTY(Config,\ EditAnywhere,\ BlueprintReadWrite,\ Category=\textcolor{stringliteral}{"{}Audio"{}},\ meta=(ClampMin=\textcolor{stringliteral}{"{}0.0"{}},\ ClampMax=\textcolor{stringliteral}{"{}1.0"{}}))}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_ae31d104e30193da7e1ab4b9da1f3970f}{MusicVolume}}\ =\ 1.0f;}
+\DoxyCodeLine{00027\ \};}
+
+\end{DoxyCode}

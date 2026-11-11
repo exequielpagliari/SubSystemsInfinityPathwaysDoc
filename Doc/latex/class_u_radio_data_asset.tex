@@ -1,0 +1,64 @@
+\doxysection{URadio\+Data\+Asset Class Reference}
+\hypertarget{class_u_radio_data_asset}{}\label{class_u_radio_data_asset}\index{URadioDataAsset@{URadioDataAsset}}
+
+
+{\ttfamily \#include $<$Radio\+Data\+Asset.\+h$>$}
+
+Inheritance diagram for URadio\+Data\+Asset\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_radio_data_asset}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual FPrimary\+Asset\+Id \mbox{\hyperlink{class_u_radio_data_asset_a505a4beb609c85db01c86ed9cbc4e22c}{Get\+Primary\+Asset\+Id}} () const override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+FName \mbox{\hyperlink{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d}{Radio\+Name}}
+\item 
+TObject\+Ptr$<$ UTexture2D $>$ \mbox{\hyperlink{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304}{Radio\+Thumbnail}}
+\item 
+TArray$<$ TObject\+Ptr$<$ USound\+Wave $>$ $>$ \mbox{\hyperlink{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa}{Radio\+Songs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Primary asset describing a radio station and its presentation and music tracks. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_radio_data_asset_a505a4beb609c85db01c86ed9cbc4e22c}\index{URadioDataAsset@{URadioDataAsset}!GetPrimaryAssetId@{GetPrimaryAssetId}}
+\index{GetPrimaryAssetId@{GetPrimaryAssetId}!URadioDataAsset@{URadioDataAsset}}
+\doxysubsubsection{\texorpdfstring{GetPrimaryAssetId()}{GetPrimaryAssetId()}}
+{\footnotesize\ttfamily \label{class_u_radio_data_asset_a505a4beb609c85db01c86ed9cbc4e22c} 
+virtual FPrimary\+Asset\+Id URadio\+Data\+Asset\+::\+Get\+Primary\+Asset\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns this station\textquotesingle{}s asset identifier using the Radio\+Station asset type. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d}\index{URadioDataAsset@{URadioDataAsset}!RadioName@{RadioName}}
+\index{RadioName@{RadioName}!URadioDataAsset@{URadioDataAsset}}
+\doxysubsubsection{\texorpdfstring{RadioName}{RadioName}}
+{\footnotesize\ttfamily \label{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d} 
+FName URadio\+Data\+Asset\+::\+Radio\+Name}
+
+Display name or identifier for this radio station. \Hypertarget{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa}\index{URadioDataAsset@{URadioDataAsset}!RadioSongs@{RadioSongs}}
+\index{RadioSongs@{RadioSongs}!URadioDataAsset@{URadioDataAsset}}
+\doxysubsubsection{\texorpdfstring{RadioSongs}{RadioSongs}}
+{\footnotesize\ttfamily \label{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa} 
+TArray$<$TObject\+Ptr$<$USound\+Wave$>$ $>$ URadio\+Data\+Asset\+::\+Radio\+Songs}
+
+Audio tracks available to play for this station. \Hypertarget{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304}\index{URadioDataAsset@{URadioDataAsset}!RadioThumbnail@{RadioThumbnail}}
+\index{RadioThumbnail@{RadioThumbnail}!URadioDataAsset@{URadioDataAsset}}
+\doxysubsubsection{\texorpdfstring{RadioThumbnail}{RadioThumbnail}}
+{\footnotesize\ttfamily \label{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304} 
+TObject\+Ptr$<$UTexture2D$>$ URadio\+Data\+Asset\+::\+Radio\+Thumbnail}
+
+Artwork displayed for the station in the radio interface. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Dev/\+Plugins/\+Sub\+Systems\+Infinity\+Pathways/\+Source/\+Sub\+Systems\+Infinity\+Pathways/\+Public/Radio\+Data\+Asset.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\doxysection{Radio\+Data\+Asset.\+h}
+\hypertarget{_radio_data_asset_8h_source}{}\label{_radio_data_asset_8h_source}\index{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/RadioDataAsset.h@{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/RadioDataAsset.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Engine/DataAsset.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Engine/Texture2D.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Sound/SoundWave.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}RadioDataAsset.generated.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00012\ UCLASS(BlueprintType,\ Blueprintable)}
+\DoxyCodeLine{00013\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_radio_data_asset}{URadioDataAsset}}\ :\ public\ UPrimaryDataAsset}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{virtual}\ FPrimaryAssetId\ \mbox{\hyperlink{class_u_radio_data_asset_a505a4beb609c85db01c86ed9cbc4e22c}{GetPrimaryAssetId}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ FPrimaryAssetId(TEXT(\textcolor{stringliteral}{"{}RadioStation"{}}),\ GetFName());}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00024\ \ \ \ \ FName\ \mbox{\hyperlink{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d}{RadioName}};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00028\ \ \ \ \ TObjectPtr<UTexture2D>\ \mbox{\hyperlink{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304}{RadioThumbnail}};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00032\ \ \ \ \ TArray<TObjectPtr<USoundWave>>\ \mbox{\hyperlink{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa}{RadioSongs}};}
+\DoxyCodeLine{00033\ \};}
+
+\end{DoxyCode}

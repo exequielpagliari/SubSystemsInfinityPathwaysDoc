@@ -1,0 +1,99 @@
+\doxysection{ULevel\+Selection\+Subsystem Class Reference}
+\hypertarget{class_u_level_selection_subsystem}{}\label{class_u_level_selection_subsystem}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+
+
+{\ttfamily \#include $<$Level\+Selection\+Subsystem.\+h$>$}
+
+Inheritance diagram for ULevel\+Selection\+Subsystem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_u_level_selection_subsystem}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_u_level_selection_subsystem_ada2c4132c4a2423522fc58a27819bfa0}{Initialize}} (FSubsystem\+Collection\+Base \&Collection) override
+\item 
+virtual void \mbox{\hyperlink{class_u_level_selection_subsystem_ae43e4e7c69c0e22b2a8af7f1c2b45e04}{Deinitialize}} () override
+\item 
+FText \mbox{\hyperlink{class_u_level_selection_subsystem_acf6ba26c15eaad534e65870ab69eb3d2}{Get\+Level\+Name\+Text}} (const FString \&Level\+Key) const
+\item 
+FText \mbox{\hyperlink{class_u_level_selection_subsystem_a443e94cf4eca8b4ee99052624a4f3008}{Get\+Level\+Text\+Information}} (ELevel\+Difficult\+Type Level\+Type) const
+\item 
+bool \mbox{\hyperlink{class_u_level_selection_subsystem_a53771be2996072bc4e3016671cea6ce0}{Get\+Level\+Information}} (const FString \&Level\+Name\+Input, \mbox{\hyperlink{struct_f_level_info_structure}{FLevel\+Info\+Structure}} \&Out\+Level\+Info) const
+\item 
+bool \mbox{\hyperlink{class_u_level_selection_subsystem_afa766d6f70fc65f491fd164d415de351}{Setter\+Level\+Unlocked}} (int32 Current\+Level\+Index) const
+\item 
+FText \mbox{\hyperlink{class_u_level_selection_subsystem_aad9e0adc6bf284f6a740a396b15ea98a}{Get\+\_\+\+Highest\+Score}} (const FString \&Level\+Name\+Input) const
+\item 
+bool \mbox{\hyperlink{class_u_level_selection_subsystem_a3489d60e1293ad950b4df140640d79e4}{Get\+Hard\+Core\+Mode\+Active}} () const
+\item 
+void \mbox{\hyperlink{class_u_level_selection_subsystem_a5e1d49a7ee0172235d75c23f496cb118}{Set\+Hard\+Core\+Mode\+Active}} (bool b\+Is\+Active)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Game-\/instance service for querying level descriptions and progression state. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_level_selection_subsystem_ae43e4e7c69c0e22b2a8af7f1c2b45e04}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!Deinitialize@{Deinitialize}}
+\index{Deinitialize@{Deinitialize}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{Deinitialize()}{Deinitialize()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_ae43e4e7c69c0e22b2a8af7f1c2b45e04} 
+void ULevel\+Selection\+Subsystem\+::\+Deinitialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Releases resources held by this subsystem. \Hypertarget{class_u_level_selection_subsystem_aad9e0adc6bf284f6a740a396b15ea98a}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!Get\_HighestScore@{Get\_HighestScore}}
+\index{Get\_HighestScore@{Get\_HighestScore}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{Get\_HighestScore()}{Get\_HighestScore()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_aad9e0adc6bf284f6a740a396b15ea98a} 
+FText ULevel\+Selection\+Subsystem\+::\+Get\+\_\+\+Highest\+Score (\begin{DoxyParamCaption}\item[{const FString \&}]{Level\+Name\+Input}{}\end{DoxyParamCaption}) const}
+
+Recupera la puntuación más alta histórica del nivel seleccionado \Hypertarget{class_u_level_selection_subsystem_a3489d60e1293ad950b4df140640d79e4}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!GetHardCoreModeActive@{GetHardCoreModeActive}}
+\index{GetHardCoreModeActive@{GetHardCoreModeActive}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{GetHardCoreModeActive()}{GetHardCoreModeActive()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_a3489d60e1293ad950b4df140640d79e4} 
+bool ULevel\+Selection\+Subsystem\+::\+Get\+Hard\+Core\+Mode\+Active (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Comprueba si el Modo Hardcore se encuentra activo \Hypertarget{class_u_level_selection_subsystem_a53771be2996072bc4e3016671cea6ce0}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!GetLevelInformation@{GetLevelInformation}}
+\index{GetLevelInformation@{GetLevelInformation}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{GetLevelInformation()}{GetLevelInformation()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_a53771be2996072bc4e3016671cea6ce0} 
+bool ULevel\+Selection\+Subsystem\+::\+Get\+Level\+Information (\begin{DoxyParamCaption}\item[{const FString \&}]{Level\+Name\+Input}{, }\item[{\mbox{\hyperlink{struct_f_level_info_structure}{FLevel\+Info\+Structure}} \&}]{Out\+Level\+Info}{}\end{DoxyParamCaption}) const}
+
+Recupera la información guardada del nivel actual desde el sistema de guardado \Hypertarget{class_u_level_selection_subsystem_acf6ba26c15eaad534e65870ab69eb3d2}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!GetLevelNameText@{GetLevelNameText}}
+\index{GetLevelNameText@{GetLevelNameText}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{GetLevelNameText()}{GetLevelNameText()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_acf6ba26c15eaad534e65870ab69eb3d2} 
+FText ULevel\+Selection\+Subsystem\+::\+Get\+Level\+Name\+Text (\begin{DoxyParamCaption}\item[{const FString \&}]{Level\+Key}{}\end{DoxyParamCaption}) const}
+
+Obtiene el nombre del nivel formateado en Text desde una Data\+Table usando una clave FString \Hypertarget{class_u_level_selection_subsystem_a443e94cf4eca8b4ee99052624a4f3008}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!GetLevelTextInformation@{GetLevelTextInformation}}
+\index{GetLevelTextInformation@{GetLevelTextInformation}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{GetLevelTextInformation()}{GetLevelTextInformation()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_a443e94cf4eca8b4ee99052624a4f3008} 
+FText ULevel\+Selection\+Subsystem\+::\+Get\+Level\+Text\+Information (\begin{DoxyParamCaption}\item[{ELevel\+Difficult\+Type}]{Level\+Type}{}\end{DoxyParamCaption}) const}
+
+Obtiene la información descriptiva del nivel alternando entre Modo Normal y Hardcore \Hypertarget{class_u_level_selection_subsystem_ada2c4132c4a2423522fc58a27819bfa0}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_ada2c4132c4a2423522fc58a27819bfa0} 
+void ULevel\+Selection\+Subsystem\+::\+Initialize (\begin{DoxyParamCaption}\item[{FSubsystem\+Collection\+Base \&}]{Collection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Loads saved level state and configured data tables. \Hypertarget{class_u_level_selection_subsystem_a5e1d49a7ee0172235d75c23f496cb118}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!SetHardCoreModeActive@{SetHardCoreModeActive}}
+\index{SetHardCoreModeActive@{SetHardCoreModeActive}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{SetHardCoreModeActive()}{SetHardCoreModeActive()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_a5e1d49a7ee0172235d75c23f496cb118} 
+void ULevel\+Selection\+Subsystem\+::\+Set\+Hard\+Core\+Mode\+Active (\begin{DoxyParamCaption}\item[{bool}]{b\+Is\+Active}{}\end{DoxyParamCaption})}
+
+Establece el estado del Modo Hardcore \Hypertarget{class_u_level_selection_subsystem_afa766d6f70fc65f491fd164d415de351}\index{ULevelSelectionSubsystem@{ULevelSelectionSubsystem}!SetterLevelUnlocked@{SetterLevelUnlocked}}
+\index{SetterLevelUnlocked@{SetterLevelUnlocked}!ULevelSelectionSubsystem@{ULevelSelectionSubsystem}}
+\doxysubsubsection{\texorpdfstring{SetterLevelUnlocked()}{SetterLevelUnlocked()}}
+{\footnotesize\ttfamily \label{class_u_level_selection_subsystem_afa766d6f70fc65f491fd164d415de351} 
+bool ULevel\+Selection\+Subsystem\+::\+Setter\+Level\+Unlocked (\begin{DoxyParamCaption}\item[{int32}]{Current\+Level\+Index}{}\end{DoxyParamCaption}) const}
+
+Comprueba si el nivel actual está desbloqueado según su índice 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Dev/\+Plugins/\+Sub\+Systems\+Infinity\+Pathways/\+Source/\+Sub\+Systems\+Infinity\+Pathways/\+Public/Level\+Selection\+Subsystem.\+h\item 
+C\+:/\+Dev/\+Plugins/\+Sub\+Systems\+Infinity\+Pathways/\+Source/\+Sub\+Systems\+Infinity\+Pathways/\+Private/Level\+Selection\+Subsystem.\+cpp\end{DoxyCompactItemize}

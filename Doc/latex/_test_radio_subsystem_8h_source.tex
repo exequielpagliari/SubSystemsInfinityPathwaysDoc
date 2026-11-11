@@ -1,0 +1,23 @@
+\doxysection{Test\+Radio\+Subsystem.\+h}
+\hypertarget{_test_radio_subsystem_8h_source}{}\label{_test_radio_subsystem_8h_source}\index{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/Test/TestRadioSubsystem.h@{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/Test/TestRadioSubsystem.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}RadioSubsystems.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}TestRadioSubsystem.generated.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ UCLASS(NotBlueprintable)}
+\DoxyCodeLine{00012\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_test_radio_subsystem}{UTestRadioSubsystem}}\ :\ public\ \mbox{\hyperlink{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918}{URadioSubsystems}}}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ El\ motor\ crea\ automaticamente\ todas\ las\ subclases\ concretas\ de\ un\ subsistema.}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Con\ esto\ nunca\ se\ instancia\ solo\ (ni\ en\ editor\ ni\ en\ juego);\ los\ tests\ la\ crean\ con\ NewObject,}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//\ que\ no\ consulta\ ShouldCreateSubsystem.}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ ShouldCreateSubsystem(UObject*\ Outer)\textcolor{keyword}{\ const\ override\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00021\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,84 @@
+\doxysection{Radio\+Subsystems.\+h}
+\hypertarget{_radio_subsystems_8h_source}{}\label{_radio_subsystems_8h_source}\index{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/RadioSubsystems.h@{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/RadioSubsystems.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ Fill\ out\ your\ copyright\ notice\ in\ the\ Description\ page\ of\ Project\ Settings.}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Subsystems/GameInstanceSubsystem.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}RadioDataAsset.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Sound/SoundWave.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Sound/SoundBase.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Components/AudioComponent.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}MetasoundOutputSubsystem.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}RadioSubsystems.generated.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00017\ UCLASS(Abstract,\ Blueprintable)}
+\DoxyCodeLine{00018\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918}{URadioSubsystems}}\ :\ public\ UGameInstanceSubsystem}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918}{URadioSubsystems}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_a866ee4a936d6eef1023eb0279ce44948}{Initialize}}(FSubsystemCollectionBase\&\ Collection)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_a40ff6b226a94f9dfadaa0807c5b36050}{Deinitialize}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00032\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_a21d25637b529c0c968247cd93625de24}{Init}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_ab7c26aa60658260922303e6796602e17}{PlaySound}}(USoundWave*\ Sound);}
+\DoxyCodeLine{00040\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_u_radio_subsystems_ae7f5d9523d751c3ea365380e3c9cfd75}{GetRadioIndex}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_ac7a3ba2b771c1255f70bdaed7e3c5df8}{Next}}();}
+\DoxyCodeLine{00047\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_afebdffda51df63056fffba8956602d42}{Previous}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00051\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Audio"{}})}
+\DoxyCodeLine{00052\ \ \ \ \ TSoftObjectPtr<USoundWave>\ \mbox{\hyperlink{class_u_radio_subsystems_a17158c8b5ccc6e3fd0f19e84c2175116}{InitialMusic}};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00055\ \ \ \ \ UPROPERTY(VisibleAnywhere,\ BlueprintReadOnly,\ Category\ =\ \textcolor{stringliteral}{"{}Audio"{}})}
+\DoxyCodeLine{00056\ \ \ \ \ TObjectPtr<UAudioComponent>\ \mbox{\hyperlink{class_u_radio_subsystems_a3092021274485a2a54f7b0b3907c6e91}{AudioComp}};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00059\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Radio|Data"{}})}
+\DoxyCodeLine{00060\ \ \ \ \ TArray<TObjectPtr<\mbox{\hyperlink{class_u_radio_data_asset}{URadioDataAsset}}>>\ \mbox{\hyperlink{class_u_radio_subsystems_a4821eba47bd5f04ef14c03d42d1f813c}{RadioListLoaded}};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00063\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Radio|Data"{}})}
+\DoxyCodeLine{00064\ \ \ \ \ TArray<TObjectPtr<USoundWave>>\ \mbox{\hyperlink{class_u_radio_subsystems_a23c262ae170a4cf82ca8893a8e3ef1c3}{RadioSongs}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ \ \ \ \ UPROPERTY(EditAnywhere,\ BlueprintReadWrite,\ Category\ =\ \textcolor{stringliteral}{"{}Radio|Data"{}})}
+\DoxyCodeLine{00068\ \ \ \ \ TObjectPtr<USoundBase>\ \mbox{\hyperlink{class_u_radio_subsystems_af06827cd24a697889a1408f25e814e08}{MS\_Soundtracks}};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00071\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_a19a9e554390087670e1429dec2e198d8}{OnSongFinished}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00075\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Radio"{}})}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_radio_subsystems_aa09e527ef8836d57959b13863d099e53}{MuteAudio}}(\textcolor{keywordtype}{bool}\ bMute);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{comment}{//private:}}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{void}\ SetRadio(\textcolor{keywordtype}{int}\ RadioIndex);}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ SetRandomSong();}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ SetRadioWaveParameter();}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ SetDefaultRadioSong();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ CurrentRadioIndex\ =\ 0;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{int}\ SongIndex\ =\ 0;}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{int}\ IndexCount\ =\ 0;}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{int}\ MinIndexRadio\ =\ 0;}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ }
+\DoxyCodeLine{00094\ \};}
+
+\end{DoxyCode}

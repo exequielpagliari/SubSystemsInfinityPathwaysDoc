@@ -1,0 +1,79 @@
+\doxysection{UTest\+Radio\+Subsystem Class Reference}
+\hypertarget{class_u_test_radio_subsystem}{}\label{class_u_test_radio_subsystem}\index{UTestRadioSubsystem@{UTestRadioSubsystem}}
+
+
+{\ttfamily \#include $<$Test\+Radio\+Subsystem.\+h$>$}
+
+Inheritance diagram for UTest\+Radio\+Subsystem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_u_test_radio_subsystem}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_u_test_radio_subsystem_aa58bb122965315eb05bb335b2de46680}\label{class_u_test_radio_subsystem_aa58bb122965315eb05bb335b2de46680} 
+virtual bool {\bfseries Should\+Create\+Subsystem} (UObject \texorpdfstring{$\ast$}{*}Outer) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_u_radio_subsystems}{URadio\+Subsystems}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918}{URadio\+Subsystems}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_radio_subsystems_a866ee4a936d6eef1023eb0279ce44948}{Initialize}} (FSubsystem\+Collection\+Base \&Collection) override
+\item 
+virtual void \mbox{\hyperlink{class_u_radio_subsystems_a40ff6b226a94f9dfadaa0807c5b36050}{Deinitialize}} () override
+\item 
+void \mbox{\hyperlink{class_u_radio_subsystems_a21d25637b529c0c968247cd93625de24}{Init}} ()
+\item 
+void \mbox{\hyperlink{class_u_radio_subsystems_ab7c26aa60658260922303e6796602e17}{Play\+Sound}} (USound\+Wave \texorpdfstring{$\ast$}{*}Sound)
+\item 
+int \mbox{\hyperlink{class_u_radio_subsystems_ae7f5d9523d751c3ea365380e3c9cfd75}{Get\+Radio\+Index}} ()
+\item 
+void \mbox{\hyperlink{class_u_radio_subsystems_ac7a3ba2b771c1255f70bdaed7e3c5df8}{Next}} ()
+\item 
+void \mbox{\hyperlink{class_u_radio_subsystems_afebdffda51df63056fffba8956602d42}{Previous}} ()
+\item 
+void \mbox{\hyperlink{class_u_radio_subsystems_a19a9e554390087670e1429dec2e198d8}{On\+Song\+Finished}} ()
+\item 
+void \mbox{\hyperlink{class_u_radio_subsystems_aa09e527ef8836d57959b13863d099e53}{Mute\+Audio}} (bool b\+Mute)
+\item 
+void {\bfseries Set\+Radio} (int Radio\+Index)
+\item 
+void {\bfseries Set\+Random\+Song} ()
+\item 
+void {\bfseries Set\+Radio\+Wave\+Parameter} ()
+\item 
+void {\bfseries Set\+Default\+Radio\+Song} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{class_u_radio_subsystems}{URadio\+Subsystems}}}
+\begin{DoxyCompactItemize}
+\item 
+TSoft\+Object\+Ptr$<$ USound\+Wave $>$ \mbox{\hyperlink{class_u_radio_subsystems_a17158c8b5ccc6e3fd0f19e84c2175116}{Initial\+Music}}
+\item 
+TObject\+Ptr$<$ UAudio\+Component $>$ \mbox{\hyperlink{class_u_radio_subsystems_a3092021274485a2a54f7b0b3907c6e91}{Audio\+Comp}}
+\item 
+TArray$<$ TObject\+Ptr$<$ \mbox{\hyperlink{class_u_radio_data_asset}{URadio\+Data\+Asset}} $>$ $>$ \mbox{\hyperlink{class_u_radio_subsystems_a4821eba47bd5f04ef14c03d42d1f813c}{Radio\+List\+Loaded}}
+\item 
+TArray$<$ TObject\+Ptr$<$ USound\+Wave $>$ $>$ \mbox{\hyperlink{class_u_radio_subsystems_a23c262ae170a4cf82ca8893a8e3ef1c3}{Radio\+Songs}}
+\item 
+TObject\+Ptr$<$ USound\+Base $>$ \mbox{\hyperlink{class_u_radio_subsystems_af06827cd24a697889a1408f25e814e08}{MS\+\_\+\+Soundtracks}}
+\item 
+int {\bfseries Current\+Radio\+Index} = 0
+\item 
+int {\bfseries Song\+Index} = 0
+\item 
+int {\bfseries Index\+Count} = 0
+\item 
+int {\bfseries Min\+Index\+Radio} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Subclase concreta de \doxylink{class_u_radio_subsystems}{URadio\+Subsystems} (que es Abstract) solo para tests. Los miembros que usan los tests ya son publicos en \doxylink{class_u_radio_subsystems}{URadio\+Subsystems}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Dev/\+Plugins/\+Sub\+Systems\+Infinity\+Pathways/\+Source/\+Sub\+Systems\+Infinity\+Pathways/\+Public/\+Test/Test\+Radio\+Subsystem.\+h\end{DoxyCompactItemize}

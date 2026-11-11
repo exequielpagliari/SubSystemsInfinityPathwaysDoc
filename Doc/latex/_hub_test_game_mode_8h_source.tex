@@ -1,0 +1,53 @@
+\doxysection{Hub\+Test\+Game\+Mode.\+h}
+\hypertarget{_hub_test_game_mode_8h_source}{}\label{_hub_test_game_mode_8h_source}\index{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/Test/HubTestGameMode.h@{C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/Test/HubTestGameMode.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}CoreMinimal.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}GameFramework/GameModeBase.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}IChallengeProgressBar.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}IGameModeDataSource.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Materials/Material.h"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}MaterialDomain.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}HubTestGameMode.generated.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00021\ UCLASS(NotBlueprintable)}
+\DoxyCodeLine{00022\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_a_hub_test_game_mode}{AHubTestGameMode}}\ :\ public\ AGameModeBase,\ public\ \mbox{\hyperlink{class_i_challenge_progress_bar}{IChallengeProgressBar}},\ public\ \mbox{\hyperlink{class_i_game_mode_data_source}{IGameModeDataSource}}}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ IChallengeProgressBar}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ StreakTimeLeft\ =\ 5.f;}
+\DoxyCodeLine{00029\ \ \ \ \ int32\ FirstStreak\ =\ 2;}
+\DoxyCodeLine{00030\ \ \ \ \ int32\ SecondStreak\ =\ 3;}
+\DoxyCodeLine{00031\ \ \ \ \ int32\ ThirdStreak\ =\ 5;}
+\DoxyCodeLine{00032\ \ \ \ \ uint8\ StreakLevel\ =\ 2;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ IGameModeDataSource}}
+\DoxyCodeLine{00035\ \ \ \ \ int32\ Score\ =\ 1234;}
+\DoxyCodeLine{00036\ \ \ \ \ FText\ TotalsCellsToConsume\ =\ FText::FromString(TEXT(\textcolor{stringliteral}{"{}20"{}}));}
+\DoxyCodeLine{00037\ \ \ \ \ FText\ CellsConsumed\ =\ FText::FromString(TEXT(\textcolor{stringliteral}{"{}7"{}}));}
+\DoxyCodeLine{00038\ \ \ \ \ int32\ CubeStepCount\ =\ 9;}
+\DoxyCodeLine{00039\ \ \ \ \ FText\ TimerValue\ =\ FText::FromString(TEXT(\textcolor{stringliteral}{"{}30"{}}));}
+\DoxyCodeLine{00040\ \ \ \ \ FText\ TimerMinutesValue\ =\ FText::FromString(TEXT(\textcolor{stringliteral}{"{}01"{}}));}
+\DoxyCodeLine{00041\ \ \ \ \ uint8\ LevelType\ =\ 1;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{float}\ GetStreakTimeLeft\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ StreakTimeLeft;\ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ int32\ GetFirstStreakLevelTime\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ FirstStreak;\ \}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{virtual}\ int32\ GetSecondStreakLevelTime\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ SecondStreak;\ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{virtual}\ int32\ GetThirdStreakLevelTime\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ ThirdStreak;\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ UMaterialInterface*\ GetHMNextToConsumeCell\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ UMaterial::GetDefaultMaterial(MD\_Surface);\ \}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{virtual}\ uint8\ GetStreakLevel\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ StreakLevel;\ \}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ int32\ GetScore\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ Score;\ \}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{virtual}\ FText\ GetTotalsCellsToConsume\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ TotalsCellsToConsume;\ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{virtual}\ FText\ GetCellsConsumed\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ CellsConsumed;\ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{virtual}\ int32\ GetCubeStepCount\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ CubeStepCount;\ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ FText\ GetTimerValue\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ TimerValue;\ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ FText\ GetTimerMinutesValue\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ TimerMinutesValue;\ \}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{virtual}\ uint8\ GetLevelTypeValue\_Implementation()\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ LevelType;\ \}}
+\DoxyCodeLine{00057\ \};}
+
+\end{DoxyCode}
