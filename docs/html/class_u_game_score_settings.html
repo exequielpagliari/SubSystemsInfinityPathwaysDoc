@@ -111,6 +111,9 @@ $(function(){initNavTree('class_u_game_score_settings.html',''); initResizable(t
 </div><!--header-->
 <div class="contents">
 
+<p>Configurable score values used by the game scoring subsystem.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_score_settings_8h_source.html">GameScoreSettings.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UGameScoreSettings:</div>
@@ -121,206 +124,30 @@ Inheritance diagram for UGameScoreSettings:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e265165df94afdfdcab2d092db9bf1a" id="r_a3e265165df94afdfdcab2d092db9bf1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e265165df94afdfdcab2d092db9bf1a">UPROPERTY</a> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 TimeBonusPerSecond</td></tr>
+<tr class="memitem:a3e265165df94afdfdcab2d092db9bf1a" id="r_a3e265165df94afdfdcab2d092db9bf1a"><td class="memItemLeft" align="right" valign="top"><a id="a3e265165df94afdfdcab2d092db9bf1a" name="a3e265165df94afdfdcab2d092db9bf1a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UPROPERTY</b> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 TimeBonusPerSecond</td></tr>
+<tr class="memdesc:a3e265165df94afdfdcab2d092db9bf1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points awarded for each second remaining when a time-based level ends. <br /></td></tr>
 <tr class="separator:a3e265165df94afdfdcab2d092db9bf1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e4fe48cbee688f1eb19b07c7d9e606" id="r_a88e4fe48cbee688f1eb19b07c7d9e606"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88e4fe48cbee688f1eb19b07c7d9e606">UPROPERTY</a> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 StepBonusPerStep</td></tr>
+<tr class="memitem:a88e4fe48cbee688f1eb19b07c7d9e606" id="r_a88e4fe48cbee688f1eb19b07c7d9e606"><td class="memItemLeft" align="right" valign="top"><a id="a88e4fe48cbee688f1eb19b07c7d9e606" name="a88e4fe48cbee688f1eb19b07c7d9e606"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UPROPERTY</b> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 StepBonusPerStep</td></tr>
+<tr class="memdesc:a88e4fe48cbee688f1eb19b07c7d9e606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points awarded for each completed step when a step-based level ends. <br /></td></tr>
 <tr class="separator:a88e4fe48cbee688f1eb19b07c7d9e606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbe56963bb6181e75e04fcb9a2382bfe" id="r_acbe56963bb6181e75e04fcb9a2382bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbe56963bb6181e75e04fcb9a2382bfe">UPROPERTY</a> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 ZenBonusPerSecond</td></tr>
+<tr class="memitem:acbe56963bb6181e75e04fcb9a2382bfe" id="r_acbe56963bb6181e75e04fcb9a2382bfe"><td class="memItemLeft" align="right" valign="top"><a id="acbe56963bb6181e75e04fcb9a2382bfe" name="acbe56963bb6181e75e04fcb9a2382bfe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UPROPERTY</b> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 ZenBonusPerSecond</td></tr>
+<tr class="memdesc:acbe56963bb6181e75e04fcb9a2382bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points awarded per elapsed second in Zen mode. <br /></td></tr>
 <tr class="separator:acbe56963bb6181e75e04fcb9a2382bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37aebaff4627b5eecf46fcff2ac17e88" id="r_a37aebaff4627b5eecf46fcff2ac17e88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37aebaff4627b5eecf46fcff2ac17e88">UPROPERTY</a> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 CellObjective</td></tr>
+<tr class="memitem:a37aebaff4627b5eecf46fcff2ac17e88" id="r_a37aebaff4627b5eecf46fcff2ac17e88"><td class="memItemLeft" align="right" valign="top"><a id="a37aebaff4627b5eecf46fcff2ac17e88" name="a37aebaff4627b5eecf46fcff2ac17e88"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UPROPERTY</b> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 CellObjective</td></tr>
+<tr class="memdesc:a37aebaff4627b5eecf46fcff2ac17e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of objective cells required for the cell-completion bonus. <br /></td></tr>
 <tr class="separator:a37aebaff4627b5eecf46fcff2ac17e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82b306580b2ffd30ba763281d3cd9179" id="r_a82b306580b2ffd30ba763281d3cd9179"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b306580b2ffd30ba763281d3cd9179">UPROPERTY</a> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 CellBonus</td></tr>
+<tr class="memitem:a82b306580b2ffd30ba763281d3cd9179" id="r_a82b306580b2ffd30ba763281d3cd9179"><td class="memItemLeft" align="right" valign="top"><a id="a82b306580b2ffd30ba763281d3cd9179" name="a82b306580b2ffd30ba763281d3cd9179"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>UPROPERTY</b> (Config, EditAnywhere, BlueprintReadOnly, Category=&quot;Score|Rules&quot;, meta=(ClampMin=&quot;0&quot;)) int32 CellBonus</td></tr>
+<tr class="memdesc:a82b306580b2ffd30ba763281d3cd9179"><td class="mdescLeft">&#160;</td><td class="mdescRight">Points awarded when the cell objective is completed. <br /></td></tr>
 <tr class="separator:a82b306580b2ffd30ba763281d3cd9179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configurable score values used by the game scoring subsystem. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a82b306580b2ffd30ba763281d3cd9179" name="a82b306580b2ffd30ba763281d3cd9179"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82b306580b2ffd30ba763281d3cd9179">&#9670;&#160;</a></span>UPROPERTY() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UGameScoreSettings::UPROPERTY </td>
-          <td>(</td>
-          <td class="paramtype">Config</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">EditAnywhere</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BlueprintReadOnly</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Category</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Score|Rules&quot;</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">meta</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">(ClampMin=&quot;0&quot;)</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Points awarded when the cell objective is completed. </p>
-
-</div>
-</div>
-<a id="a37aebaff4627b5eecf46fcff2ac17e88" name="a37aebaff4627b5eecf46fcff2ac17e88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37aebaff4627b5eecf46fcff2ac17e88">&#9670;&#160;</a></span>UPROPERTY() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UGameScoreSettings::UPROPERTY </td>
-          <td>(</td>
-          <td class="paramtype">Config</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">EditAnywhere</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BlueprintReadOnly</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Category</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Score|Rules&quot;</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">meta</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">(ClampMin=&quot;0&quot;)</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Number of objective cells required for the cell-completion bonus. </p>
-
-</div>
-</div>
-<a id="a88e4fe48cbee688f1eb19b07c7d9e606" name="a88e4fe48cbee688f1eb19b07c7d9e606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88e4fe48cbee688f1eb19b07c7d9e606">&#9670;&#160;</a></span>UPROPERTY() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UGameScoreSettings::UPROPERTY </td>
-          <td>(</td>
-          <td class="paramtype">Config</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">EditAnywhere</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BlueprintReadOnly</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Category</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Score|Rules&quot;</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">meta</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">(ClampMin=&quot;0&quot;)</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Points awarded for each completed step when a step-based level ends. </p>
-
-</div>
-</div>
-<a id="a3e265165df94afdfdcab2d092db9bf1a" name="a3e265165df94afdfdcab2d092db9bf1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e265165df94afdfdcab2d092db9bf1a">&#9670;&#160;</a></span>UPROPERTY() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UGameScoreSettings::UPROPERTY </td>
-          <td>(</td>
-          <td class="paramtype">Config</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">EditAnywhere</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BlueprintReadOnly</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Category</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Score|Rules&quot;</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">meta</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">(ClampMin=&quot;0&quot;)</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Points awarded for each second remaining when a time-based level ends. </p>
-
-</div>
-</div>
-<a id="acbe56963bb6181e75e04fcb9a2382bfe" name="acbe56963bb6181e75e04fcb9a2382bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbe56963bb6181e75e04fcb9a2382bfe">&#9670;&#160;</a></span>UPROPERTY() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">UGameScoreSettings::UPROPERTY </td>
-          <td>(</td>
-          <td class="paramtype">Config</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">EditAnywhere</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BlueprintReadOnly</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Category</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;Score|Rules&quot;</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">meta</td>          <td class="paramname"><span class="paramname"><em></em></span><span class="paramdefsep"> = </span><span class="paramdefval">(ClampMin=&quot;0&quot;)</span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Points awarded per elapsed second in Zen mode. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/<a class="el" href="_game_score_settings_8h_source.html">GameScoreSettings.h</a></li>
 </ul>
 </div><!-- contents -->

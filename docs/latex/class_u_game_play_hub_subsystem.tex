@@ -2,6 +2,11 @@
 \hypertarget{class_u_game_play_hub_subsystem}{}\label{class_u_game_play_hub_subsystem}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 
 
+Game-\/instance service that caches gameplay HUD metrics and broadcasts updates.  
+
+
+
+
 {\ttfamily \#include $<$Game\+Play\+Hub\+Subsystem.\+h$>$}
 
 Inheritance diagram for UGame\+Play\+Hub\+Subsystem\+:\begin{figure}[H]
@@ -14,80 +19,87 @@ Inheritance diagram for UGame\+Play\+Hub\+Subsystem\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_u_game_play_hub_subsystem_a0f4a37e6406f271f05381ab2490bc445}{Update\+Streak\+Data}} (float In\+Streak\+Time\+Left, int In\+First\+Streak, int In\+Second\+Streak, int In\+Third\+Streak, uint8 In\+Level\+Type)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates streak data and level type, caching the values and broadcasting the On\+Streak\+Values\+Changed event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_play_hub_subsystem_a4c8366ff676e588ea882b98e5c064fa2}{Update\+Score}} (int In\+Score)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the player score cache and broadcasts the On\+Score\+Changed event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_play_hub_subsystem_ab6fe5a437158596b65955e82b833035f}{Update\+Cell\+Data}} (int In\+Cells\+Consumed, int In\+Totals\+Cells\+To\+Consume, UMaterial\+Interface \texorpdfstring{$\ast$}{*}In\+Next\+Cell)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates cell data metrics and next cell material, broadcasting corresponding events. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_play_hub_subsystem_af6bca601c5b3d3ee87be16a3ea1393a7}{Update\+Timer\+Data}} (int In\+Timer\+Value, int In\+Timer\+Minutes\+Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates timer values (seconds and minutes) and broadcasts the On\+Timer\+Changed event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_play_hub_subsystem_a630540c390223bf54fd4d0434c86d039}{Update\+Cube\+Step\+Count}} (int In\+Cube\+Step\+Count)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the cube step count cache and broadcasts the On\+Step\+Count\+Changed event. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_play_hub_subsystem_af2a17eb479f0ea37e134207be99c43c9}{Update\+Level\+Type\+Game\+Mode}} (uint8 In\+Level\+Type)
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the game mode level type and broadcasts the On\+Level\+Type\+Game\+Mode event. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_game_play_hub_subsystem_a097fd5869a8cc6e18d6a622659d47939}{Get\+Charging}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates and returns the charging ratio based on streak time left and total streak sum. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_game_play_hub_subsystem_aa772f084dc074dbbbf142825fb03d9ac}{Get\+Combo}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the combo ratio (maps directly to \doxylink{class_u_game_play_hub_subsystem_a097fd5869a8cc6e18d6a622659d47939}{Get\+Charging()}). \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_game_play_hub_subsystem_a78683b8eaf2da9a615f3bf00e5a64561}{Get\+Sustained}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates and returns the sustained streak metric incorporating the first streak weight. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_game_play_hub_subsystem_a712872f74d4aa1a579cebff3a9213150}{Get\+Ultra}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates and returns the ultra streak metric incorporating combined inner weights. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_play_hub_subsystem_a77fe8fd2dd037212776d6a6d6ff463a5}{Get\+Streak\+Value}} (float \&Charging, float \&Combo, float \&Sustained, float \&Ultra) const
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieves all calculated streak values at once by reference parameters. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_aab6d4e80474f360904e776bd4e4d39a1}{Get\+Add\+Streak}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the sum of all three streak levels. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_game_play_hub_subsystem_aecf58166261095540df47a6c1c2fe2ae}{Get\+Streak\+Time\+Left\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached streak time left value. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_a8ae40beb48c73f2a60bc8756e828b9f0}{Get\+First\+Streak\+Level\+Time\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached first streak level time/value. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_a806124775cfb4ac573227d44a3db7c76}{Get\+Second\+Streak\+Level\+Time\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached second streak level time/value. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_a5737cb6af64073bf49fd7f97e9386a67}{Get\+Third\+Streak\+Level\+Time\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached third streak level time/value. \end{DoxyCompactList}\item 
 UMaterial\+Interface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_game_play_hub_subsystem_a295500ee23b5e3b6bfd5088184b50d97}{Get\+HMNext\+To\+Consume\+Cell\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached material interface for the next cell to consume. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_adfb7a915f80ed621546b827301566457}{Get\+Score\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached player score value. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_aa46c2d240b9444b4254d66724dd3ddb9}{Get\+Totals\+Cells\+To\+Consume\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached total cells to consume target. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_a423f8ce0fb095db4287fe7a286832ba6}{Get\+Cells\+Consumed\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached number of cells consumed. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_a336088db05bfdedeb264b31a833ec20a}{Get\+Cube\+Step\+Count\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached cube step count. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_a4a6d921dde33b7757e1b1ff25101e254}{Get\+Timer\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached timer seconds value. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_game_play_hub_subsystem_a5910648304f043d99c023b0e9f37d22b}{Get\+Timer\+Minutes\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached timer minutes value. \end{DoxyCompactList}\item 
 uint8 \mbox{\hyperlink{class_u_game_play_hub_subsystem_a95d9802ffb3590cfe5489816000e2a0b}{Get\+Streak\+Level\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached streak level identifier. \end{DoxyCompactList}\item 
 uint8 \mbox{\hyperlink{class_u_game_play_hub_subsystem_a9a57f1ad2bb43a366eab386559bfaac0}{Get\+Level\+Type\+Value}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the cached level type identifier. \end{DoxyCompactList}\item 
 uint8 \mbox{\hyperlink{class_u_game_play_hub_subsystem_ab00a11ea408901ad03e1e505bbe9a617}{Get\+Level\+Type\+Game\+Mode\+Value}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Gets the cached game mode level type identifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-FOn\+Streak\+Values\+Changed \mbox{\hyperlink{class_u_game_play_hub_subsystem_acb744c16bdb106f4f88a2cb43398496f}{On\+Streak\+Values\+Changed}}
-\item 
-FOn\+Score\+Changed \mbox{\hyperlink{class_u_game_play_hub_subsystem_a2dcc2d7ef8a154736d6c3072ebd6c6ae}{On\+Score\+Changed}}
-\item 
-FOn\+Timer\+Changed \mbox{\hyperlink{class_u_game_play_hub_subsystem_a36f02099975d7a7ceb62927082150b3f}{On\+Timer\+Changed}}
-\item 
-FOn\+Cells\+Changed \mbox{\hyperlink{class_u_game_play_hub_subsystem_ad9cf10f75960cc13130b465eb4781099}{On\+Cells\+Changed}}
-\item 
-FOn\+Next\+Cell\+Changed \mbox{\hyperlink{class_u_game_play_hub_subsystem_a57977c1b197c4ecc730f2381419afa05}{On\+Next\+Cell\+Changed}}
-\item 
-FOn\+Step\+Count\+Changed \mbox{\hyperlink{class_u_game_play_hub_subsystem_ade5cdb23951e149ca6bfa9509085dae5}{On\+Step\+Count\+Changed}}
-\item 
-FOn\+Level\+Type\+Game\+Mode \mbox{\hyperlink{class_u_game_play_hub_subsystem_a3cadded1f501052fa2f0a21dfdb82897}{On\+Level\+Type\+Game\+Mode}}
-\end{DoxyCompactItemize}
+\Hypertarget{class_u_game_play_hub_subsystem_acb744c16bdb106f4f88a2cb43398496f}\label{class_u_game_play_hub_subsystem_acb744c16bdb106f4f88a2cb43398496f} 
+FOn\+Streak\+Values\+Changed {\bfseries On\+Streak\+Values\+Changed}
+\begin{DoxyCompactList}\small\item\em Delegate fired whenever streak values or the level type change. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_play_hub_subsystem_a2dcc2d7ef8a154736d6c3072ebd6c6ae}\label{class_u_game_play_hub_subsystem_a2dcc2d7ef8a154736d6c3072ebd6c6ae} 
+FOn\+Score\+Changed {\bfseries On\+Score\+Changed}
+\begin{DoxyCompactList}\small\item\em Delegate fired whenever the score changes. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_play_hub_subsystem_a36f02099975d7a7ceb62927082150b3f}\label{class_u_game_play_hub_subsystem_a36f02099975d7a7ceb62927082150b3f} 
+FOn\+Timer\+Changed {\bfseries On\+Timer\+Changed}
+\begin{DoxyCompactList}\small\item\em Delegate fired whenever the timer values (seconds and minutes) change. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_play_hub_subsystem_ad9cf10f75960cc13130b465eb4781099}\label{class_u_game_play_hub_subsystem_ad9cf10f75960cc13130b465eb4781099} 
+FOn\+Cells\+Changed {\bfseries On\+Cells\+Changed}
+\begin{DoxyCompactList}\small\item\em Delegate fired whenever cell consumption metrics change. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_play_hub_subsystem_a57977c1b197c4ecc730f2381419afa05}\label{class_u_game_play_hub_subsystem_a57977c1b197c4ecc730f2381419afa05} 
+FOn\+Next\+Cell\+Changed {\bfseries On\+Next\+Cell\+Changed}
+\begin{DoxyCompactList}\small\item\em Delegate fired whenever the next cell material to consume changes. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_play_hub_subsystem_ade5cdb23951e149ca6bfa9509085dae5}\label{class_u_game_play_hub_subsystem_ade5cdb23951e149ca6bfa9509085dae5} 
+FOn\+Step\+Count\+Changed {\bfseries On\+Step\+Count\+Changed}
+\begin{DoxyCompactList}\small\item\em Delegate fired whenever the cube step count changes. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_play_hub_subsystem_a3cadded1f501052fa2f0a21dfdb82897}\label{class_u_game_play_hub_subsystem_a3cadded1f501052fa2f0a21dfdb82897} 
+FOn\+Level\+Type\+Game\+Mode {\bfseries On\+Level\+Type\+Game\+Mode}
+\begin{DoxyCompactList}\small\item\em Delegate fired whenever the game mode level type changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-\doxylink{class_u_game_play_hub_subsystem}{UGame\+Play\+Hub\+Subsystem}
+Game-\/instance service that caches gameplay HUD metrics and broadcasts updates. 
 
-A game instance subsystem redesigned under an Event-\/\+Driven architecture. It manages and caches gameplay HUD metrics, streaks, timers, and cells data, providing direct getters and multicast delegates to instantly update UI elements and systems without per-\/frame interface overhead. 
+It manages streaks, timers, score, and cell data, exposing getters and multicast delegates so UI and gameplay systems can react to changes without polling. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_u_game_play_hub_subsystem_aab6d4e80474f360904e776bd4e4d39a1}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetAddStreak@{GetAddStreak}}
@@ -96,7 +108,11 @@ A game instance subsystem redesigned under an Event-\/\+Driven architecture. It 
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_aab6d4e80474f360904e776bd4e4d39a1} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Add\+Streak (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Returns the sum of all three streak levels. \begin{DoxyReturn}{Returns}
+
+
+Returns the sum of all three streak levels. 
+
+\begin{DoxyReturn}{Returns}
 Total combined integer streak value. 
 \end{DoxyReturn}
 \Hypertarget{class_u_game_play_hub_subsystem_a423f8ce0fb095db4287fe7a286832ba6}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetCellsConsumedValue@{GetCellsConsumedValue}}
@@ -105,13 +121,24 @@ Total combined integer streak value.
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a423f8ce0fb095db4287fe7a286832ba6} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Cells\+Consumed\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached number of cells consumed. \Hypertarget{class_u_game_play_hub_subsystem_a097fd5869a8cc6e18d6a622659d47939}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetCharging@{GetCharging}}
+
+
+Gets the cached number of cells consumed. 
+
+\begin{DoxyReturn}{Returns}
+Number of cells consumed. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a097fd5869a8cc6e18d6a622659d47939}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetCharging@{GetCharging}}
 \index{GetCharging@{GetCharging}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetCharging()}{GetCharging()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a097fd5869a8cc6e18d6a622659d47939} 
 float UGame\+Play\+Hub\+Subsystem\+::\+Get\+Charging (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Calculates and returns the charging ratio based on streak time left and total streak sum. \begin{DoxyReturn}{Returns}
+
+
+Calculates and returns the charging ratio based on streak time left and total streak sum. 
+
+\begin{DoxyReturn}{Returns}
 The normalized charging value (0.\+0f to 1.\+0f+). 
 \end{DoxyReturn}
 \Hypertarget{class_u_game_play_hub_subsystem_aa772f084dc074dbbbf142825fb03d9ac}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetCombo@{GetCombo}}
@@ -120,7 +147,11 @@ The normalized charging value (0.\+0f to 1.\+0f+).
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_aa772f084dc074dbbbf142825fb03d9ac} 
 float UGame\+Play\+Hub\+Subsystem\+::\+Get\+Combo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Returns the combo ratio (maps directly to \doxylink{class_u_game_play_hub_subsystem_a097fd5869a8cc6e18d6a622659d47939}{Get\+Charging()}). \begin{DoxyReturn}{Returns}
+
+
+Returns the combo ratio (maps directly to \doxylink{class_u_game_play_hub_subsystem_a097fd5869a8cc6e18d6a622659d47939}{Get\+Charging()}). 
+
+\begin{DoxyReturn}{Returns}
 The normalized combo value. 
 \end{DoxyReturn}
 \Hypertarget{class_u_game_play_hub_subsystem_a336088db05bfdedeb264b31a833ec20a}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetCubeStepCountValue@{GetCubeStepCountValue}}
@@ -129,61 +160,128 @@ The normalized combo value.
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a336088db05bfdedeb264b31a833ec20a} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Cube\+Step\+Count\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached cube step count. \Hypertarget{class_u_game_play_hub_subsystem_a8ae40beb48c73f2a60bc8756e828b9f0}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetFirstStreakLevelTimeValue@{GetFirstStreakLevelTimeValue}}
+
+
+Gets the cached cube step count. 
+
+\begin{DoxyReturn}{Returns}
+Cached cube step count. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a8ae40beb48c73f2a60bc8756e828b9f0}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetFirstStreakLevelTimeValue@{GetFirstStreakLevelTimeValue}}
 \index{GetFirstStreakLevelTimeValue@{GetFirstStreakLevelTimeValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetFirstStreakLevelTimeValue()}{GetFirstStreakLevelTimeValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a8ae40beb48c73f2a60bc8756e828b9f0} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+First\+Streak\+Level\+Time\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached first streak level time/value. \Hypertarget{class_u_game_play_hub_subsystem_a295500ee23b5e3b6bfd5088184b50d97}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetHMNextToConsumeCellValue@{GetHMNextToConsumeCellValue}}
+
+
+Gets the cached first streak level time/value. 
+
+\begin{DoxyReturn}{Returns}
+Cached first streak value. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a295500ee23b5e3b6bfd5088184b50d97}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetHMNextToConsumeCellValue@{GetHMNextToConsumeCellValue}}
 \index{GetHMNextToConsumeCellValue@{GetHMNextToConsumeCellValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetHMNextToConsumeCellValue()}{GetHMNextToConsumeCellValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a295500ee23b5e3b6bfd5088184b50d97} 
 UMaterial\+Interface \texorpdfstring{$\ast$}{*} UGame\+Play\+Hub\+Subsystem\+::\+Get\+HMNext\+To\+Consume\+Cell\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached material interface for the next cell to consume. \Hypertarget{class_u_game_play_hub_subsystem_ab00a11ea408901ad03e1e505bbe9a617}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetLevelTypeGameModeValue@{GetLevelTypeGameModeValue}}
+
+
+Gets the cached material interface for the next cell to consume. 
+
+\begin{DoxyReturn}{Returns}
+Material for the next cell, or null when unavailable. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_ab00a11ea408901ad03e1e505bbe9a617}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetLevelTypeGameModeValue@{GetLevelTypeGameModeValue}}
 \index{GetLevelTypeGameModeValue@{GetLevelTypeGameModeValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetLevelTypeGameModeValue()}{GetLevelTypeGameModeValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_ab00a11ea408901ad03e1e505bbe9a617} 
 uint8 UGame\+Play\+Hub\+Subsystem\+::\+Get\+Level\+Type\+Game\+Mode\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached game mode level type identifier. \Hypertarget{class_u_game_play_hub_subsystem_a9a57f1ad2bb43a366eab386559bfaac0}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetLevelTypeValue@{GetLevelTypeValue}}
+
+
+Gets the cached game mode level type identifier. 
+
+\begin{DoxyReturn}{Returns}
+Cached game mode level type. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a9a57f1ad2bb43a366eab386559bfaac0}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetLevelTypeValue@{GetLevelTypeValue}}
 \index{GetLevelTypeValue@{GetLevelTypeValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetLevelTypeValue()}{GetLevelTypeValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a9a57f1ad2bb43a366eab386559bfaac0} 
 uint8 UGame\+Play\+Hub\+Subsystem\+::\+Get\+Level\+Type\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached level type identifier. \Hypertarget{class_u_game_play_hub_subsystem_adfb7a915f80ed621546b827301566457}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetScoreValue@{GetScoreValue}}
+
+
+Gets the cached level type identifier. 
+
+\begin{DoxyReturn}{Returns}
+Cached level type. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_adfb7a915f80ed621546b827301566457}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetScoreValue@{GetScoreValue}}
 \index{GetScoreValue@{GetScoreValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetScoreValue()}{GetScoreValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_adfb7a915f80ed621546b827301566457} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Score\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached player score value. \Hypertarget{class_u_game_play_hub_subsystem_a806124775cfb4ac573227d44a3db7c76}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetSecondStreakLevelTimeValue@{GetSecondStreakLevelTimeValue}}
+
+
+Gets the cached player score value. 
+
+\begin{DoxyReturn}{Returns}
+Cached score. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a806124775cfb4ac573227d44a3db7c76}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetSecondStreakLevelTimeValue@{GetSecondStreakLevelTimeValue}}
 \index{GetSecondStreakLevelTimeValue@{GetSecondStreakLevelTimeValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetSecondStreakLevelTimeValue()}{GetSecondStreakLevelTimeValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a806124775cfb4ac573227d44a3db7c76} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Second\+Streak\+Level\+Time\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached second streak level time/value. \Hypertarget{class_u_game_play_hub_subsystem_a95d9802ffb3590cfe5489816000e2a0b}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetStreakLevelValue@{GetStreakLevelValue}}
+
+
+Gets the cached second streak level time/value. 
+
+\begin{DoxyReturn}{Returns}
+Cached second streak value. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a95d9802ffb3590cfe5489816000e2a0b}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetStreakLevelValue@{GetStreakLevelValue}}
 \index{GetStreakLevelValue@{GetStreakLevelValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetStreakLevelValue()}{GetStreakLevelValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a95d9802ffb3590cfe5489816000e2a0b} 
 uint8 UGame\+Play\+Hub\+Subsystem\+::\+Get\+Streak\+Level\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached streak level identifier. \Hypertarget{class_u_game_play_hub_subsystem_aecf58166261095540df47a6c1c2fe2ae}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetStreakTimeLeftValue@{GetStreakTimeLeftValue}}
+
+
+Gets the cached streak level identifier. 
+
+\begin{DoxyReturn}{Returns}
+Cached streak tier. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_aecf58166261095540df47a6c1c2fe2ae}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetStreakTimeLeftValue@{GetStreakTimeLeftValue}}
 \index{GetStreakTimeLeftValue@{GetStreakTimeLeftValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetStreakTimeLeftValue()}{GetStreakTimeLeftValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_aecf58166261095540df47a6c1c2fe2ae} 
 float UGame\+Play\+Hub\+Subsystem\+::\+Get\+Streak\+Time\+Left\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached streak time left value. \Hypertarget{class_u_game_play_hub_subsystem_a77fe8fd2dd037212776d6a6d6ff463a5}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetStreakValue@{GetStreakValue}}
+
+
+Gets the cached streak time left value. 
+
+\begin{DoxyReturn}{Returns}
+Cached remaining streak time. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a77fe8fd2dd037212776d6a6d6ff463a5}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetStreakValue@{GetStreakValue}}
 \index{GetStreakValue@{GetStreakValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetStreakValue()}{GetStreakValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a77fe8fd2dd037212776d6a6d6ff463a5} 
 void UGame\+Play\+Hub\+Subsystem\+::\+Get\+Streak\+Value (\begin{DoxyParamCaption}\item[{float \&}]{Charging}{, }\item[{float \&}]{Combo}{, }\item[{float \&}]{Sustained}{, }\item[{float \&}]{Ultra}{}\end{DoxyParamCaption}) const}
 
+
+
 Retrieves all calculated streak values at once by reference parameters. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Charging} & \mbox{[}out\mbox{]} Output charging value. \\
 \hline
@@ -200,7 +298,11 @@ Retrieves all calculated streak values at once by reference parameters.
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a78683b8eaf2da9a615f3bf00e5a64561} 
 float UGame\+Play\+Hub\+Subsystem\+::\+Get\+Sustained (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Calculates and returns the sustained streak metric incorporating the first streak weight. \begin{DoxyReturn}{Returns}
+
+
+Calculates and returns the sustained streak metric incorporating the first streak weight. 
+
+\begin{DoxyReturn}{Returns}
 The calculated sustained value. 
 \end{DoxyReturn}
 \Hypertarget{class_u_game_play_hub_subsystem_a5737cb6af64073bf49fd7f97e9386a67}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetThirdStreakLevelTimeValue@{GetThirdStreakLevelTimeValue}}
@@ -209,31 +311,63 @@ The calculated sustained value.
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a5737cb6af64073bf49fd7f97e9386a67} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Third\+Streak\+Level\+Time\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached third streak level time/value. \Hypertarget{class_u_game_play_hub_subsystem_a5910648304f043d99c023b0e9f37d22b}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetTimerMinutesValue@{GetTimerMinutesValue}}
+
+
+Gets the cached third streak level time/value. 
+
+\begin{DoxyReturn}{Returns}
+Cached third streak value. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a5910648304f043d99c023b0e9f37d22b}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetTimerMinutesValue@{GetTimerMinutesValue}}
 \index{GetTimerMinutesValue@{GetTimerMinutesValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetTimerMinutesValue()}{GetTimerMinutesValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a5910648304f043d99c023b0e9f37d22b} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Timer\+Minutes\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached timer minutes value. \Hypertarget{class_u_game_play_hub_subsystem_a4a6d921dde33b7757e1b1ff25101e254}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetTimerValue@{GetTimerValue}}
+
+
+Gets the cached timer minutes value. 
+
+\begin{DoxyReturn}{Returns}
+Cached timer minutes. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a4a6d921dde33b7757e1b1ff25101e254}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetTimerValue@{GetTimerValue}}
 \index{GetTimerValue@{GetTimerValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetTimerValue()}{GetTimerValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a4a6d921dde33b7757e1b1ff25101e254} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Timer\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached timer seconds value. \Hypertarget{class_u_game_play_hub_subsystem_aa46c2d240b9444b4254d66724dd3ddb9}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetTotalsCellsToConsumeValue@{GetTotalsCellsToConsumeValue}}
+
+
+Gets the cached timer seconds value. 
+
+\begin{DoxyReturn}{Returns}
+Cached timer seconds. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_aa46c2d240b9444b4254d66724dd3ddb9}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetTotalsCellsToConsumeValue@{GetTotalsCellsToConsumeValue}}
 \index{GetTotalsCellsToConsumeValue@{GetTotalsCellsToConsumeValue}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetTotalsCellsToConsumeValue()}{GetTotalsCellsToConsumeValue()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_aa46c2d240b9444b4254d66724dd3ddb9} 
 int UGame\+Play\+Hub\+Subsystem\+::\+Get\+Totals\+Cells\+To\+Consume\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Gets the cached total cells to consume target. \Hypertarget{class_u_game_play_hub_subsystem_a712872f74d4aa1a579cebff3a9213150}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetUltra@{GetUltra}}
+
+
+Gets the cached total cells to consume target. 
+
+\begin{DoxyReturn}{Returns}
+Target cell count. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_play_hub_subsystem_a712872f74d4aa1a579cebff3a9213150}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!GetUltra@{GetUltra}}
 \index{GetUltra@{GetUltra}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetUltra()}{GetUltra()}}
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a712872f74d4aa1a579cebff3a9213150} 
 float UGame\+Play\+Hub\+Subsystem\+::\+Get\+Ultra (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Calculates and returns the ultra streak metric incorporating combined inner weights. \begin{DoxyReturn}{Returns}
+
+
+Calculates and returns the ultra streak metric incorporating combined inner weights. 
+
+\begin{DoxyReturn}{Returns}
 The calculated ultra value. 
 \end{DoxyReturn}
 \Hypertarget{class_u_game_play_hub_subsystem_ab6fe5a437158596b65955e82b833035f}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!UpdateCellData@{UpdateCellData}}
@@ -242,7 +376,11 @@ The calculated ultra value.
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_ab6fe5a437158596b65955e82b833035f} 
 void UGame\+Play\+Hub\+Subsystem\+::\+Update\+Cell\+Data (\begin{DoxyParamCaption}\item[{int}]{In\+Cells\+Consumed}{, }\item[{int}]{In\+Totals\+Cells\+To\+Consume}{, }\item[{UMaterial\+Interface \texorpdfstring{$\ast$}{*}}]{In\+Next\+Cell}{}\end{DoxyParamCaption})}
 
+
+
 Updates cell data metrics and next cell material, broadcasting corresponding events. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em In\+Cells\+Consumed} & The number of cells consumed. \\
 \hline
@@ -257,7 +395,11 @@ Updates cell data metrics and next cell material, broadcasting corresponding eve
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a630540c390223bf54fd4d0434c86d039} 
 void UGame\+Play\+Hub\+Subsystem\+::\+Update\+Cube\+Step\+Count (\begin{DoxyParamCaption}\item[{int}]{In\+Cube\+Step\+Count}{}\end{DoxyParamCaption})}
 
+
+
 Updates the cube step count cache and broadcasts the On\+Step\+Count\+Changed event. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em In\+Cube\+Step\+Count} & The new step count value. \\
 \hline
@@ -268,7 +410,11 @@ Updates the cube step count cache and broadcasts the On\+Step\+Count\+Changed ev
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_af2a17eb479f0ea37e134207be99c43c9} 
 void UGame\+Play\+Hub\+Subsystem\+::\+Update\+Level\+Type\+Game\+Mode (\begin{DoxyParamCaption}\item[{uint8}]{In\+Level\+Type}{}\end{DoxyParamCaption})}
 
+
+
 Updates the game mode level type and broadcasts the On\+Level\+Type\+Game\+Mode event. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em In\+Level\+Type} & The new level type identifier. \\
 \hline
@@ -279,7 +425,11 @@ Updates the game mode level type and broadcasts the On\+Level\+Type\+Game\+Mode 
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a4c8366ff676e588ea882b98e5c064fa2} 
 void UGame\+Play\+Hub\+Subsystem\+::\+Update\+Score (\begin{DoxyParamCaption}\item[{int}]{In\+Score}{}\end{DoxyParamCaption})}
 
+
+
 Updates the player score cache and broadcasts the On\+Score\+Changed event. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em In\+Score} & The new score value. \\
 \hline
@@ -290,7 +440,11 @@ Updates the player score cache and broadcasts the On\+Score\+Changed event.
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a0f4a37e6406f271f05381ab2490bc445} 
 void UGame\+Play\+Hub\+Subsystem\+::\+Update\+Streak\+Data (\begin{DoxyParamCaption}\item[{float}]{In\+Streak\+Time\+Left}{, }\item[{int}]{In\+First\+Streak}{, }\item[{int}]{In\+Second\+Streak}{, }\item[{int}]{In\+Third\+Streak}{, }\item[{uint8}]{In\+Level\+Type}{}\end{DoxyParamCaption})}
 
+
+
 Updates streak data and level type, caching the values and broadcasting the On\+Streak\+Values\+Changed event. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em In\+Streak\+Time\+Left} & The remaining time for the current streak. \\
 \hline
@@ -309,7 +463,11 @@ Updates streak data and level type, caching the values and broadcasting the On\+
 {\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_af6bca601c5b3d3ee87be16a3ea1393a7} 
 void UGame\+Play\+Hub\+Subsystem\+::\+Update\+Timer\+Data (\begin{DoxyParamCaption}\item[{int}]{In\+Timer\+Value}{, }\item[{int}]{In\+Timer\+Minutes\+Value}{}\end{DoxyParamCaption})}
 
+
+
 Updates timer values (seconds and minutes) and broadcasts the On\+Timer\+Changed event. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em In\+Timer\+Value} & The new timer seconds value. \\
 \hline
@@ -317,51 +475,6 @@ Updates timer values (seconds and minutes) and broadcasts the On\+Timer\+Changed
 \hline
 \end{DoxyParams}
 
-
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_u_game_play_hub_subsystem_ad9cf10f75960cc13130b465eb4781099}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!OnCellsChanged@{OnCellsChanged}}
-\index{OnCellsChanged@{OnCellsChanged}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnCellsChanged}{OnCellsChanged}}
-{\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_ad9cf10f75960cc13130b465eb4781099} 
-FOn\+Cells\+Changed UGame\+Play\+Hub\+Subsystem\+::\+On\+Cells\+Changed}
-
-Delegate fired whenever cell consumption metrics change. \Hypertarget{class_u_game_play_hub_subsystem_a3cadded1f501052fa2f0a21dfdb82897}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!OnLevelTypeGameMode@{OnLevelTypeGameMode}}
-\index{OnLevelTypeGameMode@{OnLevelTypeGameMode}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnLevelTypeGameMode}{OnLevelTypeGameMode}}
-{\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a3cadded1f501052fa2f0a21dfdb82897} 
-FOn\+Level\+Type\+Game\+Mode UGame\+Play\+Hub\+Subsystem\+::\+On\+Level\+Type\+Game\+Mode}
-
-Delegate fired whenever the game mode level type changes. \Hypertarget{class_u_game_play_hub_subsystem_a57977c1b197c4ecc730f2381419afa05}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!OnNextCellChanged@{OnNextCellChanged}}
-\index{OnNextCellChanged@{OnNextCellChanged}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnNextCellChanged}{OnNextCellChanged}}
-{\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a57977c1b197c4ecc730f2381419afa05} 
-FOn\+Next\+Cell\+Changed UGame\+Play\+Hub\+Subsystem\+::\+On\+Next\+Cell\+Changed}
-
-Delegate fired whenever the next cell material to consume changes. \Hypertarget{class_u_game_play_hub_subsystem_a2dcc2d7ef8a154736d6c3072ebd6c6ae}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!OnScoreChanged@{OnScoreChanged}}
-\index{OnScoreChanged@{OnScoreChanged}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnScoreChanged}{OnScoreChanged}}
-{\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a2dcc2d7ef8a154736d6c3072ebd6c6ae} 
-FOn\+Score\+Changed UGame\+Play\+Hub\+Subsystem\+::\+On\+Score\+Changed}
-
-Delegate fired whenever the score changes. \Hypertarget{class_u_game_play_hub_subsystem_ade5cdb23951e149ca6bfa9509085dae5}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!OnStepCountChanged@{OnStepCountChanged}}
-\index{OnStepCountChanged@{OnStepCountChanged}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnStepCountChanged}{OnStepCountChanged}}
-{\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_ade5cdb23951e149ca6bfa9509085dae5} 
-FOn\+Step\+Count\+Changed UGame\+Play\+Hub\+Subsystem\+::\+On\+Step\+Count\+Changed}
-
-Delegate fired whenever the cube step count changes. \Hypertarget{class_u_game_play_hub_subsystem_acb744c16bdb106f4f88a2cb43398496f}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!OnStreakValuesChanged@{OnStreakValuesChanged}}
-\index{OnStreakValuesChanged@{OnStreakValuesChanged}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnStreakValuesChanged}{OnStreakValuesChanged}}
-{\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_acb744c16bdb106f4f88a2cb43398496f} 
-FOn\+Streak\+Values\+Changed UGame\+Play\+Hub\+Subsystem\+::\+On\+Streak\+Values\+Changed}
-
-Delegate fired whenever streak values or the level type change. \Hypertarget{class_u_game_play_hub_subsystem_a36f02099975d7a7ceb62927082150b3f}\index{UGamePlayHubSubsystem@{UGamePlayHubSubsystem}!OnTimerChanged@{OnTimerChanged}}
-\index{OnTimerChanged@{OnTimerChanged}!UGamePlayHubSubsystem@{UGamePlayHubSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnTimerChanged}{OnTimerChanged}}
-{\footnotesize\ttfamily \label{class_u_game_play_hub_subsystem_a36f02099975d7a7ceb62927082150b3f} 
-FOn\+Timer\+Changed UGame\+Play\+Hub\+Subsystem\+::\+On\+Timer\+Changed}
-
-Delegate fired whenever the timer values (seconds and minutes) change. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

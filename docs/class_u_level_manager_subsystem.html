@@ -113,6 +113,9 @@ $(function(){initNavTree('class_u_level_manager_subsystem.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 
+<p>Loads level data assets and maintains indexed, sorted collections for game systems.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_level_manager_subsystem_8h_source.html">LevelManagerSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ULevelManagerSubsystem:</div>
@@ -123,32 +126,51 @@ Inheritance diagram for ULevelManagerSubsystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8364b03c5ab031af009932ef80ffd300" id="r_a8364b03c5ab031af009932ef80ffd300"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8364b03c5ab031af009932ef80ffd300">ULevelManagerSubsystem</a> ()</td></tr>
+<tr class="memitem:a8364b03c5ab031af009932ef80ffd300" id="r_a8364b03c5ab031af009932ef80ffd300"><td class="memItemLeft" align="right" valign="top"><a id="a8364b03c5ab031af009932ef80ffd300" name="a8364b03c5ab031af009932ef80ffd300"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ULevelManagerSubsystem</b> ()</td></tr>
+<tr class="memdesc:a8364b03c5ab031af009932ef80ffd300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the subsystem and initializes its level-data state. <br /></td></tr>
 <tr class="separator:a8364b03c5ab031af009932ef80ffd300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a42c80acdc9f56bc3442b0084f80e4" id="r_af1a42c80acdc9f56bc3442b0084f80e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1a42c80acdc9f56bc3442b0084f80e4">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="memdesc:af1a42c80acdc9f56bc3442b0084f80e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers feature-state observation and begins loading available level assets.  <br /></td></tr>
 <tr class="separator:af1a42c80acdc9f56bc3442b0084f80e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42ee5432e49d77bff5494b37d9e02c43" id="r_a42ee5432e49d77bff5494b37d9e02c43"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42ee5432e49d77bff5494b37d9e02c43">Deinitialize</a> () override</td></tr>
+<tr class="memitem:a42ee5432e49d77bff5494b37d9e02c43" id="r_a42ee5432e49d77bff5494b37d9e02c43"><td class="memItemLeft" align="right" valign="top"><a id="a42ee5432e49d77bff5494b37d9e02c43" name="a42ee5432e49d77bff5494b37d9e02c43"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deinitialize</b> () override</td></tr>
+<tr class="memdesc:a42ee5432e49d77bff5494b37d9e02c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregisters feature-state observation and releases streaming handles. <br /></td></tr>
 <tr class="separator:a42ee5432e49d77bff5494b37d9e02c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52dc8ca973773d5415ad886bcfa9de67" id="r_a52dc8ca973773d5415ad886bcfa9de67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52dc8ca973773d5415ad886bcfa9de67">LoadLevelInfoAssets</a> ()</td></tr>
+<tr class="memitem:a52dc8ca973773d5415ad886bcfa9de67" id="r_a52dc8ca973773d5415ad886bcfa9de67"><td class="memItemLeft" align="right" valign="top"><a id="a52dc8ca973773d5415ad886bcfa9de67" name="a52dc8ca973773d5415ad886bcfa9de67"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadLevelInfoAssets</b> ()</td></tr>
+<tr class="memdesc:a52dc8ca973773d5415ad886bcfa9de67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discovers and loads level data assets available to the active game features. <br /></td></tr>
 <tr class="separator:a52dc8ca973773d5415ad886bcfa9de67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f24a6a9ae0e3733c37785047d8421dc" id="r_a3f24a6a9ae0e3733c37785047d8421dc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f24a6a9ae0e3733c37785047d8421dc">OnGameFeatureActivating</a> (const UGameFeatureData *Data, const FString &amp;PluginName) override</td></tr>
+<tr class="memdesc:a3f24a6a9ae0e3733c37785047d8421dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads level assets contributed by a game feature when it activates.  <br /></td></tr>
 <tr class="separator:a3f24a6a9ae0e3733c37785047d8421dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f159d27fedaecf38015d60ba3977511" id="r_a8f159d27fedaecf38015d60ba3977511"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f159d27fedaecf38015d60ba3977511">OnGameFeatureDeactivating</a> (const UGameFeatureData *Data, FGameFeatureDeactivatingContext &amp;Ctx, const FString &amp;PluginName) override</td></tr>
+<tr class="memdesc:a8f159d27fedaecf38015d60ba3977511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes level assets contributed by a game feature when it deactivates.  <br /></td></tr>
 <tr class="separator:a8f159d27fedaecf38015d60ba3977511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e107153b8a67f955ffc957a7d53c069" id="r_a0e107153b8a67f955ffc957a7d53c069"><td class="memItemLeft" align="right" valign="top">TArray&lt; <a class="el" href="class_u_level_info_data_asset.html">ULevelInfoDataAsset</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e107153b8a67f955ffc957a7d53c069">GetAllLevelData</a> ()</td></tr>
+<tr class="memdesc:a0e107153b8a67f955ffc957a7d53c069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all currently loaded level data assets.  <br /></td></tr>
 <tr class="separator:a0e107153b8a67f955ffc957a7d53c069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41b70555544a5e5f8876129fa26e37d8" id="r_a41b70555544a5e5f8876129fa26e37d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a41b70555544a5e5f8876129fa26e37d8">RefreshLevelList</a> ()</td></tr>
+<tr class="memitem:a41b70555544a5e5f8876129fa26e37d8" id="r_a41b70555544a5e5f8876129fa26e37d8"><td class="memItemLeft" align="right" valign="top"><a id="a41b70555544a5e5f8876129fa26e37d8" name="a41b70555544a5e5f8876129fa26e37d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshLevelList</b> ()</td></tr>
+<tr class="memdesc:a41b70555544a5e5f8876129fa26e37d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the loaded level collection and its derived indexes. <br /></td></tr>
 <tr class="separator:a41b70555544a5e5f8876129fa26e37d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f71dfef6972f6125b026ef3169583d4" id="r_a1f71dfef6972f6125b026ef3169583d4"><td class="memItemLeft" align="right" valign="top">const TArray&lt; <a class="el" href="class_u_level_info_data_asset.html">ULevelInfoDataAsset</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f71dfef6972f6125b026ef3169583d4">GetSortedLevels</a> () const</td></tr>
+<tr class="memdesc:a1f71dfef6972f6125b026ef3169583d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns level assets ordered by their level index.  <br /></td></tr>
 <tr class="separator:a1f71dfef6972f6125b026ef3169583d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab373a67a035a7d8079a1dc5727f7ca98" id="r_ab373a67a035a7d8079a1dc5727f7ca98"><td class="memItemLeft" align="right" valign="top">TArray&lt; TObjectPtr&lt; <a class="el" href="class_u_level_info_data_asset.html">ULevelInfoDataAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab373a67a035a7d8079a1dc5727f7ca98">LevelInfoAssets</a></td></tr>
+<tr class="memitem:ab373a67a035a7d8079a1dc5727f7ca98" id="r_ab373a67a035a7d8079a1dc5727f7ca98"><td class="memItemLeft" align="right" valign="top"><a id="ab373a67a035a7d8079a1dc5727f7ca98" name="ab373a67a035a7d8079a1dc5727f7ca98"></a>
+TArray&lt; TObjectPtr&lt; <a class="el" href="class_u_level_info_data_asset.html">ULevelInfoDataAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LevelInfoAssets</b></td></tr>
+<tr class="memdesc:ab373a67a035a7d8079a1dc5727f7ca98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flat collection of currently loaded level data assets. <br /></td></tr>
 <tr class="separator:ab373a67a035a7d8079a1dc5727f7ca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f1d456d722db11d965f3c07f7a35e8" id="r_ab5f1d456d722db11d965f3c07f7a35e8"><td class="memItemLeft" align="right" valign="top">FOnLevelDataUpdated&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5f1d456d722db11d965f3c07f7a35e8">OnLevelDataUpdated</a></td></tr>
+<tr class="memitem:ab5f1d456d722db11d965f3c07f7a35e8" id="r_ab5f1d456d722db11d965f3c07f7a35e8"><td class="memItemLeft" align="right" valign="top"><a id="ab5f1d456d722db11d965f3c07f7a35e8" name="ab5f1d456d722db11d965f3c07f7a35e8"></a>
+FOnLevelDataUpdated&#160;</td><td class="memItemRight" valign="bottom"><b>OnLevelDataUpdated</b></td></tr>
+<tr class="memdesc:ab5f1d456d722db11d965f3c07f7a35e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired after the available level collection is updated. <br /></td></tr>
 <tr class="separator:ab5f1d456d722db11d965f3c07f7a35e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac10bee5f1d63c9a015670bc413e05821" id="r_ac10bee5f1d63c9a015670bc413e05821"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac10bee5f1d63c9a015670bc413e05821">bLevelDataReady</a> = false</td></tr>
+<tr class="memitem:ac10bee5f1d63c9a015670bc413e05821" id="r_ac10bee5f1d63c9a015670bc413e05821"><td class="memItemLeft" align="right" valign="top"><a id="ac10bee5f1d63c9a015670bc413e05821" name="ac10bee5f1d63c9a015670bc413e05821"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bLevelDataReady</b> = false</td></tr>
+<tr class="memdesc:ac10bee5f1d63c9a015670bc413e05821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether initial level discovery and loading has completed. <br /></td></tr>
 <tr class="separator:ac10bee5f1d63c9a015670bc413e05821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -159,52 +181,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FLevelManagerSubsyst
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Loads level data assets and maintains indexed, sorted collections for game systems. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8364b03c5ab031af009932ef80ffd300" name="a8364b03c5ab031af009932ef80ffd300"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8364b03c5ab031af009932ef80ffd300">&#9670;&#160;</a></span>ULevelManagerSubsystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ULevelManagerSubsystem::ULevelManagerSubsystem </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Creates the subsystem and initializes its level-data state. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a42ee5432e49d77bff5494b37d9e02c43" name="a42ee5432e49d77bff5494b37d9e02c43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42ee5432e49d77bff5494b37d9e02c43">&#9670;&#160;</a></span>Deinitialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ULevelManagerSubsystem::Deinitialize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Unregisters feature-state observation and releases streaming handles. </p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0e107153b8a67f955ffc957a7d53c069" name="a0e107153b8a67f955ffc957a7d53c069"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e107153b8a67f955ffc957a7d53c069">&#9670;&#160;</a></span>GetAllLevelData()</h2>
 
@@ -219,7 +196,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FLevelManagerSubsyst
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns all currently loaded level data assets. </p>
+<dl class="section return"><dt>Returns</dt><dd>Loaded level data assets. </dd></dl>
 
 </div>
 </div>
@@ -245,7 +224,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FLevelManagerSubsyst
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Returns level assets ordered by their level index. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached levels sorted by level index. </dd></dl>
 
 </div>
 </div>
@@ -271,25 +252,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FLevelManagerSubsyst
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Registers feature-state observation and begins loading available level assets. </p>
-
-</div>
-</div>
-<a id="a52dc8ca973773d5415ad886bcfa9de67" name="a52dc8ca973773d5415ad886bcfa9de67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52dc8ca973773d5415ad886bcfa9de67">&#9670;&#160;</a></span>LoadLevelInfoAssets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ULevelManagerSubsystem::LoadLevelInfoAssets </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Discovers and loads level data assets available to the active game features. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Collection</td><td>Subsystem collection used to initialize dependencies. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -319,7 +289,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FLevelManagerSubsyst
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Loads level assets contributed by a game feature when it activates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Data</td><td>Active game feature data. </td></tr>
+    <tr><td class="paramname">PluginName</td><td>Name of the activating feature plugin. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -354,71 +332,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FLevelManagerSubsyst
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Removes level assets contributed by a game feature when it deactivates. </p>
-
-</div>
-</div>
-<a id="a41b70555544a5e5f8876129fa26e37d8" name="a41b70555544a5e5f8876129fa26e37d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41b70555544a5e5f8876129fa26e37d8">&#9670;&#160;</a></span>RefreshLevelList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ULevelManagerSubsystem::RefreshLevelList </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Refreshes the loaded level collection and its derived indexes. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac10bee5f1d63c9a015670bc413e05821" name="ac10bee5f1d63c9a015670bc413e05821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac10bee5f1d63c9a015670bc413e05821">&#9670;&#160;</a></span>bLevelDataReady</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ULevelManagerSubsystem::bLevelDataReady = false</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Whether initial level discovery and loading has completed. </p>
-
-</div>
-</div>
-<a id="ab373a67a035a7d8079a1dc5727f7ca98" name="ab373a67a035a7d8079a1dc5727f7ca98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab373a67a035a7d8079a1dc5727f7ca98">&#9670;&#160;</a></span>LevelInfoAssets</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;TObjectPtr&lt;<a class="el" href="class_u_level_info_data_asset.html">ULevelInfoDataAsset</a>&gt; &gt; ULevelManagerSubsystem::LevelInfoAssets</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Flat collection of currently loaded level data assets. </p>
-
-</div>
-</div>
-<a id="ab5f1d456d722db11d965f3c07f7a35e8" name="ab5f1d456d722db11d965f3c07f7a35e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5f1d456d722db11d965f3c07f7a35e8">&#9670;&#160;</a></span>OnLevelDataUpdated</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnLevelDataUpdated ULevelManagerSubsystem::OnLevelDataUpdated</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Fired after the available level collection is updated. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Data</td><td>Game feature data being deactivated. </td></tr>
+    <tr><td class="paramname">Ctx</td><td>Deactivation context supplied by the game features system. </td></tr>
+    <tr><td class="paramname">PluginName</td><td>Name of the deactivating feature plugin. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

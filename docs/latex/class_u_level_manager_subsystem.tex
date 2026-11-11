@@ -2,6 +2,11 @@
 \hypertarget{class_u_level_manager_subsystem}{}\label{class_u_level_manager_subsystem}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}}
 
 
+Loads level data assets and maintains indexed, sorted collections for game systems.  
+
+
+
+
 {\ttfamily \#include $<$Level\+Manager\+Subsystem.\+h$>$}
 
 Inheritance diagram for ULevel\+Manager\+Subsystem\+:\begin{figure}[H]
@@ -13,33 +18,40 @@ Inheritance diagram for ULevel\+Manager\+Subsystem\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300}{ULevel\+Manager\+Subsystem}} ()
-\item 
+\Hypertarget{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300}\label{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300} 
+{\bfseries ULevel\+Manager\+Subsystem} ()
+\begin{DoxyCompactList}\small\item\em Creates the subsystem and initializes its level-\/data state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_u_level_manager_subsystem_af1a42c80acdc9f56bc3442b0084f80e4}{Initialize}} (FSubsystem\+Collection\+Base \&Collection) override
-\item 
-virtual void \mbox{\hyperlink{class_u_level_manager_subsystem_a42ee5432e49d77bff5494b37d9e02c43}{Deinitialize}} () override
-\item 
-void \mbox{\hyperlink{class_u_level_manager_subsystem_a52dc8ca973773d5415ad886bcfa9de67}{Load\+Level\+Info\+Assets}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Registers feature-\/state observation and begins loading available level assets. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_manager_subsystem_a42ee5432e49d77bff5494b37d9e02c43}\label{class_u_level_manager_subsystem_a42ee5432e49d77bff5494b37d9e02c43} 
+virtual void {\bfseries Deinitialize} () override
+\begin{DoxyCompactList}\small\item\em Unregisters feature-\/state observation and releases streaming handles. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_manager_subsystem_a52dc8ca973773d5415ad886bcfa9de67}\label{class_u_level_manager_subsystem_a52dc8ca973773d5415ad886bcfa9de67} 
+void {\bfseries Load\+Level\+Info\+Assets} ()
+\begin{DoxyCompactList}\small\item\em Discovers and loads level data assets available to the active game features. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_u_level_manager_subsystem_a3f24a6a9ae0e3733c37785047d8421dc}{On\+Game\+Feature\+Activating}} (const UGame\+Feature\+Data \texorpdfstring{$\ast$}{*}Data, const FString \&Plugin\+Name) override
-\item 
+\begin{DoxyCompactList}\small\item\em Loads level assets contributed by a game feature when it activates. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_u_level_manager_subsystem_a8f159d27fedaecf38015d60ba3977511}{On\+Game\+Feature\+Deactivating}} (const UGame\+Feature\+Data \texorpdfstring{$\ast$}{*}Data, FGame\+Feature\+Deactivating\+Context \&Ctx, const FString \&Plugin\+Name) override
-\item 
+\begin{DoxyCompactList}\small\item\em Removes level assets contributed by a game feature when it deactivates. \end{DoxyCompactList}\item 
 TArray$<$ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevel\+Info\+Data\+Asset}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_u_level_manager_subsystem_a0e107153b8a67f955ffc957a7d53c069}{Get\+All\+Level\+Data}} ()
-\item 
-void \mbox{\hyperlink{class_u_level_manager_subsystem_a41b70555544a5e5f8876129fa26e37d8}{Refresh\+Level\+List}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns all currently loaded level data assets. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_manager_subsystem_a41b70555544a5e5f8876129fa26e37d8}\label{class_u_level_manager_subsystem_a41b70555544a5e5f8876129fa26e37d8} 
+void {\bfseries Refresh\+Level\+List} ()
+\begin{DoxyCompactList}\small\item\em Refreshes the loaded level collection and its derived indexes. \end{DoxyCompactList}\item 
 const TArray$<$ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevel\+Info\+Data\+Asset}} \texorpdfstring{$\ast$}{*} $>$ \& \mbox{\hyperlink{class_u_level_manager_subsystem_a1f71dfef6972f6125b026ef3169583d4}{Get\+Sorted\+Levels}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns level assets ordered by their level index. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-TArray$<$ TObject\+Ptr$<$ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevel\+Info\+Data\+Asset}} $>$ $>$ \mbox{\hyperlink{class_u_level_manager_subsystem_ab373a67a035a7d8079a1dc5727f7ca98}{Level\+Info\+Assets}}
-\item 
-FOn\+Level\+Data\+Updated \mbox{\hyperlink{class_u_level_manager_subsystem_ab5f1d456d722db11d965f3c07f7a35e8}{On\+Level\+Data\+Updated}}
-\item 
-bool \mbox{\hyperlink{class_u_level_manager_subsystem_ac10bee5f1d63c9a015670bc413e05821}{b\+Level\+Data\+Ready}} = false
-\end{DoxyCompactItemize}
+\Hypertarget{class_u_level_manager_subsystem_ab373a67a035a7d8079a1dc5727f7ca98}\label{class_u_level_manager_subsystem_ab373a67a035a7d8079a1dc5727f7ca98} 
+TArray$<$ TObject\+Ptr$<$ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevel\+Info\+Data\+Asset}} $>$ $>$ {\bfseries Level\+Info\+Assets}
+\begin{DoxyCompactList}\small\item\em Flat collection of currently loaded level data assets. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_manager_subsystem_ab5f1d456d722db11d965f3c07f7a35e8}\label{class_u_level_manager_subsystem_ab5f1d456d722db11d965f3c07f7a35e8} 
+FOn\+Level\+Data\+Updated {\bfseries On\+Level\+Data\+Updated}
+\begin{DoxyCompactList}\small\item\em Fired after the available level collection is updated. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_manager_subsystem_ac10bee5f1d63c9a015670bc413e05821}\label{class_u_level_manager_subsystem_ac10bee5f1d63c9a015670bc413e05821} 
+bool {\bfseries b\+Level\+Data\+Ready} = false
+\begin{DoxyCompactList}\small\item\em Whether initial level discovery and loading has completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,86 +63,85 @@ class {\bfseries FLevel\+Manager\+Subsystem\+Test\+Access}
 \doxysubsection{Detailed Description}
 Loads level data assets and maintains indexed, sorted collections for game systems. 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\doxysubsubsection{\texorpdfstring{ULevelManagerSubsystem()}{ULevelManagerSubsystem()}}
-{\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300} 
-ULevel\+Manager\+Subsystem\+::\+ULevel\+Manager\+Subsystem (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Creates the subsystem and initializes its level-\/data state. 
-
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_u_level_manager_subsystem_a42ee5432e49d77bff5494b37d9e02c43}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!Deinitialize@{Deinitialize}}
-\index{Deinitialize@{Deinitialize}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\doxysubsubsection{\texorpdfstring{Deinitialize()}{Deinitialize()}}
-{\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a42ee5432e49d77bff5494b37d9e02c43} 
-void ULevel\+Manager\+Subsystem\+::\+Deinitialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-Unregisters feature-\/state observation and releases streaming handles. \Hypertarget{class_u_level_manager_subsystem_a0e107153b8a67f955ffc957a7d53c069}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!GetAllLevelData@{GetAllLevelData}}
+\Hypertarget{class_u_level_manager_subsystem_a0e107153b8a67f955ffc957a7d53c069}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!GetAllLevelData@{GetAllLevelData}}
 \index{GetAllLevelData@{GetAllLevelData}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetAllLevelData()}{GetAllLevelData()}}
 {\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a0e107153b8a67f955ffc957a7d53c069} 
 TArray$<$ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevel\+Info\+Data\+Asset}} \texorpdfstring{$\ast$}{*} $>$ ULevel\+Manager\+Subsystem\+::\+Get\+All\+Level\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns all currently loaded level data assets. \Hypertarget{class_u_level_manager_subsystem_a1f71dfef6972f6125b026ef3169583d4}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!GetSortedLevels@{GetSortedLevels}}
+
+
+Returns all currently loaded level data assets. 
+
+\begin{DoxyReturn}{Returns}
+Loaded level data assets. 
+\end{DoxyReturn}
+\Hypertarget{class_u_level_manager_subsystem_a1f71dfef6972f6125b026ef3169583d4}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!GetSortedLevels@{GetSortedLevels}}
 \index{GetSortedLevels@{GetSortedLevels}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetSortedLevels()}{GetSortedLevels()}}
 {\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a1f71dfef6972f6125b026ef3169583d4} 
 const TArray$<$ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevel\+Info\+Data\+Asset}} \texorpdfstring{$\ast$}{*} $>$ \& ULevel\+Manager\+Subsystem\+::\+Get\+Sorted\+Levels (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-Returns level assets ordered by their level index. \Hypertarget{class_u_level_manager_subsystem_af1a42c80acdc9f56bc3442b0084f80e4}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!Initialize@{Initialize}}
+
+
+Returns level assets ordered by their level index. 
+
+\begin{DoxyReturn}{Returns}
+Cached levels sorted by level index. 
+\end{DoxyReturn}
+\Hypertarget{class_u_level_manager_subsystem_af1a42c80acdc9f56bc3442b0084f80e4}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
 \doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
 {\footnotesize\ttfamily \label{class_u_level_manager_subsystem_af1a42c80acdc9f56bc3442b0084f80e4} 
 void ULevel\+Manager\+Subsystem\+::\+Initialize (\begin{DoxyParamCaption}\item[{FSubsystem\+Collection\+Base \&}]{Collection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Registers feature-\/state observation and begins loading available level assets. \Hypertarget{class_u_level_manager_subsystem_a52dc8ca973773d5415ad886bcfa9de67}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!LoadLevelInfoAssets@{LoadLevelInfoAssets}}
-\index{LoadLevelInfoAssets@{LoadLevelInfoAssets}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\doxysubsubsection{\texorpdfstring{LoadLevelInfoAssets()}{LoadLevelInfoAssets()}}
-{\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a52dc8ca973773d5415ad886bcfa9de67} 
-void ULevel\+Manager\+Subsystem\+::\+Load\+Level\+Info\+Assets (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Discovers and loads level data assets available to the active game features. \Hypertarget{class_u_level_manager_subsystem_a3f24a6a9ae0e3733c37785047d8421dc}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!OnGameFeatureActivating@{OnGameFeatureActivating}}
+
+Registers feature-\/state observation and begins loading available level assets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection} & Subsystem collection used to initialize dependencies. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_level_manager_subsystem_a3f24a6a9ae0e3733c37785047d8421dc}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!OnGameFeatureActivating@{OnGameFeatureActivating}}
 \index{OnGameFeatureActivating@{OnGameFeatureActivating}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
 \doxysubsubsection{\texorpdfstring{OnGameFeatureActivating()}{OnGameFeatureActivating()}}
 {\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a3f24a6a9ae0e3733c37785047d8421dc} 
 void ULevel\+Manager\+Subsystem\+::\+On\+Game\+Feature\+Activating (\begin{DoxyParamCaption}\item[{const UGame\+Feature\+Data \texorpdfstring{$\ast$}{*}}]{Data}{, }\item[{const FString \&}]{Plugin\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Loads level assets contributed by a game feature when it activates. \Hypertarget{class_u_level_manager_subsystem_a8f159d27fedaecf38015d60ba3977511}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!OnGameFeatureDeactivating@{OnGameFeatureDeactivating}}
+
+
+Loads level assets contributed by a game feature when it activates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Data} & Active game feature data. \\
+\hline
+{\em Plugin\+Name} & Name of the activating feature plugin. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_level_manager_subsystem_a8f159d27fedaecf38015d60ba3977511}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!OnGameFeatureDeactivating@{OnGameFeatureDeactivating}}
 \index{OnGameFeatureDeactivating@{OnGameFeatureDeactivating}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
 \doxysubsubsection{\texorpdfstring{OnGameFeatureDeactivating()}{OnGameFeatureDeactivating()}}
 {\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a8f159d27fedaecf38015d60ba3977511} 
 void ULevel\+Manager\+Subsystem\+::\+On\+Game\+Feature\+Deactivating (\begin{DoxyParamCaption}\item[{const UGame\+Feature\+Data \texorpdfstring{$\ast$}{*}}]{Data}{, }\item[{FGame\+Feature\+Deactivating\+Context \&}]{Ctx}{, }\item[{const FString \&}]{Plugin\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Removes level assets contributed by a game feature when it deactivates. \Hypertarget{class_u_level_manager_subsystem_a41b70555544a5e5f8876129fa26e37d8}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!RefreshLevelList@{RefreshLevelList}}
-\index{RefreshLevelList@{RefreshLevelList}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\doxysubsubsection{\texorpdfstring{RefreshLevelList()}{RefreshLevelList()}}
-{\footnotesize\ttfamily \label{class_u_level_manager_subsystem_a41b70555544a5e5f8876129fa26e37d8} 
-void ULevel\+Manager\+Subsystem\+::\+Refresh\+Level\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Refreshes the loaded level collection and its derived indexes. 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_u_level_manager_subsystem_ac10bee5f1d63c9a015670bc413e05821}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!bLevelDataReady@{bLevelDataReady}}
-\index{bLevelDataReady@{bLevelDataReady}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\doxysubsubsection{\texorpdfstring{bLevelDataReady}{bLevelDataReady}}
-{\footnotesize\ttfamily \label{class_u_level_manager_subsystem_ac10bee5f1d63c9a015670bc413e05821} 
-bool ULevel\+Manager\+Subsystem\+::b\+Level\+Data\+Ready = false}
+Removes level assets contributed by a game feature when it deactivates. 
 
-Whether initial level discovery and loading has completed. \Hypertarget{class_u_level_manager_subsystem_ab373a67a035a7d8079a1dc5727f7ca98}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!LevelInfoAssets@{LevelInfoAssets}}
-\index{LevelInfoAssets@{LevelInfoAssets}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\doxysubsubsection{\texorpdfstring{LevelInfoAssets}{LevelInfoAssets}}
-{\footnotesize\ttfamily \label{class_u_level_manager_subsystem_ab373a67a035a7d8079a1dc5727f7ca98} 
-TArray$<$TObject\+Ptr$<$\mbox{\hyperlink{class_u_level_info_data_asset}{ULevel\+Info\+Data\+Asset}}$>$ $>$ ULevel\+Manager\+Subsystem\+::\+Level\+Info\+Assets}
 
-Flat collection of currently loaded level data assets. \Hypertarget{class_u_level_manager_subsystem_ab5f1d456d722db11d965f3c07f7a35e8}\index{ULevelManagerSubsystem@{ULevelManagerSubsystem}!OnLevelDataUpdated@{OnLevelDataUpdated}}
-\index{OnLevelDataUpdated@{OnLevelDataUpdated}!ULevelManagerSubsystem@{ULevelManagerSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnLevelDataUpdated}{OnLevelDataUpdated}}
-{\footnotesize\ttfamily \label{class_u_level_manager_subsystem_ab5f1d456d722db11d965f3c07f7a35e8} 
-FOn\+Level\+Data\+Updated ULevel\+Manager\+Subsystem\+::\+On\+Level\+Data\+Updated}
+\begin{DoxyParams}{Parameters}
+{\em Data} & Game feature data being deactivated. \\
+\hline
+{\em Ctx} & Deactivation context supplied by the game features system. \\
+\hline
+{\em Plugin\+Name} & Name of the deactivating feature plugin. \\
+\hline
+\end{DoxyParams}
 
-Fired after the available level collection is updated. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

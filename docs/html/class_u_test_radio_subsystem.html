@@ -111,6 +111,9 @@ $(function(){initNavTree('class_u_test_radio_subsystem.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>Subclase concreta de <a class="el" href="class_u_radio_subsystems.html" title="Abstract game-instance service for loading stations and controlling radio playback.">URadioSubsystems</a> (que es Abstract) solo para tests. Los miembros que usan los tests ya son publicos en <a class="el" href="class_u_radio_subsystems.html" title="Abstract game-instance service for loading stations and controlling radio playback.">URadioSubsystems</a>.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_test_radio_subsystem_8h_source.html">TestRadioSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UTestRadioSubsystem:</div>
@@ -118,7 +121,7 @@ Inheritance diagram for UTestRadioSubsystem:</div>
  <div class="center">
   <img src="class_u_test_radio_subsystem.png" usemap="#UTestRadioSubsystem_map" alt=""/>
   <map id="UTestRadioSubsystem_map" name="UTestRadioSubsystem_map">
-<area href="class_u_radio_subsystems.html" alt="URadioSubsystems" shape="rect" coords="0,56,159,80"/>
+<area href="class_u_radio_subsystems.html" title="Abstract game-instance service for loading stations and controlling radio playback." alt="URadioSubsystems" shape="rect" coords="0,56,159,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,51 +131,80 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldCreateSubsystem</b> (UObject *Outer) const override</td></tr>
 <tr class="separator:aa58bb122965315eb05bb335b2de46680"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_u_radio_subsystems"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_u_radio_subsystems')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_u_radio_subsystems.html">URadioSubsystems</a></td></tr>
-<tr class="memitem:ad0cb142556ea77891512a53982685918 inherit pub_methods_class_u_radio_subsystems" id="r_ad0cb142556ea77891512a53982685918"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#ad0cb142556ea77891512a53982685918">URadioSubsystems</a> ()</td></tr>
+<tr class="memitem:ad0cb142556ea77891512a53982685918 inherit pub_methods_class_u_radio_subsystems" id="r_ad0cb142556ea77891512a53982685918"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>URadioSubsystems</b> ()</td></tr>
+<tr class="memdesc:ad0cb142556ea77891512a53982685918 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the radio subsystem and its playback state. <br /></td></tr>
 <tr class="separator:ad0cb142556ea77891512a53982685918 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866ee4a936d6eef1023eb0279ce44948 inherit pub_methods_class_u_radio_subsystems" id="r_a866ee4a936d6eef1023eb0279ce44948"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a866ee4a936d6eef1023eb0279ce44948">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="memdesc:a866ee4a936d6eef1023eb0279ce44948 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes radio playback resources for the game instance.  <br /></td></tr>
 <tr class="separator:a866ee4a936d6eef1023eb0279ce44948 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40ff6b226a94f9dfadaa0807c5b36050 inherit pub_methods_class_u_radio_subsystems" id="r_a40ff6b226a94f9dfadaa0807c5b36050"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a40ff6b226a94f9dfadaa0807c5b36050">Deinitialize</a> () override</td></tr>
+<tr class="memitem:a40ff6b226a94f9dfadaa0807c5b36050 inherit pub_methods_class_u_radio_subsystems" id="r_a40ff6b226a94f9dfadaa0807c5b36050"><td class="memItemLeft" align="right" valign="top">
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deinitialize</b> () override</td></tr>
+<tr class="memdesc:a40ff6b226a94f9dfadaa0807c5b36050 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops playback and releases resources owned by the subsystem. <br /></td></tr>
 <tr class="separator:a40ff6b226a94f9dfadaa0807c5b36050 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d25637b529c0c968247cd93625de24 inherit pub_methods_class_u_radio_subsystems" id="r_a21d25637b529c0c968247cd93625de24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a21d25637b529c0c968247cd93625de24">Init</a> ()</td></tr>
+<tr class="memitem:a21d25637b529c0c968247cd93625de24 inherit pub_methods_class_u_radio_subsystems" id="r_a21d25637b529c0c968247cd93625de24"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="memdesc:a21d25637b529c0c968247cd93625de24 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes station data and selects the initial playback state. <br /></td></tr>
 <tr class="separator:a21d25637b529c0c968247cd93625de24 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c26aa60658260922303e6796602e17 inherit pub_methods_class_u_radio_subsystems" id="r_ab7c26aa60658260922303e6796602e17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#ab7c26aa60658260922303e6796602e17">PlaySound</a> (USoundWave *Sound)</td></tr>
+<tr class="memdesc:ab7c26aa60658260922303e6796602e17 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the supplied sound wave through the radio audio component.  <br /></td></tr>
 <tr class="separator:ab7c26aa60658260922303e6796602e17 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f5d9523d751c3ea365380e3c9cfd75 inherit pub_methods_class_u_radio_subsystems" id="r_ae7f5d9523d751c3ea365380e3c9cfd75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#ae7f5d9523d751c3ea365380e3c9cfd75">GetRadioIndex</a> ()</td></tr>
+<tr class="memdesc:ae7f5d9523d751c3ea365380e3c9cfd75 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the currently selected radio station.  <br /></td></tr>
 <tr class="separator:ae7f5d9523d751c3ea365380e3c9cfd75 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a3ba2b771c1255f70bdaed7e3c5df8 inherit pub_methods_class_u_radio_subsystems" id="r_ac7a3ba2b771c1255f70bdaed7e3c5df8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#ac7a3ba2b771c1255f70bdaed7e3c5df8">Next</a> ()</td></tr>
+<tr class="memitem:ac7a3ba2b771c1255f70bdaed7e3c5df8 inherit pub_methods_class_u_radio_subsystems" id="r_ac7a3ba2b771c1255f70bdaed7e3c5df8"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Next</b> ()</td></tr>
+<tr class="memdesc:ac7a3ba2b771c1255f70bdaed7e3c5df8 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances playback to the next available station or track. <br /></td></tr>
 <tr class="separator:ac7a3ba2b771c1255f70bdaed7e3c5df8 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afebdffda51df63056fffba8956602d42 inherit pub_methods_class_u_radio_subsystems" id="r_afebdffda51df63056fffba8956602d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#afebdffda51df63056fffba8956602d42">Previous</a> ()</td></tr>
+<tr class="memitem:afebdffda51df63056fffba8956602d42 inherit pub_methods_class_u_radio_subsystems" id="r_afebdffda51df63056fffba8956602d42"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Previous</b> ()</td></tr>
+<tr class="memdesc:afebdffda51df63056fffba8956602d42 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves playback to the previous available station or track. <br /></td></tr>
 <tr class="separator:afebdffda51df63056fffba8956602d42 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a9e554390087670e1429dec2e198d8 inherit pub_methods_class_u_radio_subsystems" id="r_a19a9e554390087670e1429dec2e198d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a19a9e554390087670e1429dec2e198d8">OnSongFinished</a> ()</td></tr>
+<tr class="memitem:a19a9e554390087670e1429dec2e198d8 inherit pub_methods_class_u_radio_subsystems" id="r_a19a9e554390087670e1429dec2e198d8"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSongFinished</b> ()</td></tr>
+<tr class="memdesc:a19a9e554390087670e1429dec2e198d8 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles completion of the current song and advances playback. <br /></td></tr>
 <tr class="separator:a19a9e554390087670e1429dec2e198d8 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa09e527ef8836d57959b13863d099e53 inherit pub_methods_class_u_radio_subsystems" id="r_aa09e527ef8836d57959b13863d099e53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#aa09e527ef8836d57959b13863d099e53">MuteAudio</a> (bool bMute)</td></tr>
+<tr class="memdesc:aa09e527ef8836d57959b13863d099e53 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes radio output.  <br /></td></tr>
 <tr class="separator:aa09e527ef8836d57959b13863d099e53 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2de78ac731ef81cec46e1a331c2ff161 inherit pub_methods_class_u_radio_subsystems" id="r_a2de78ac731ef81cec46e1a331c2ff161"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRadio</b> (int RadioIndex)</td></tr>
+<tr class="memitem:a2de78ac731ef81cec46e1a331c2ff161 inherit pub_methods_class_u_radio_subsystems" id="r_a2de78ac731ef81cec46e1a331c2ff161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a2de78ac731ef81cec46e1a331c2ff161">SetRadio</a> (int RadioIndex)</td></tr>
+<tr class="memdesc:a2de78ac731ef81cec46e1a331c2ff161 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the station at the specified index.  <br /></td></tr>
 <tr class="separator:a2de78ac731ef81cec46e1a331c2ff161 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c905db61685bdae1debbd22925ec3e6 inherit pub_methods_class_u_radio_subsystems" id="r_a2c905db61685bdae1debbd22925ec3e6"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRandomSong</b> ()</td></tr>
+<tr class="memdesc:a2c905db61685bdae1debbd22925ec3e6 inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a random song from the current station. <br /></td></tr>
 <tr class="separator:a2c905db61685bdae1debbd22925ec3e6 inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa190fe16b258303f3358f3858054dfbc inherit pub_methods_class_u_radio_subsystems" id="r_aa190fe16b258303f3358f3858054dfbc"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRadioWaveParameter</b> ()</td></tr>
+<tr class="memdesc:aa190fe16b258303f3358f3858054dfbc inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the MetaSound radio-wave parameter for the current station. <br /></td></tr>
 <tr class="separator:aa190fe16b258303f3358f3858054dfbc inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde572f64398b9f77a1bbae2a1f1f22a inherit pub_methods_class_u_radio_subsystems" id="r_adde572f64398b9f77a1bbae2a1f1f22a"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultRadioSong</b> ()</td></tr>
+<tr class="memdesc:adde572f64398b9f77a1bbae2a1f1f22a inherit pub_methods_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the configured default radio song. <br /></td></tr>
 <tr class="separator:adde572f64398b9f77a1bbae2a1f1f22a inherit pub_methods_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_u_radio_subsystems"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_class_u_radio_subsystems')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_u_radio_subsystems.html">URadioSubsystems</a></td></tr>
-<tr class="memitem:a17158c8b5ccc6e3fd0f19e84c2175116 inherit pub_attribs_class_u_radio_subsystems" id="r_a17158c8b5ccc6e3fd0f19e84c2175116"><td class="memItemLeft" align="right" valign="top">TSoftObjectPtr&lt; USoundWave &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a17158c8b5ccc6e3fd0f19e84c2175116">InitialMusic</a></td></tr>
+<tr class="memitem:a17158c8b5ccc6e3fd0f19e84c2175116 inherit pub_attribs_class_u_radio_subsystems" id="r_a17158c8b5ccc6e3fd0f19e84c2175116"><td class="memItemLeft" align="right" valign="top">
+TSoftObjectPtr&lt; USoundWave &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InitialMusic</b></td></tr>
+<tr class="memdesc:a17158c8b5ccc6e3fd0f19e84c2175116 inherit pub_attribs_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional sound wave selected as the initial music asset. <br /></td></tr>
 <tr class="separator:a17158c8b5ccc6e3fd0f19e84c2175116 inherit pub_attribs_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3092021274485a2a54f7b0b3907c6e91 inherit pub_attribs_class_u_radio_subsystems" id="r_a3092021274485a2a54f7b0b3907c6e91"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; UAudioComponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a3092021274485a2a54f7b0b3907c6e91">AudioComp</a></td></tr>
+<tr class="memitem:a3092021274485a2a54f7b0b3907c6e91 inherit pub_attribs_class_u_radio_subsystems" id="r_a3092021274485a2a54f7b0b3907c6e91"><td class="memItemLeft" align="right" valign="top">
+TObjectPtr&lt; UAudioComponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AudioComp</b></td></tr>
+<tr class="memdesc:a3092021274485a2a54f7b0b3907c6e91 inherit pub_attribs_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio component that plays the currently selected radio track. <br /></td></tr>
 <tr class="separator:a3092021274485a2a54f7b0b3907c6e91 inherit pub_attribs_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4821eba47bd5f04ef14c03d42d1f813c inherit pub_attribs_class_u_radio_subsystems" id="r_a4821eba47bd5f04ef14c03d42d1f813c"><td class="memItemLeft" align="right" valign="top">TArray&lt; TObjectPtr&lt; <a class="el" href="class_u_radio_data_asset.html">URadioDataAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a4821eba47bd5f04ef14c03d42d1f813c">RadioListLoaded</a></td></tr>
+<tr class="memitem:a4821eba47bd5f04ef14c03d42d1f813c inherit pub_attribs_class_u_radio_subsystems" id="r_a4821eba47bd5f04ef14c03d42d1f813c"><td class="memItemLeft" align="right" valign="top">
+TArray&lt; TObjectPtr&lt; <a class="el" href="class_u_radio_data_asset.html">URadioDataAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RadioListLoaded</b></td></tr>
+<tr class="memdesc:a4821eba47bd5f04ef14c03d42d1f813c inherit pub_attribs_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Station assets discovered or assigned for this subsystem. <br /></td></tr>
 <tr class="separator:a4821eba47bd5f04ef14c03d42d1f813c inherit pub_attribs_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c262ae170a4cf82ca8893a8e3ef1c3 inherit pub_attribs_class_u_radio_subsystems" id="r_a23c262ae170a4cf82ca8893a8e3ef1c3"><td class="memItemLeft" align="right" valign="top">TArray&lt; TObjectPtr&lt; USoundWave &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#a23c262ae170a4cf82ca8893a8e3ef1c3">RadioSongs</a></td></tr>
+<tr class="memitem:a23c262ae170a4cf82ca8893a8e3ef1c3 inherit pub_attribs_class_u_radio_subsystems" id="r_a23c262ae170a4cf82ca8893a8e3ef1c3"><td class="memItemLeft" align="right" valign="top">
+TArray&lt; TObjectPtr&lt; USoundWave &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RadioSongs</b></td></tr>
+<tr class="memdesc:a23c262ae170a4cf82ca8893a8e3ef1c3 inherit pub_attribs_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks currently available to the radio playback logic. <br /></td></tr>
 <tr class="separator:a23c262ae170a4cf82ca8893a8e3ef1c3 inherit pub_attribs_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06827cd24a697889a1408f25e814e08 inherit pub_attribs_class_u_radio_subsystems" id="r_af06827cd24a697889a1408f25e814e08"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; USoundBase &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_u_radio_subsystems.html#af06827cd24a697889a1408f25e814e08">MS_Soundtracks</a></td></tr>
+<tr class="memitem:af06827cd24a697889a1408f25e814e08 inherit pub_attribs_class_u_radio_subsystems" id="r_af06827cd24a697889a1408f25e814e08"><td class="memItemLeft" align="right" valign="top">
+TObjectPtr&lt; USoundBase &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MS_Soundtracks</b></td></tr>
+<tr class="memdesc:af06827cd24a697889a1408f25e814e08 inherit pub_attribs_class_u_radio_subsystems"><td class="mdescLeft">&#160;</td><td class="mdescRight">MetaSound asset used for radio soundtrack output and parameters. <br /></td></tr>
 <tr class="separator:af06827cd24a697889a1408f25e814e08 inherit pub_attribs_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1778d3d95a6499b08e57511b07a812db inherit pub_attribs_class_u_radio_subsystems" id="r_a1778d3d95a6499b08e57511b07a812db"><td class="memItemLeft" align="right" valign="top">
 int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentRadioIndex</b> = 0</td></tr>
@@ -188,7 +220,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MinIndexRadio</b> = 0<
 <tr class="separator:aff10b1dba4513379e5147a09384bc63b inherit pub_attribs_class_u_radio_subsystems"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Subclase concreta de <a class="el" href="class_u_radio_subsystems.html">URadioSubsystems</a> (que es Abstract) solo para tests. Los miembros que usan los tests ya son publicos en <a class="el" href="class_u_radio_subsystems.html">URadioSubsystems</a>. </p>
+<div class="textblock"><p>Subclase concreta de <a class="el" href="class_u_radio_subsystems.html" title="Abstract game-instance service for loading stations and controlling radio playback.">URadioSubsystems</a> (que es Abstract) solo para tests. Los miembros que usan los tests ya son publicos en <a class="el" href="class_u_radio_subsystems.html" title="Abstract game-instance service for loading stations and controlling radio playback.">URadioSubsystems</a>. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/Test/<a class="el" href="_test_radio_subsystem_8h_source.html">TestRadioSubsystem.h</a></li>
 </ul>

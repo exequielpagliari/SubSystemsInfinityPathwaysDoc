@@ -111,6 +111,9 @@ $(function(){initNavTree('class_i_game_mode_data_source.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
+<p>Blueprint-native contract for reading gameplay values displayed by the HUD.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_i_game_mode_data_source_8h_source.html">IGameModeDataSource.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IGameModeDataSource:</div>
@@ -118,25 +121,32 @@ Inheritance diagram for IGameModeDataSource:</div>
  <div class="center">
   <img src="class_i_game_mode_data_source.png" usemap="#IGameModeDataSource_map" alt=""/>
   <map id="IGameModeDataSource_map" name="IGameModeDataSource_map">
-<area href="class_a_hub_test_game_mode.html" alt="AHubTestGameMode" shape="rect" coords="0,56,146,80"/>
+<area href="class_a_hub_test_game_mode.html" title="GameMode falso solo para tests. Implementa las dos interfaces que consume UGamePlayHubSubsystem y dev..." alt="AHubTestGameMode" shape="rect" coords="0,56,146,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a12300246d74ff05f27ecef58732db6c0" id="r_a12300246d74ff05f27ecef58732db6c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12300246d74ff05f27ecef58732db6c0">GetScore</a> ()</td></tr>
+<tr class="memdesc:a12300246d74ff05f27ecef58732db6c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current player score.  <br /></td></tr>
 <tr class="separator:a12300246d74ff05f27ecef58732db6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9172d897fdec50985e1cd7638e636353" id="r_a9172d897fdec50985e1cd7638e636353"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9172d897fdec50985e1cd7638e636353">GetTotalsCellsToConsume</a> ()</td></tr>
+<tr class="memdesc:a9172d897fdec50985e1cd7638e636353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the target number of cells as display-ready text.  <br /></td></tr>
 <tr class="separator:a9172d897fdec50985e1cd7638e636353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c2ab79c2919db4057692dc19a0bcb7" id="r_ac7c2ab79c2919db4057692dc19a0bcb7"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7c2ab79c2919db4057692dc19a0bcb7">GetCellsConsumed</a> ()</td></tr>
+<tr class="memdesc:ac7c2ab79c2919db4057692dc19a0bcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consumed cells as display-ready text.  <br /></td></tr>
 <tr class="separator:ac7c2ab79c2919db4057692dc19a0bcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d2ef862156e5cad395410b1820b591" id="r_ad7d2ef862156e5cad395410b1820b591"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7d2ef862156e5cad395410b1820b591">GetCubeStepCount</a> ()</td></tr>
+<tr class="memdesc:ad7d2ef862156e5cad395410b1820b591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cube step count.  <br /></td></tr>
 <tr class="separator:ad7d2ef862156e5cad395410b1820b591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761cd5fffbd0f738a69a4a6c4dd53824" id="r_a761cd5fffbd0f738a69a4a6c4dd53824"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a761cd5fffbd0f738a69a4a6c4dd53824">GetTimerValue</a> ()</td></tr>
+<tr class="memdesc:a761cd5fffbd0f738a69a4a6c4dd53824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timer seconds component as display-ready text.  <br /></td></tr>
 <tr class="separator:a761cd5fffbd0f738a69a4a6c4dd53824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10200b0b05a74bc2c39f9ef2a3e2306f" id="r_a10200b0b05a74bc2c39f9ef2a3e2306f"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10200b0b05a74bc2c39f9ef2a3e2306f">GetTimerMinutesValue</a> ()</td></tr>
+<tr class="memdesc:a10200b0b05a74bc2c39f9ef2a3e2306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timer minutes component as display-ready text.  <br /></td></tr>
 <tr class="separator:a10200b0b05a74bc2c39f9ef2a3e2306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39366d453225a02b454f441de570854e" id="r_a39366d453225a02b454f441de570854e"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39366d453225a02b454f441de570854e">GetLevelTypeValue</a> ()</td></tr>
+<tr class="memdesc:a39366d453225a02b454f441de570854e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current level type as its project-defined byte value.  <br /></td></tr>
 <tr class="separator:a39366d453225a02b454f441de570854e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -156,7 +166,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the number of consumed cells as display-ready text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Consumed cell count formatted for display. </dd></dl>
 
 </div>
 </div>
@@ -174,7 +186,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the current cube step count. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current step count. </dd></dl>
 
 </div>
 </div>
@@ -192,7 +206,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the current level type as its project-defined byte value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current level type. </dd></dl>
 
 </div>
 </div>
@@ -210,7 +226,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the current player score. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current score. </dd></dl>
 
 </div>
 </div>
@@ -228,7 +246,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the timer minutes component as display-ready text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Timer minutes formatted for display. </dd></dl>
 
 </div>
 </div>
@@ -246,7 +266,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the timer seconds component as display-ready text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Timer seconds formatted for display. </dd></dl>
 
 </div>
 </div>
@@ -264,7 +286,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the target number of cells as display-ready text. </p>
+<dl class="section return"><dt>Returns</dt><dd>Total cell target formatted for display. </dd></dl>
 
 </div>
 </div>

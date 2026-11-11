@@ -112,6 +112,9 @@ $(function(){initNavTree('class_u_level_info_data_asset.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
+<p>Authorable level metadata covering identity, gameplay rules, assets, and unlock flow.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_level_info_data_asset_8h_source.html">LevelInfoDataAsset.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ULevelInfoDataAsset:</div>
@@ -122,264 +125,69 @@ Inheritance diagram for ULevelInfoDataAsset:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1371a4935f491e2b2bc9830d5ea12236" id="r_a1371a4935f491e2b2bc9830d5ea12236"><td class="memItemLeft" align="right" valign="top">virtual FPrimaryAssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1371a4935f491e2b2bc9830d5ea12236">GetPrimaryAssetId</a> () const override</td></tr>
+<tr class="memitem:a1371a4935f491e2b2bc9830d5ea12236" id="r_a1371a4935f491e2b2bc9830d5ea12236"><td class="memItemLeft" align="right" valign="top"><a id="a1371a4935f491e2b2bc9830d5ea12236" name="a1371a4935f491e2b2bc9830d5ea12236"></a>
+virtual FPrimaryAssetId&#160;</td><td class="memItemRight" valign="bottom"><b>GetPrimaryAssetId</b> () const override</td></tr>
+<tr class="memdesc:a1371a4935f491e2b2bc9830d5ea12236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the primary asset identifier used by Unreal's asset manager. <br /></td></tr>
 <tr class="separator:a1371a4935f491e2b2bc9830d5ea12236"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6cf5a2d2a78587293641cd70016623d1" id="r_a6cf5a2d2a78587293641cd70016623d1"><td class="memItemLeft" align="right" valign="top">FName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cf5a2d2a78587293641cd70016623d1">LevelID</a></td></tr>
+<tr class="memitem:a6cf5a2d2a78587293641cd70016623d1" id="r_a6cf5a2d2a78587293641cd70016623d1"><td class="memItemLeft" align="right" valign="top"><a id="a6cf5a2d2a78587293641cd70016623d1" name="a6cf5a2d2a78587293641cd70016623d1"></a>
+FName&#160;</td><td class="memItemRight" valign="bottom"><b>LevelID</b></td></tr>
+<tr class="memdesc:a6cf5a2d2a78587293641cd70016623d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stable identifier used to refer to this level in data and save state. <br /></td></tr>
 <tr class="separator:a6cf5a2d2a78587293641cd70016623d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d6b255df0ed208c0ba5b4e91b00dd7" id="r_a11d6b255df0ed208c0ba5b4e91b00dd7"><td class="memItemLeft" align="right" valign="top">FName&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11d6b255df0ed208c0ba5b4e91b00dd7">LevelIndex</a></td></tr>
+<tr class="memitem:a11d6b255df0ed208c0ba5b4e91b00dd7" id="r_a11d6b255df0ed208c0ba5b4e91b00dd7"><td class="memItemLeft" align="right" valign="top"><a id="a11d6b255df0ed208c0ba5b4e91b00dd7" name="a11d6b255df0ed208c0ba5b4e91b00dd7"></a>
+FName&#160;</td><td class="memItemRight" valign="bottom"><b>LevelIndex</b></td></tr>
+<tr class="memdesc:a11d6b255df0ed208c0ba5b4e91b00dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordering index used when presenting levels to the player. <br /></td></tr>
 <tr class="separator:a11d6b255df0ed208c0ba5b4e91b00dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50df36628d869f51d77740d8476f649e" id="r_a50df36628d869f51d77740d8476f649e"><td class="memItemLeft" align="right" valign="top">TSoftObjectPtr&lt; UWorld &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50df36628d869f51d77740d8476f649e">Level</a></td></tr>
+<tr class="memitem:a50df36628d869f51d77740d8476f649e" id="r_a50df36628d869f51d77740d8476f649e"><td class="memItemLeft" align="right" valign="top"><a id="a50df36628d869f51d77740d8476f649e" name="a50df36628d869f51d77740d8476f649e"></a>
+TSoftObjectPtr&lt; UWorld &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Level</b></td></tr>
+<tr class="memdesc:a50df36628d869f51d77740d8476f649e"><td class="mdescLeft">&#160;</td><td class="mdescRight">World asset loaded when this level is launched. <br /></td></tr>
 <tr class="separator:a50df36628d869f51d77740d8476f649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a908544b4e656047ee0b961f7eec8a0da" id="r_a908544b4e656047ee0b961f7eec8a0da"><td class="memItemLeft" align="right" valign="top">ELevelType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a908544b4e656047ee0b961f7eec8a0da">LevelTypeEnum</a></td></tr>
+<tr class="memitem:a908544b4e656047ee0b961f7eec8a0da" id="r_a908544b4e656047ee0b961f7eec8a0da"><td class="memItemLeft" align="right" valign="top"><a id="a908544b4e656047ee0b961f7eec8a0da" name="a908544b4e656047ee0b961f7eec8a0da"></a>
+ELevelType&#160;</td><td class="memItemRight" valign="bottom"><b>LevelTypeEnum</b></td></tr>
+<tr class="memdesc:a908544b4e656047ee0b961f7eec8a0da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gameplay mode configured for this level. <br /></td></tr>
 <tr class="separator:a908544b4e656047ee0b961f7eec8a0da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9e8f93ba7119f2c236f46d1cd70f226" id="r_ae9e8f93ba7119f2c236f46d1cd70f226"><td class="memItemLeft" align="right" valign="top">TSoftObjectPtr&lt; UTexture2D &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9e8f93ba7119f2c236f46d1cd70f226">LevelThumbnail</a></td></tr>
+<tr class="memitem:ae9e8f93ba7119f2c236f46d1cd70f226" id="r_ae9e8f93ba7119f2c236f46d1cd70f226"><td class="memItemLeft" align="right" valign="top"><a id="ae9e8f93ba7119f2c236f46d1cd70f226" name="ae9e8f93ba7119f2c236f46d1cd70f226"></a>
+TSoftObjectPtr&lt; UTexture2D &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LevelThumbnail</b></td></tr>
+<tr class="memdesc:ae9e8f93ba7119f2c236f46d1cd70f226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thumbnail shown for this level in menus. <br /></td></tr>
 <tr class="separator:ae9e8f93ba7119f2c236f46d1cd70f226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af249cec9c7042c632736e893af932a55" id="r_af249cec9c7042c632736e893af932a55"><td class="memItemLeft" align="right" valign="top">ELevelWinCondition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af249cec9c7042c632736e893af932a55">LevelWinConditionEnum</a></td></tr>
+<tr class="memitem:af249cec9c7042c632736e893af932a55" id="r_af249cec9c7042c632736e893af932a55"><td class="memItemLeft" align="right" valign="top"><a id="af249cec9c7042c632736e893af932a55" name="af249cec9c7042c632736e893af932a55"></a>
+ELevelWinCondition&#160;</td><td class="memItemRight" valign="bottom"><b>LevelWinConditionEnum</b></td></tr>
+<tr class="memdesc:af249cec9c7042c632736e893af932a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rule that determines how the level is completed. <br /></td></tr>
 <tr class="separator:af249cec9c7042c632736e893af932a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad685f15ca1fc629f834077588eed4132" id="r_ad685f15ca1fc629f834077588eed4132"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad685f15ca1fc629f834077588eed4132">DificultyLevel</a></td></tr>
+<tr class="memitem:ad685f15ca1fc629f834077588eed4132" id="r_ad685f15ca1fc629f834077588eed4132"><td class="memItemLeft" align="right" valign="top"><a id="ad685f15ca1fc629f834077588eed4132" name="ad685f15ca1fc629f834077588eed4132"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>DificultyLevel</b></td></tr>
+<tr class="memdesc:ad685f15ca1fc629f834077588eed4132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Difficulty rating used by the level-selection experience. <br /></td></tr>
 <tr class="separator:ad685f15ca1fc629f834077588eed4132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b04344fd34e1d84f066f14de338dbe0" id="r_a6b04344fd34e1d84f066f14de338dbe0"><td class="memItemLeft" align="right" valign="top">EHighestScore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b04344fd34e1d84f066f14de338dbe0">HighestScore</a></td></tr>
+<tr class="memitem:a6b04344fd34e1d84f066f14de338dbe0" id="r_a6b04344fd34e1d84f066f14de338dbe0"><td class="memItemLeft" align="right" valign="top"><a id="a6b04344fd34e1d84f066f14de338dbe0" name="a6b04344fd34e1d84f066f14de338dbe0"></a>
+EHighestScore&#160;</td><td class="memItemRight" valign="bottom"><b>HighestScore</b></td></tr>
+<tr class="memdesc:a6b04344fd34e1d84f066f14de338dbe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines whether lower or higher score values are considered best. <br /></td></tr>
 <tr class="separator:a6b04344fd34e1d84f066f14de338dbe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2fb51969f7e5e9cb5c28745796773eb" id="r_aa2fb51969f7e5e9cb5c28745796773eb"><td class="memItemLeft" align="right" valign="top">ELevelLooseCondition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa2fb51969f7e5e9cb5c28745796773eb">LevelLooseConditionEnum</a></td></tr>
+<tr class="memitem:aa2fb51969f7e5e9cb5c28745796773eb" id="r_aa2fb51969f7e5e9cb5c28745796773eb"><td class="memItemLeft" align="right" valign="top"><a id="aa2fb51969f7e5e9cb5c28745796773eb" name="aa2fb51969f7e5e9cb5c28745796773eb"></a>
+ELevelLooseCondition&#160;</td><td class="memItemRight" valign="bottom"><b>LevelLooseConditionEnum</b></td></tr>
+<tr class="memdesc:aa2fb51969f7e5e9cb5c28745796773eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Condition used to determine the level's loss or ranking outcome. <br /></td></tr>
 <tr class="separator:aa2fb51969f7e5e9cb5c28745796773eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7070e23a6a5b075dd88ffde212403a87" id="r_a7070e23a6a5b075dd88ffde212403a87"><td class="memItemLeft" align="right" valign="top">TSoftObjectPtr&lt; UWorld &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7070e23a6a5b075dd88ffde212403a87">LevelToUnlock</a></td></tr>
+<tr class="memitem:a7070e23a6a5b075dd88ffde212403a87" id="r_a7070e23a6a5b075dd88ffde212403a87"><td class="memItemLeft" align="right" valign="top"><a id="a7070e23a6a5b075dd88ffde212403a87" name="a7070e23a6a5b075dd88ffde212403a87"></a>
+TSoftObjectPtr&lt; UWorld &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LevelToUnlock</b></td></tr>
+<tr class="memdesc:a7070e23a6a5b075dd88ffde212403a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level unlocked after completing this level, if any. <br /></td></tr>
 <tr class="separator:a7070e23a6a5b075dd88ffde212403a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92ae8879176966ebfccce16af5b5af00" id="r_a92ae8879176966ebfccce16af5b5af00"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92ae8879176966ebfccce16af5b5af00">bFirstlevelOfKind</a></td></tr>
+<tr class="memitem:a92ae8879176966ebfccce16af5b5af00" id="r_a92ae8879176966ebfccce16af5b5af00"><td class="memItemLeft" align="right" valign="top"><a id="a92ae8879176966ebfccce16af5b5af00" name="a92ae8879176966ebfccce16af5b5af00"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bFirstlevelOfKind</b></td></tr>
+<tr class="memdesc:a92ae8879176966ebfccce16af5b5af00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this is the first level in its mode or level family. <br /></td></tr>
 <tr class="separator:a92ae8879176966ebfccce16af5b5af00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14d68d5f656576c1c7b4ac4bdf2d331" id="r_ac14d68d5f656576c1c7b4ac4bdf2d331"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac14d68d5f656576c1c7b4ac4bdf2d331">bHasTutorial</a></td></tr>
+<tr class="memitem:ac14d68d5f656576c1c7b4ac4bdf2d331" id="r_ac14d68d5f656576c1c7b4ac4bdf2d331"><td class="memItemLeft" align="right" valign="top"><a id="ac14d68d5f656576c1c7b4ac4bdf2d331" name="ac14d68d5f656576c1c7b4ac4bdf2d331"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bHasTutorial</b></td></tr>
+<tr class="memdesc:ac14d68d5f656576c1c7b4ac4bdf2d331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the level provides its standard tutorial. <br /></td></tr>
 <tr class="separator:ac14d68d5f656576c1c7b4ac4bdf2d331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d790a70c3e65e6a03ca846e430424b" id="r_a23d790a70c3e65e6a03ca846e430424b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23d790a70c3e65e6a03ca846e430424b">bHasHardcoreTutorial</a></td></tr>
+<tr class="memitem:a23d790a70c3e65e6a03ca846e430424b" id="r_a23d790a70c3e65e6a03ca846e430424b"><td class="memItemLeft" align="right" valign="top"><a id="a23d790a70c3e65e6a03ca846e430424b" name="a23d790a70c3e65e6a03ca846e430424b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bHasHardcoreTutorial</b></td></tr>
+<tr class="memdesc:a23d790a70c3e65e6a03ca846e430424b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the level provides a hardcore-mode tutorial. <br /></td></tr>
 <tr class="separator:a23d790a70c3e65e6a03ca846e430424b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Authorable metadata for a level, including its identity, gameplay rules, assets, and unlock flow. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1371a4935f491e2b2bc9830d5ea12236" name="a1371a4935f491e2b2bc9830d5ea12236"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1371a4935f491e2b2bc9830d5ea12236">&#9670;&#160;</a></span>GetPrimaryAssetId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual FPrimaryAssetId ULevelInfoDataAsset::GetPrimaryAssetId </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the primary asset identifier used by Unreal's asset manager. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a92ae8879176966ebfccce16af5b5af00" name="a92ae8879176966ebfccce16af5b5af00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92ae8879176966ebfccce16af5b5af00">&#9670;&#160;</a></span>bFirstlevelOfKind</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ULevelInfoDataAsset::bFirstlevelOfKind</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Whether this is the first level in its mode or level family. </p>
-
-</div>
-</div>
-<a id="a23d790a70c3e65e6a03ca846e430424b" name="a23d790a70c3e65e6a03ca846e430424b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23d790a70c3e65e6a03ca846e430424b">&#9670;&#160;</a></span>bHasHardcoreTutorial</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ULevelInfoDataAsset::bHasHardcoreTutorial</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Whether the level provides a hardcore-mode tutorial. </p>
-
-</div>
-</div>
-<a id="ac14d68d5f656576c1c7b4ac4bdf2d331" name="ac14d68d5f656576c1c7b4ac4bdf2d331"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14d68d5f656576c1c7b4ac4bdf2d331">&#9670;&#160;</a></span>bHasTutorial</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ULevelInfoDataAsset::bHasTutorial</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Whether the level provides its standard tutorial. </p>
-
-</div>
-</div>
-<a id="ad685f15ca1fc629f834077588eed4132" name="ad685f15ca1fc629f834077588eed4132"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad685f15ca1fc629f834077588eed4132">&#9670;&#160;</a></span>DificultyLevel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ULevelInfoDataAsset::DificultyLevel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Difficulty rating used by the level-selection experience. </p>
-
-</div>
-</div>
-<a id="a6b04344fd34e1d84f066f14de338dbe0" name="a6b04344fd34e1d84f066f14de338dbe0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b04344fd34e1d84f066f14de338dbe0">&#9670;&#160;</a></span>HighestScore</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">EHighestScore ULevelInfoDataAsset::HighestScore</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Defines whether lower or higher score values are considered best. </p>
-
-</div>
-</div>
-<a id="a50df36628d869f51d77740d8476f649e" name="a50df36628d869f51d77740d8476f649e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50df36628d869f51d77740d8476f649e">&#9670;&#160;</a></span>Level</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TSoftObjectPtr&lt;UWorld&gt; ULevelInfoDataAsset::Level</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>World asset loaded when this level is launched. </p>
-
-</div>
-</div>
-<a id="a6cf5a2d2a78587293641cd70016623d1" name="a6cf5a2d2a78587293641cd70016623d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cf5a2d2a78587293641cd70016623d1">&#9670;&#160;</a></span>LevelID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FName ULevelInfoDataAsset::LevelID</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Stable identifier used to refer to this level in data and save state. </p>
-
-</div>
-</div>
-<a id="a11d6b255df0ed208c0ba5b4e91b00dd7" name="a11d6b255df0ed208c0ba5b4e91b00dd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11d6b255df0ed208c0ba5b4e91b00dd7">&#9670;&#160;</a></span>LevelIndex</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FName ULevelInfoDataAsset::LevelIndex</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Ordering index used when presenting levels to the player. </p>
-
-</div>
-</div>
-<a id="aa2fb51969f7e5e9cb5c28745796773eb" name="aa2fb51969f7e5e9cb5c28745796773eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2fb51969f7e5e9cb5c28745796773eb">&#9670;&#160;</a></span>LevelLooseConditionEnum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ELevelLooseCondition ULevelInfoDataAsset::LevelLooseConditionEnum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Condition used to determine the level's loss or ranking outcome. </p>
-
-</div>
-</div>
-<a id="ae9e8f93ba7119f2c236f46d1cd70f226" name="ae9e8f93ba7119f2c236f46d1cd70f226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9e8f93ba7119f2c236f46d1cd70f226">&#9670;&#160;</a></span>LevelThumbnail</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TSoftObjectPtr&lt;UTexture2D&gt; ULevelInfoDataAsset::LevelThumbnail</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Thumbnail shown for this level in menus. </p>
-
-</div>
-</div>
-<a id="a7070e23a6a5b075dd88ffde212403a87" name="a7070e23a6a5b075dd88ffde212403a87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7070e23a6a5b075dd88ffde212403a87">&#9670;&#160;</a></span>LevelToUnlock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TSoftObjectPtr&lt;UWorld&gt; ULevelInfoDataAsset::LevelToUnlock</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Level unlocked after completing this level, if any. </p>
-
-</div>
-</div>
-<a id="a908544b4e656047ee0b961f7eec8a0da" name="a908544b4e656047ee0b961f7eec8a0da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a908544b4e656047ee0b961f7eec8a0da">&#9670;&#160;</a></span>LevelTypeEnum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ELevelType ULevelInfoDataAsset::LevelTypeEnum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Gameplay mode configured for this level. </p>
-
-</div>
-</div>
-<a id="af249cec9c7042c632736e893af932a55" name="af249cec9c7042c632736e893af932a55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af249cec9c7042c632736e893af932a55">&#9670;&#160;</a></span>LevelWinConditionEnum</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ELevelWinCondition ULevelInfoDataAsset::LevelWinConditionEnum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Rule that determines how the level is completed. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Authorable level metadata covering identity, gameplay rules, assets, and unlock flow. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/<a class="el" href="_level_info_data_asset_8h_source.html">LevelInfoDataAsset.h</a></li>
 </ul>
 </div><!-- contents -->

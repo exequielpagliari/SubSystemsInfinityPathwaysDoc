@@ -2,6 +2,11 @@
 \hypertarget{class_u_level_info_data_asset}{}\label{class_u_level_info_data_asset}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}}
 
 
+Authorable level metadata covering identity, gameplay rules, assets, and unlock flow.  
+
+
+
+
 {\ttfamily \#include $<$Level\+Info\+Data\+Asset.\+h$>$}
 
 Inheritance diagram for ULevel\+Info\+Data\+Asset\+:\begin{figure}[H]
@@ -13,131 +18,55 @@ Inheritance diagram for ULevel\+Info\+Data\+Asset\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual FPrimary\+Asset\+Id \mbox{\hyperlink{class_u_level_info_data_asset_a1371a4935f491e2b2bc9830d5ea12236}{Get\+Primary\+Asset\+Id}} () const override
-\end{DoxyCompactItemize}
+\Hypertarget{class_u_level_info_data_asset_a1371a4935f491e2b2bc9830d5ea12236}\label{class_u_level_info_data_asset_a1371a4935f491e2b2bc9830d5ea12236} 
+virtual FPrimary\+Asset\+Id {\bfseries Get\+Primary\+Asset\+Id} () const override
+\begin{DoxyCompactList}\small\item\em Returns the primary asset identifier used by Unreal\textquotesingle{}s asset manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-FName \mbox{\hyperlink{class_u_level_info_data_asset_a6cf5a2d2a78587293641cd70016623d1}{Level\+ID}}
-\item 
-FName \mbox{\hyperlink{class_u_level_info_data_asset_a11d6b255df0ed208c0ba5b4e91b00dd7}{Level\+Index}}
-\item 
-TSoft\+Object\+Ptr$<$ UWorld $>$ \mbox{\hyperlink{class_u_level_info_data_asset_a50df36628d869f51d77740d8476f649e}{Level}}
-\item 
-ELevel\+Type \mbox{\hyperlink{class_u_level_info_data_asset_a908544b4e656047ee0b961f7eec8a0da}{Level\+Type\+Enum}}
-\item 
-TSoft\+Object\+Ptr$<$ UTexture2D $>$ \mbox{\hyperlink{class_u_level_info_data_asset_ae9e8f93ba7119f2c236f46d1cd70f226}{Level\+Thumbnail}}
-\item 
-ELevel\+Win\+Condition \mbox{\hyperlink{class_u_level_info_data_asset_af249cec9c7042c632736e893af932a55}{Level\+Win\+Condition\+Enum}}
-\item 
-int \mbox{\hyperlink{class_u_level_info_data_asset_ad685f15ca1fc629f834077588eed4132}{Dificulty\+Level}}
-\item 
-EHighest\+Score \mbox{\hyperlink{class_u_level_info_data_asset_a6b04344fd34e1d84f066f14de338dbe0}{Highest\+Score}}
-\item 
-ELevel\+Loose\+Condition \mbox{\hyperlink{class_u_level_info_data_asset_aa2fb51969f7e5e9cb5c28745796773eb}{Level\+Loose\+Condition\+Enum}}
-\item 
-TSoft\+Object\+Ptr$<$ UWorld $>$ \mbox{\hyperlink{class_u_level_info_data_asset_a7070e23a6a5b075dd88ffde212403a87}{Level\+To\+Unlock}}
-\item 
-bool \mbox{\hyperlink{class_u_level_info_data_asset_a92ae8879176966ebfccce16af5b5af00}{b\+Firstlevel\+Of\+Kind}}
-\item 
-bool \mbox{\hyperlink{class_u_level_info_data_asset_ac14d68d5f656576c1c7b4ac4bdf2d331}{b\+Has\+Tutorial}}
-\item 
-bool \mbox{\hyperlink{class_u_level_info_data_asset_a23d790a70c3e65e6a03ca846e430424b}{b\+Has\+Hardcore\+Tutorial}}
-\end{DoxyCompactItemize}
+\Hypertarget{class_u_level_info_data_asset_a6cf5a2d2a78587293641cd70016623d1}\label{class_u_level_info_data_asset_a6cf5a2d2a78587293641cd70016623d1} 
+FName {\bfseries Level\+ID}
+\begin{DoxyCompactList}\small\item\em Stable identifier used to refer to this level in data and save state. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_a11d6b255df0ed208c0ba5b4e91b00dd7}\label{class_u_level_info_data_asset_a11d6b255df0ed208c0ba5b4e91b00dd7} 
+FName {\bfseries Level\+Index}
+\begin{DoxyCompactList}\small\item\em Ordering index used when presenting levels to the player. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_a50df36628d869f51d77740d8476f649e}\label{class_u_level_info_data_asset_a50df36628d869f51d77740d8476f649e} 
+TSoft\+Object\+Ptr$<$ UWorld $>$ {\bfseries Level}
+\begin{DoxyCompactList}\small\item\em World asset loaded when this level is launched. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_a908544b4e656047ee0b961f7eec8a0da}\label{class_u_level_info_data_asset_a908544b4e656047ee0b961f7eec8a0da} 
+ELevel\+Type {\bfseries Level\+Type\+Enum}
+\begin{DoxyCompactList}\small\item\em Gameplay mode configured for this level. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_ae9e8f93ba7119f2c236f46d1cd70f226}\label{class_u_level_info_data_asset_ae9e8f93ba7119f2c236f46d1cd70f226} 
+TSoft\+Object\+Ptr$<$ UTexture2D $>$ {\bfseries Level\+Thumbnail}
+\begin{DoxyCompactList}\small\item\em Thumbnail shown for this level in menus. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_af249cec9c7042c632736e893af932a55}\label{class_u_level_info_data_asset_af249cec9c7042c632736e893af932a55} 
+ELevel\+Win\+Condition {\bfseries Level\+Win\+Condition\+Enum}
+\begin{DoxyCompactList}\small\item\em Rule that determines how the level is completed. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_ad685f15ca1fc629f834077588eed4132}\label{class_u_level_info_data_asset_ad685f15ca1fc629f834077588eed4132} 
+int {\bfseries Dificulty\+Level}
+\begin{DoxyCompactList}\small\item\em Difficulty rating used by the level-\/selection experience. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_a6b04344fd34e1d84f066f14de338dbe0}\label{class_u_level_info_data_asset_a6b04344fd34e1d84f066f14de338dbe0} 
+EHighest\+Score {\bfseries Highest\+Score}
+\begin{DoxyCompactList}\small\item\em Defines whether lower or higher score values are considered best. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_aa2fb51969f7e5e9cb5c28745796773eb}\label{class_u_level_info_data_asset_aa2fb51969f7e5e9cb5c28745796773eb} 
+ELevel\+Loose\+Condition {\bfseries Level\+Loose\+Condition\+Enum}
+\begin{DoxyCompactList}\small\item\em Condition used to determine the level\textquotesingle{}s loss or ranking outcome. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_a7070e23a6a5b075dd88ffde212403a87}\label{class_u_level_info_data_asset_a7070e23a6a5b075dd88ffde212403a87} 
+TSoft\+Object\+Ptr$<$ UWorld $>$ {\bfseries Level\+To\+Unlock}
+\begin{DoxyCompactList}\small\item\em Level unlocked after completing this level, if any. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_a92ae8879176966ebfccce16af5b5af00}\label{class_u_level_info_data_asset_a92ae8879176966ebfccce16af5b5af00} 
+bool {\bfseries b\+Firstlevel\+Of\+Kind}
+\begin{DoxyCompactList}\small\item\em Whether this is the first level in its mode or level family. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_ac14d68d5f656576c1c7b4ac4bdf2d331}\label{class_u_level_info_data_asset_ac14d68d5f656576c1c7b4ac4bdf2d331} 
+bool {\bfseries b\+Has\+Tutorial}
+\begin{DoxyCompactList}\small\item\em Whether the level provides its standard tutorial. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_level_info_data_asset_a23d790a70c3e65e6a03ca846e430424b}\label{class_u_level_info_data_asset_a23d790a70c3e65e6a03ca846e430424b} 
+bool {\bfseries b\+Has\+Hardcore\+Tutorial}
+\begin{DoxyCompactList}\small\item\em Whether the level provides a hardcore-\/mode tutorial. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Authorable metadata for a level, including its identity, gameplay rules, assets, and unlock flow. 
-
-\doxysubsection{Member Function Documentation}
-\Hypertarget{class_u_level_info_data_asset_a1371a4935f491e2b2bc9830d5ea12236}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!GetPrimaryAssetId@{GetPrimaryAssetId}}
-\index{GetPrimaryAssetId@{GetPrimaryAssetId}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{GetPrimaryAssetId()}{GetPrimaryAssetId()}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a1371a4935f491e2b2bc9830d5ea12236} 
-virtual FPrimary\+Asset\+Id ULevel\+Info\+Data\+Asset\+::\+Get\+Primary\+Asset\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
-
-Returns the primary asset identifier used by Unreal\textquotesingle{}s asset manager. 
-
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_u_level_info_data_asset_a92ae8879176966ebfccce16af5b5af00}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!bFirstlevelOfKind@{bFirstlevelOfKind}}
-\index{bFirstlevelOfKind@{bFirstlevelOfKind}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{bFirstlevelOfKind}{bFirstlevelOfKind}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a92ae8879176966ebfccce16af5b5af00} 
-bool ULevel\+Info\+Data\+Asset\+::b\+Firstlevel\+Of\+Kind}
-
-Whether this is the first level in its mode or level family. \Hypertarget{class_u_level_info_data_asset_a23d790a70c3e65e6a03ca846e430424b}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!bHasHardcoreTutorial@{bHasHardcoreTutorial}}
-\index{bHasHardcoreTutorial@{bHasHardcoreTutorial}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{bHasHardcoreTutorial}{bHasHardcoreTutorial}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a23d790a70c3e65e6a03ca846e430424b} 
-bool ULevel\+Info\+Data\+Asset\+::b\+Has\+Hardcore\+Tutorial}
-
-Whether the level provides a hardcore-\/mode tutorial. \Hypertarget{class_u_level_info_data_asset_ac14d68d5f656576c1c7b4ac4bdf2d331}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!bHasTutorial@{bHasTutorial}}
-\index{bHasTutorial@{bHasTutorial}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{bHasTutorial}{bHasTutorial}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_ac14d68d5f656576c1c7b4ac4bdf2d331} 
-bool ULevel\+Info\+Data\+Asset\+::b\+Has\+Tutorial}
-
-Whether the level provides its standard tutorial. \Hypertarget{class_u_level_info_data_asset_ad685f15ca1fc629f834077588eed4132}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!DificultyLevel@{DificultyLevel}}
-\index{DificultyLevel@{DificultyLevel}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{DificultyLevel}{DificultyLevel}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_ad685f15ca1fc629f834077588eed4132} 
-int ULevel\+Info\+Data\+Asset\+::\+Dificulty\+Level}
-
-Difficulty rating used by the level-\/selection experience. \Hypertarget{class_u_level_info_data_asset_a6b04344fd34e1d84f066f14de338dbe0}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!HighestScore@{HighestScore}}
-\index{HighestScore@{HighestScore}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{HighestScore}{HighestScore}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a6b04344fd34e1d84f066f14de338dbe0} 
-EHighest\+Score ULevel\+Info\+Data\+Asset\+::\+Highest\+Score}
-
-Defines whether lower or higher score values are considered best. \Hypertarget{class_u_level_info_data_asset_a50df36628d869f51d77740d8476f649e}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!Level@{Level}}
-\index{Level@{Level}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{Level}{Level}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a50df36628d869f51d77740d8476f649e} 
-TSoft\+Object\+Ptr$<$UWorld$>$ ULevel\+Info\+Data\+Asset\+::\+Level}
-
-World asset loaded when this level is launched. \Hypertarget{class_u_level_info_data_asset_a6cf5a2d2a78587293641cd70016623d1}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!LevelID@{LevelID}}
-\index{LevelID@{LevelID}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{LevelID}{LevelID}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a6cf5a2d2a78587293641cd70016623d1} 
-FName ULevel\+Info\+Data\+Asset\+::\+Level\+ID}
-
-Stable identifier used to refer to this level in data and save state. \Hypertarget{class_u_level_info_data_asset_a11d6b255df0ed208c0ba5b4e91b00dd7}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!LevelIndex@{LevelIndex}}
-\index{LevelIndex@{LevelIndex}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{LevelIndex}{LevelIndex}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a11d6b255df0ed208c0ba5b4e91b00dd7} 
-FName ULevel\+Info\+Data\+Asset\+::\+Level\+Index}
-
-Ordering index used when presenting levels to the player. \Hypertarget{class_u_level_info_data_asset_aa2fb51969f7e5e9cb5c28745796773eb}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!LevelLooseConditionEnum@{LevelLooseConditionEnum}}
-\index{LevelLooseConditionEnum@{LevelLooseConditionEnum}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{LevelLooseConditionEnum}{LevelLooseConditionEnum}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_aa2fb51969f7e5e9cb5c28745796773eb} 
-ELevel\+Loose\+Condition ULevel\+Info\+Data\+Asset\+::\+Level\+Loose\+Condition\+Enum}
-
-Condition used to determine the level\textquotesingle{}s loss or ranking outcome. \Hypertarget{class_u_level_info_data_asset_ae9e8f93ba7119f2c236f46d1cd70f226}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!LevelThumbnail@{LevelThumbnail}}
-\index{LevelThumbnail@{LevelThumbnail}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{LevelThumbnail}{LevelThumbnail}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_ae9e8f93ba7119f2c236f46d1cd70f226} 
-TSoft\+Object\+Ptr$<$UTexture2D$>$ ULevel\+Info\+Data\+Asset\+::\+Level\+Thumbnail}
-
-Thumbnail shown for this level in menus. \Hypertarget{class_u_level_info_data_asset_a7070e23a6a5b075dd88ffde212403a87}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!LevelToUnlock@{LevelToUnlock}}
-\index{LevelToUnlock@{LevelToUnlock}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{LevelToUnlock}{LevelToUnlock}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a7070e23a6a5b075dd88ffde212403a87} 
-TSoft\+Object\+Ptr$<$UWorld$>$ ULevel\+Info\+Data\+Asset\+::\+Level\+To\+Unlock}
-
-Level unlocked after completing this level, if any. \Hypertarget{class_u_level_info_data_asset_a908544b4e656047ee0b961f7eec8a0da}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!LevelTypeEnum@{LevelTypeEnum}}
-\index{LevelTypeEnum@{LevelTypeEnum}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{LevelTypeEnum}{LevelTypeEnum}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_a908544b4e656047ee0b961f7eec8a0da} 
-ELevel\+Type ULevel\+Info\+Data\+Asset\+::\+Level\+Type\+Enum}
-
-Gameplay mode configured for this level. \Hypertarget{class_u_level_info_data_asset_af249cec9c7042c632736e893af932a55}\index{ULevelInfoDataAsset@{ULevelInfoDataAsset}!LevelWinConditionEnum@{LevelWinConditionEnum}}
-\index{LevelWinConditionEnum@{LevelWinConditionEnum}!ULevelInfoDataAsset@{ULevelInfoDataAsset}}
-\doxysubsubsection{\texorpdfstring{LevelWinConditionEnum}{LevelWinConditionEnum}}
-{\footnotesize\ttfamily \label{class_u_level_info_data_asset_af249cec9c7042c632736e893af932a55} 
-ELevel\+Win\+Condition ULevel\+Info\+Data\+Asset\+::\+Level\+Win\+Condition\+Enum}
-
-Rule that determines how the level is completed. 
+Authorable level metadata covering identity, gameplay rules, assets, and unlock flow. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

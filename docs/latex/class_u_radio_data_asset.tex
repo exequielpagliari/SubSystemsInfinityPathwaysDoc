@@ -2,6 +2,11 @@
 \hypertarget{class_u_radio_data_asset}{}\label{class_u_radio_data_asset}\index{URadioDataAsset@{URadioDataAsset}}
 
 
+Primary asset describing a radio station and its presentation and music tracks.  
+
+
+
+
 {\ttfamily \#include $<$Radio\+Data\+Asset.\+h$>$}
 
 Inheritance diagram for URadio\+Data\+Asset\+:\begin{figure}[H]
@@ -14,16 +19,19 @@ Inheritance diagram for URadio\+Data\+Asset\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 virtual FPrimary\+Asset\+Id \mbox{\hyperlink{class_u_radio_data_asset_a505a4beb609c85db01c86ed9cbc4e22c}{Get\+Primary\+Asset\+Id}} () const override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns this station\textquotesingle{}s asset identifier using the Radio\+Station asset type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-FName \mbox{\hyperlink{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d}{Radio\+Name}}
-\item 
-TObject\+Ptr$<$ UTexture2D $>$ \mbox{\hyperlink{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304}{Radio\+Thumbnail}}
-\item 
-TArray$<$ TObject\+Ptr$<$ USound\+Wave $>$ $>$ \mbox{\hyperlink{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa}{Radio\+Songs}}
-\end{DoxyCompactItemize}
+\Hypertarget{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d}\label{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d} 
+FName {\bfseries Radio\+Name}
+\begin{DoxyCompactList}\small\item\em Display name or identifier for this radio station. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304}\label{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304} 
+TObject\+Ptr$<$ UTexture2D $>$ {\bfseries Radio\+Thumbnail}
+\begin{DoxyCompactList}\small\item\em Artwork displayed for the station in the radio interface. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa}\label{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa} 
+TArray$<$ TObject\+Ptr$<$ USound\+Wave $>$ $>$ {\bfseries Radio\+Songs}
+\begin{DoxyCompactList}\small\item\em Audio tracks available to play for this station. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -36,28 +44,14 @@ Primary asset describing a radio station and its presentation and music tracks.
 {\footnotesize\ttfamily \label{class_u_radio_data_asset_a505a4beb609c85db01c86ed9cbc4e22c} 
 virtual FPrimary\+Asset\+Id URadio\+Data\+Asset\+::\+Get\+Primary\+Asset\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
 Returns this station\textquotesingle{}s asset identifier using the Radio\+Station asset type. 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d}\index{URadioDataAsset@{URadioDataAsset}!RadioName@{RadioName}}
-\index{RadioName@{RadioName}!URadioDataAsset@{URadioDataAsset}}
-\doxysubsubsection{\texorpdfstring{RadioName}{RadioName}}
-{\footnotesize\ttfamily \label{class_u_radio_data_asset_a7e819dc994e77ff0a48feb4db02e9a2d} 
-FName URadio\+Data\+Asset\+::\+Radio\+Name}
+\begin{DoxyReturn}{Returns}
+Primary asset identifier for this station. 
+\end{DoxyReturn}
 
-Display name or identifier for this radio station. \Hypertarget{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa}\index{URadioDataAsset@{URadioDataAsset}!RadioSongs@{RadioSongs}}
-\index{RadioSongs@{RadioSongs}!URadioDataAsset@{URadioDataAsset}}
-\doxysubsubsection{\texorpdfstring{RadioSongs}{RadioSongs}}
-{\footnotesize\ttfamily \label{class_u_radio_data_asset_adacc0c998d4a3eaf56f2b756e27a6cfa} 
-TArray$<$TObject\+Ptr$<$USound\+Wave$>$ $>$ URadio\+Data\+Asset\+::\+Radio\+Songs}
-
-Audio tracks available to play for this station. \Hypertarget{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304}\index{URadioDataAsset@{URadioDataAsset}!RadioThumbnail@{RadioThumbnail}}
-\index{RadioThumbnail@{RadioThumbnail}!URadioDataAsset@{URadioDataAsset}}
-\doxysubsubsection{\texorpdfstring{RadioThumbnail}{RadioThumbnail}}
-{\footnotesize\ttfamily \label{class_u_radio_data_asset_afbf9195a02d6bb4db19ce57849150304} 
-TObject\+Ptr$<$UTexture2D$>$ URadio\+Data\+Asset\+::\+Radio\+Thumbnail}
-
-Artwork displayed for the station in the radio interface. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

@@ -2,6 +2,11 @@
 \hypertarget{class_a_hub_test_game_mode}{}\label{class_a_hub_test_game_mode}\index{AHubTestGameMode@{AHubTestGameMode}}
 
 
+Game\+Mode falso solo para tests. Implementa las dos interfaces que consume \doxylink{class_u_game_play_hub_subsystem}{UGame\+Play\+Hub\+Subsystem} y devuelve valores fijos y modificables desde el test.  
+
+
+
+
 {\ttfamily \#include $<$Hub\+Test\+Game\+Mode.\+h$>$}
 
 Inheritance diagram for AHub\+Test\+Game\+Mode\+:\begin{figure}[H]
@@ -56,34 +61,34 @@ virtual uint8 {\bfseries Get\+Level\+Type\+Value\+\_\+\+Implementation} () overr
 \begin{DoxyCompactItemize}
 \item 
 float \mbox{\hyperlink{class_i_challenge_progress_bar_a9145483e235b7daf3d769e15183c65b3}{Get\+Streak\+Time\+Left}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the remaining time for the active streak. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_i_challenge_progress_bar_aa6b2e6de365cc2c2934afedfb17ed151}{Get\+First\+Streak\+Level\+Time}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the first streak threshold or value used by the progress bar. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_i_challenge_progress_bar_a2fbc1fbda7597488cf32ffc553b9bafc}{Get\+Second\+Streak\+Level\+Time}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the second streak threshold or value used by the progress bar. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_i_challenge_progress_bar_a5ea622a94b7c3d8450a9e81aba3cb155}{Get\+Third\+Streak\+Level\+Time}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the third streak threshold or value used by the progress bar. \end{DoxyCompactList}\item 
 UMaterial\+Interface \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_i_challenge_progress_bar_a73aeca0820fe83dbb7e794db59320fa5}{Get\+HMNext\+To\+Consume\+Cell}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the material for the next cell that will be consumed. \end{DoxyCompactList}\item 
 uint8 \mbox{\hyperlink{class_i_challenge_progress_bar_abbdd00ca2e5b5b3e80ab6562eba5bf22}{Get\+Streak\+Level}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the current streak tier as its project-\/defined byte value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_i_game_mode_data_source}{IGame\+Mode\+Data\+Source}}}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0}{Get\+Score}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the current player score. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353}{Get\+Totals\+Cells\+To\+Consume}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the target number of cells as display-\/ready text. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_ac7c2ab79c2919db4057692dc19a0bcb7}{Get\+Cells\+Consumed}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the number of consumed cells as display-\/ready text. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591}{Get\+Cube\+Step\+Count}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the current cube step count. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824}{Get\+Timer\+Value}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the timer seconds component as display-\/ready text. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f}{Get\+Timer\+Minutes\+Value}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the timer minutes component as display-\/ready text. \end{DoxyCompactList}\item 
 uint8 \mbox{\hyperlink{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e}{Get\+Level\+Type\+Value}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the current level type as its project-\/defined byte value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -126,7 +131,7 @@ uint8 {\bfseries Level\+Type} = 1
 
 
 \doxysubsection{Detailed Description}
-Game\+Mode falso solo para tests. Implementa las dos interfaces que consume \doxylink{class_u_game_play_hub_subsystem}{UGame\+Play\+Hub\+Subsystem} y devuelve valores fijos y modificables desde el test.
+Game\+Mode falso solo para tests. Implementa las dos interfaces que consume \doxylink{class_u_game_play_hub_subsystem}{UGame\+Play\+Hub\+Subsystem} y devuelve valores fijos y modificables desde el test. 
 
 SUPUESTOS (si el compilador se queja en los override, revisar esto en las interfaces)\+:
 \begin{DoxyItemize}

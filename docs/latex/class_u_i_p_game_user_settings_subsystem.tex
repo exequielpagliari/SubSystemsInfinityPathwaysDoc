@@ -19,45 +19,48 @@ Inheritance diagram for UIPGame\+User\+Settings\+Subsystem\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_adfda2b86c14ed1c5dbec46c002e2a4c3}{Initialize}} (FSubsystem\+Collection\+Base \&Collection) override
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the subsystem and loads saved user settings if available. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a843997bd4e2f09c19733e9c731e76334}{Get\+Master\+Volume}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current master audio volume. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ad8c0b621e665b8a828db434996d4a6e0}{Set\+Master\+Volume}} (float Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the master audio volume. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa305b54ef75ceae00758677833bb7bb4}{Get\+SFXVolume}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current sound effects (SFX) audio volume. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a7108598f8a69a2ee5d6e1ede6d31e983}{Set\+SFXVolume}} (float Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the sound effects (SFX) audio volume. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa3fbe6a0002bf3462bf437804fecb7d0}{Get\+Music\+Volume}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current music audio volume. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ac1682e075f8795eeec8ad44a9b9b61ea}{Set\+Music\+Volume}} (float Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the music audio volume. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a07e746cd589383566c727fe6ad045856}{Get\+Graphics\+Quality}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the overall graphics quality scalability level. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a9a8027b2453c7c6e01dde804ed34eace}{Set\+Graphics\+Quality}} (int32 Quality)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the overall graphics quality scalability level. \end{DoxyCompactList}\item 
 TArray$<$ FString $>$ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a9984bbff3b8647f69e82cc989b68554d}{Get\+Supported\+Resolutions}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieves a list of supported widescreen resolutions formatted as strings. \end{DoxyCompactList}\item 
 FString \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a3ae8f047c2ac0652f3598adecab22693}{Get\+Resolution}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current screen resolution as a formatted string. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ab9084ceccad04213a60d39a95ea598a1}{Set\+Resolution}} (FInt\+Point Resolution)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the current screen resolution. \end{DoxyCompactList}\item 
 TArray$<$ int32 $>$ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a81bad9801cab6251f694d39c33a0e171}{Get\+Supported\+Frame\+Rates}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the list of supported frame rate caps. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a5b63c64175d5a04bb710abee78399bbc}{Get\+Frame\+Rate}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current frame rate limit. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ad363bcf9fcb382b565b1c12d5b45a1aa}{Set\+Frame\+Rate}} (int32 Frame\+Rate)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the frame rate limit. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aef8fdb715defea0479711d529820d817}{Is\+VSync\+Enabled}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Checks whether VSync is currently enabled. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a294d73f8b8b3218347b91b32ede2bf7f}{Set\+VSync\+Enabled}} (bool b\+Enabled)
-\item 
+\begin{DoxyCompactList}\small\item\em Enables or disables VSync. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa63a6a5aaf1c86b978f4296bfb22f28b}{Apply\+And\+Save\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em 
+\begin{DoxyItemize}
 \item 
+\end{DoxyItemize}\end{DoxyCompactList}\item 
 EWindow\+Mode\+::\+Type \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aef60f1304004ab1cbb66c7a413e1a3f3}{Get\+Window\+Mode}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets the current window display mode (Fullscreen, Windowed, Windowed\+Fullscreen). \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aeac83e053a434cbd99ef9ec4034811ec}{Set\+Window\+Mode}} (EWindow\+Mode\+::\+Type In\+Window\+Mode)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Changes the window display mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -70,13 +73,24 @@ Subsystem responsible for managing game user settings, audio configurations, gra
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_aa63a6a5aaf1c86b978f4296bfb22f28b} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Apply\+And\+Save\+Settings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
 Applies current settings changes and saves them to disk. \Hypertarget{class_u_i_p_game_user_settings_subsystem_a5b63c64175d5a04bb710abee78399bbc}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetFrameRate@{GetFrameRate}}
 \index{GetFrameRate@{GetFrameRate}!UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetFrameRate()}{GetFrameRate()}}
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a5b63c64175d5a04bb710abee78399bbc} 
 int32 UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Frame\+Rate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the current frame rate limit. \begin{DoxyReturn}{Returns}
+
+
+Gets the current frame rate limit. 
+
+\begin{DoxyReturn}{Returns}
 Frame rate limit value, or 0 if uncapped. 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_a07e746cd589383566c727fe6ad045856}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetGraphicsQuality@{GetGraphicsQuality}}
@@ -85,7 +99,11 @@ Frame rate limit value, or 0 if uncapped.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a07e746cd589383566c727fe6ad045856} 
 int32 UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Graphics\+Quality (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the overall graphics quality scalability level. \begin{DoxyReturn}{Returns}
+
+
+Gets the overall graphics quality scalability level. 
+
+\begin{DoxyReturn}{Returns}
 Scalability level integer (typically 0 to 4). 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_a843997bd4e2f09c19733e9c731e76334}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetMasterVolume@{GetMasterVolume}}
@@ -94,7 +112,11 @@ Scalability level integer (typically 0 to 4).
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a843997bd4e2f09c19733e9c731e76334} 
 float UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Master\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the current master audio volume. \begin{DoxyReturn}{Returns}
+
+
+Gets the current master audio volume. 
+
+\begin{DoxyReturn}{Returns}
 Current master volume normalized between 0.\+0 and 1.\+0. 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_aa3fbe6a0002bf3462bf437804fecb7d0}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetMusicVolume@{GetMusicVolume}}
@@ -103,7 +125,11 @@ Current master volume normalized between 0.\+0 and 1.\+0.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_aa3fbe6a0002bf3462bf437804fecb7d0} 
 float UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Music\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the current music audio volume. \begin{DoxyReturn}{Returns}
+
+
+Gets the current music audio volume. 
+
+\begin{DoxyReturn}{Returns}
 Current music volume normalized between 0.\+0 and 1.\+0. 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_a3ae8f047c2ac0652f3598adecab22693}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetResolution@{GetResolution}}
@@ -112,7 +138,11 @@ Current music volume normalized between 0.\+0 and 1.\+0.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a3ae8f047c2ac0652f3598adecab22693} 
 FString UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Resolution (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the current screen resolution as a formatted string. \begin{DoxyReturn}{Returns}
+
+
+Gets the current screen resolution as a formatted string. 
+
+\begin{DoxyReturn}{Returns}
 Resolution string (e.\+g., "{}1920x1080"{}). 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_aa305b54ef75ceae00758677833bb7bb4}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetSFXVolume@{GetSFXVolume}}
@@ -121,7 +151,11 @@ Resolution string (e.\+g., "{}1920x1080"{}).
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_aa305b54ef75ceae00758677833bb7bb4} 
 float UIPGame\+User\+Settings\+Subsystem\+::\+Get\+SFXVolume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the current sound effects (SFX) audio volume. \begin{DoxyReturn}{Returns}
+
+
+Gets the current sound effects (SFX) audio volume. 
+
+\begin{DoxyReturn}{Returns}
 Current SFX volume normalized between 0.\+0 and 1.\+0. 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_a81bad9801cab6251f694d39c33a0e171}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetSupportedFrameRates@{GetSupportedFrameRates}}
@@ -130,7 +164,11 @@ Current SFX volume normalized between 0.\+0 and 1.\+0.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a81bad9801cab6251f694d39c33a0e171} 
 TArray$<$ int32 $>$ UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Supported\+Frame\+Rates (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the list of supported frame rate caps. \begin{DoxyReturn}{Returns}
+
+
+Gets the list of supported frame rate caps. 
+
+\begin{DoxyReturn}{Returns}
 Array of supported frame rate integer limits. 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_a9984bbff3b8647f69e82cc989b68554d}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetSupportedResolutions@{GetSupportedResolutions}}
@@ -139,7 +177,11 @@ Array of supported frame rate integer limits.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a9984bbff3b8647f69e82cc989b68554d} 
 TArray$<$ FString $>$ UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Supported\+Resolutions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Retrieves a list of supported widescreen resolutions formatted as strings. \begin{DoxyReturn}{Returns}
+
+
+Retrieves a list of supported widescreen resolutions formatted as strings. 
+
+\begin{DoxyReturn}{Returns}
 Array of formatted resolution strings (e.\+g., "{}1920x1080"{}). 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_aef60f1304004ab1cbb66c7a413e1a3f3}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!GetWindowMode@{GetWindowMode}}
@@ -148,7 +190,11 @@ Array of formatted resolution strings (e.\+g., "{}1920x1080"{}).
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_aef60f1304004ab1cbb66c7a413e1a3f3} 
 EWindow\+Mode\+::\+Type UIPGame\+User\+Settings\+Subsystem\+::\+Get\+Window\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Gets the current window display mode (Fullscreen, Windowed, Windowed\+Fullscreen). \begin{DoxyReturn}{Returns}
+
+
+Gets the current window display mode (Fullscreen, Windowed, Windowed\+Fullscreen). 
+
+\begin{DoxyReturn}{Returns}
 Current EWindow\+Mode type. 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_adfda2b86c14ed1c5dbec46c002e2a4c3}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!Initialize@{Initialize}}
@@ -157,7 +203,11 @@ Current EWindow\+Mode type.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_adfda2b86c14ed1c5dbec46c002e2a4c3} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Initialize (\begin{DoxyParamCaption}\item[{FSubsystem\+Collection\+Base \&}]{Collection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
 Initializes the subsystem and loads saved user settings if available. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Collection} & Subsystem collection base reference. \\
 \hline
@@ -168,7 +218,11 @@ Initializes the subsystem and loads saved user settings if available.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_aef8fdb715defea0479711d529820d817} 
 bool UIPGame\+User\+Settings\+Subsystem\+::\+Is\+VSync\+Enabled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Checks whether VSync is currently enabled. \begin{DoxyReturn}{Returns}
+
+
+Checks whether VSync is currently enabled. 
+
+\begin{DoxyReturn}{Returns}
 True if VSync is active, false otherwise. 
 \end{DoxyReturn}
 \Hypertarget{class_u_i_p_game_user_settings_subsystem_ad363bcf9fcb382b565b1c12d5b45a1aa}\index{UIPGameUserSettingsSubsystem@{UIPGameUserSettingsSubsystem}!SetFrameRate@{SetFrameRate}}
@@ -177,7 +231,11 @@ True if VSync is active, false otherwise.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_ad363bcf9fcb382b565b1c12d5b45a1aa} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+Frame\+Rate (\begin{DoxyParamCaption}\item[{int32}]{Frame\+Rate}{}\end{DoxyParamCaption})}
 
+
+
 Sets the frame rate limit. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Frame\+Rate} & Target frame rate cap (0 for uncapped). \\
 \hline
@@ -188,7 +246,11 @@ Sets the frame rate limit.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a9a8027b2453c7c6e01dde804ed34eace} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+Graphics\+Quality (\begin{DoxyParamCaption}\item[{int32}]{Quality}{}\end{DoxyParamCaption})}
 
+
+
 Sets the overall graphics quality scalability level. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Quality} & Desired quality level, clamped between 0 and 4. \\
 \hline
@@ -199,7 +261,11 @@ Sets the overall graphics quality scalability level.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_ad8c0b621e665b8a828db434996d4a6e0} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+Master\+Volume (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})}
 
+
+
 Sets the master audio volume. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Value} & New master volume value, clamped between 0.\+0 and 1.\+0. \\
 \hline
@@ -210,7 +276,11 @@ Sets the master audio volume.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_ac1682e075f8795eeec8ad44a9b9b61ea} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+Music\+Volume (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})}
 
+
+
 Sets the music audio volume. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Value} & New music volume value, clamped between 0.\+0 and 1.\+0. \\
 \hline
@@ -221,7 +291,11 @@ Sets the music audio volume.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_ab9084ceccad04213a60d39a95ea598a1} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+Resolution (\begin{DoxyParamCaption}\item[{FInt\+Point}]{Resolution}{}\end{DoxyParamCaption})}
 
+
+
 Sets the current screen resolution. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Resolution} & FInt\+Point containing the target width and height. \\
 \hline
@@ -232,7 +306,11 @@ Sets the current screen resolution.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a7108598f8a69a2ee5d6e1ede6d31e983} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+SFXVolume (\begin{DoxyParamCaption}\item[{float}]{Value}{}\end{DoxyParamCaption})}
 
+
+
 Sets the sound effects (SFX) audio volume. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em Value} & New SFX volume value, clamped between 0.\+0 and 1.\+0. \\
 \hline
@@ -243,7 +321,11 @@ Sets the sound effects (SFX) audio volume.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_a294d73f8b8b3218347b91b32ede2bf7f} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+VSync\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{b\+Enabled}{}\end{DoxyParamCaption})}
 
+
+
 Enables or disables VSync. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em b\+Enabled} & True to turn VSync on, false to turn it off. \\
 \hline
@@ -254,7 +336,11 @@ Enables or disables VSync.
 {\footnotesize\ttfamily \label{class_u_i_p_game_user_settings_subsystem_aeac83e053a434cbd99ef9ec4034811ec} 
 void UIPGame\+User\+Settings\+Subsystem\+::\+Set\+Window\+Mode (\begin{DoxyParamCaption}\item[{EWindow\+Mode\+::\+Type}]{In\+Window\+Mode}{}\end{DoxyParamCaption})}
 
+
+
 Changes the window display mode. 
+
+
 \begin{DoxyParams}{Parameters}
 {\em In\+Window\+Mode} & Desired window mode type. \\
 \hline

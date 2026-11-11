@@ -2,6 +2,11 @@
 \hypertarget{class_i_game_mode_data_source}{}\label{class_i_game_mode_data_source}\index{IGameModeDataSource@{IGameModeDataSource}}
 
 
+Blueprint-\/native contract for reading gameplay values displayed by the HUD.  
+
+
+
+
 {\ttfamily \#include $<$IGame\+Mode\+Data\+Source.\+h$>$}
 
 Inheritance diagram for IGame\+Mode\+Data\+Source\+:\begin{figure}[H]
@@ -14,19 +19,19 @@ Inheritance diagram for IGame\+Mode\+Data\+Source\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0}{Get\+Score}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the current player score. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353}{Get\+Totals\+Cells\+To\+Consume}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the target number of cells as display-\/ready text. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_ac7c2ab79c2919db4057692dc19a0bcb7}{Get\+Cells\+Consumed}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the number of consumed cells as display-\/ready text. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591}{Get\+Cube\+Step\+Count}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the current cube step count. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824}{Get\+Timer\+Value}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the timer seconds component as display-\/ready text. \end{DoxyCompactList}\item 
 FText \mbox{\hyperlink{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f}{Get\+Timer\+Minutes\+Value}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the timer minutes component as display-\/ready text. \end{DoxyCompactList}\item 
 uint8 \mbox{\hyperlink{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e}{Get\+Level\+Type\+Value}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the current level type as its project-\/defined byte value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -39,43 +44,92 @@ Blueprint-\/native contract for reading gameplay values displayed by the HUD.
 {\footnotesize\ttfamily \label{class_i_game_mode_data_source_ac7c2ab79c2919db4057692dc19a0bcb7} 
 FText IGame\+Mode\+Data\+Source\+::\+Get\+Cells\+Consumed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns the number of consumed cells as display-\/ready text. \Hypertarget{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591}\index{IGameModeDataSource@{IGameModeDataSource}!GetCubeStepCount@{GetCubeStepCount}}
+
+
+Returns the number of consumed cells as display-\/ready text. 
+
+\begin{DoxyReturn}{Returns}
+Consumed cell count formatted for display. 
+\end{DoxyReturn}
+\Hypertarget{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591}\index{IGameModeDataSource@{IGameModeDataSource}!GetCubeStepCount@{GetCubeStepCount}}
 \index{GetCubeStepCount@{GetCubeStepCount}!IGameModeDataSource@{IGameModeDataSource}}
 \doxysubsubsection{\texorpdfstring{GetCubeStepCount()}{GetCubeStepCount()}}
 {\footnotesize\ttfamily \label{class_i_game_mode_data_source_ad7d2ef862156e5cad395410b1820b591} 
 int IGame\+Mode\+Data\+Source\+::\+Get\+Cube\+Step\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns the current cube step count. \Hypertarget{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e}\index{IGameModeDataSource@{IGameModeDataSource}!GetLevelTypeValue@{GetLevelTypeValue}}
+
+
+Returns the current cube step count. 
+
+\begin{DoxyReturn}{Returns}
+Current step count. 
+\end{DoxyReturn}
+\Hypertarget{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e}\index{IGameModeDataSource@{IGameModeDataSource}!GetLevelTypeValue@{GetLevelTypeValue}}
 \index{GetLevelTypeValue@{GetLevelTypeValue}!IGameModeDataSource@{IGameModeDataSource}}
 \doxysubsubsection{\texorpdfstring{GetLevelTypeValue()}{GetLevelTypeValue()}}
 {\footnotesize\ttfamily \label{class_i_game_mode_data_source_a39366d453225a02b454f441de570854e} 
 uint8 IGame\+Mode\+Data\+Source\+::\+Get\+Level\+Type\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns the current level type as its project-\/defined byte value. \Hypertarget{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0}\index{IGameModeDataSource@{IGameModeDataSource}!GetScore@{GetScore}}
+
+
+Returns the current level type as its project-\/defined byte value. 
+
+\begin{DoxyReturn}{Returns}
+Current level type. 
+\end{DoxyReturn}
+\Hypertarget{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0}\index{IGameModeDataSource@{IGameModeDataSource}!GetScore@{GetScore}}
 \index{GetScore@{GetScore}!IGameModeDataSource@{IGameModeDataSource}}
 \doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
 {\footnotesize\ttfamily \label{class_i_game_mode_data_source_a12300246d74ff05f27ecef58732db6c0} 
 int IGame\+Mode\+Data\+Source\+::\+Get\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns the current player score. \Hypertarget{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f}\index{IGameModeDataSource@{IGameModeDataSource}!GetTimerMinutesValue@{GetTimerMinutesValue}}
+
+
+Returns the current player score. 
+
+\begin{DoxyReturn}{Returns}
+Current score. 
+\end{DoxyReturn}
+\Hypertarget{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f}\index{IGameModeDataSource@{IGameModeDataSource}!GetTimerMinutesValue@{GetTimerMinutesValue}}
 \index{GetTimerMinutesValue@{GetTimerMinutesValue}!IGameModeDataSource@{IGameModeDataSource}}
 \doxysubsubsection{\texorpdfstring{GetTimerMinutesValue()}{GetTimerMinutesValue()}}
 {\footnotesize\ttfamily \label{class_i_game_mode_data_source_a10200b0b05a74bc2c39f9ef2a3e2306f} 
 FText IGame\+Mode\+Data\+Source\+::\+Get\+Timer\+Minutes\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns the timer minutes component as display-\/ready text. \Hypertarget{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824}\index{IGameModeDataSource@{IGameModeDataSource}!GetTimerValue@{GetTimerValue}}
+
+
+Returns the timer minutes component as display-\/ready text. 
+
+\begin{DoxyReturn}{Returns}
+Timer minutes formatted for display. 
+\end{DoxyReturn}
+\Hypertarget{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824}\index{IGameModeDataSource@{IGameModeDataSource}!GetTimerValue@{GetTimerValue}}
 \index{GetTimerValue@{GetTimerValue}!IGameModeDataSource@{IGameModeDataSource}}
 \doxysubsubsection{\texorpdfstring{GetTimerValue()}{GetTimerValue()}}
 {\footnotesize\ttfamily \label{class_i_game_mode_data_source_a761cd5fffbd0f738a69a4a6c4dd53824} 
 FText IGame\+Mode\+Data\+Source\+::\+Get\+Timer\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns the timer seconds component as display-\/ready text. \Hypertarget{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353}\index{IGameModeDataSource@{IGameModeDataSource}!GetTotalsCellsToConsume@{GetTotalsCellsToConsume}}
+
+
+Returns the timer seconds component as display-\/ready text. 
+
+\begin{DoxyReturn}{Returns}
+Timer seconds formatted for display. 
+\end{DoxyReturn}
+\Hypertarget{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353}\index{IGameModeDataSource@{IGameModeDataSource}!GetTotalsCellsToConsume@{GetTotalsCellsToConsume}}
 \index{GetTotalsCellsToConsume@{GetTotalsCellsToConsume}!IGameModeDataSource@{IGameModeDataSource}}
 \doxysubsubsection{\texorpdfstring{GetTotalsCellsToConsume()}{GetTotalsCellsToConsume()}}
 {\footnotesize\ttfamily \label{class_i_game_mode_data_source_a9172d897fdec50985e1cd7638e636353} 
 FText IGame\+Mode\+Data\+Source\+::\+Get\+Totals\+Cells\+To\+Consume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
 Returns the target number of cells as display-\/ready text. 
+
+\begin{DoxyReturn}{Returns}
+Total cell target formatted for display. 
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

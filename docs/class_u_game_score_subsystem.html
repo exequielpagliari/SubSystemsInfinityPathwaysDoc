@@ -112,6 +112,9 @@ $(function(){initNavTree('class_u_game_score_subsystem.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>Owns runtime score state, score calculations, and score-change notifications.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_score_subsystem_8h_source.html">GameScoreSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UGameScoreSubsystem:</div>
@@ -123,39 +126,56 @@ Inheritance diagram for UGameScoreSubsystem:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab448e0c37e61e8d793865c353aa17e88" id="r_ab448e0c37e61e8d793865c353aa17e88"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab448e0c37e61e8d793865c353aa17e88">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="memdesc:ab448e0c37e61e8d793865c353aa17e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes score subsystem state and event bindings.  <br /></td></tr>
 <tr class="separator:ab448e0c37e61e8d793865c353aa17e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e4dda0025f37479e40d5b5691a36cf" id="r_a58e4dda0025f37479e40d5b5691a36cf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58e4dda0025f37479e40d5b5691a36cf">Deinitialize</a> () override</td></tr>
+<tr class="memitem:a58e4dda0025f37479e40d5b5691a36cf" id="r_a58e4dda0025f37479e40d5b5691a36cf"><td class="memItemLeft" align="right" valign="top"><a id="a58e4dda0025f37479e40d5b5691a36cf" name="a58e4dda0025f37479e40d5b5691a36cf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deinitialize</b> () override</td></tr>
+<tr class="memdesc:a58e4dda0025f37479e40d5b5691a36cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases resources and event bindings owned by this subsystem. <br /></td></tr>
 <tr class="separator:a58e4dda0025f37479e40d5b5691a36cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac65e9289598383f1794227e169bcb1be" id="r_ac65e9289598383f1794227e169bcb1be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac65e9289598383f1794227e169bcb1be">ResetScore</a> ()</td></tr>
+<tr class="memitem:ac65e9289598383f1794227e169bcb1be" id="r_ac65e9289598383f1794227e169bcb1be"><td class="memItemLeft" align="right" valign="top"><a id="ac65e9289598383f1794227e169bcb1be" name="ac65e9289598383f1794227e169bcb1be"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetScore</b> ()</td></tr>
+<tr class="memdesc:ac65e9289598383f1794227e169bcb1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the current score to zero and notifies listeners of the change. <br /></td></tr>
 <tr class="separator:ac65e9289598383f1794227e169bcb1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a087c1a96bd3dd5f86df4c0806515d485" id="r_a087c1a96bd3dd5f86df4c0806515d485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a087c1a96bd3dd5f86df4c0806515d485">SetScore</a> (int32 NewScore)</td></tr>
+<tr class="memdesc:a087c1a96bd3dd5f86df4c0806515d485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the current score with the supplied value.  <br /></td></tr>
 <tr class="separator:a087c1a96bd3dd5f86df4c0806515d485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf918e5947bdb0b7873645123b8e551b" id="r_adf918e5947bdb0b7873645123b8e551b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf918e5947bdb0b7873645123b8e551b">AddScore</a> (int32 Points)</td></tr>
+<tr class="memdesc:adf918e5947bdb0b7873645123b8e551b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds points to the current score.  <br /></td></tr>
 <tr class="separator:adf918e5947bdb0b7873645123b8e551b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12a75ece42f7823a4808a3c0b7809fe4" id="r_a12a75ece42f7823a4808a3c0b7809fe4"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12a75ece42f7823a4808a3c0b7809fe4">GetScore</a> () const</td></tr>
+<tr class="memdesc:a12a75ece42f7823a4808a3c0b7809fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current score.  <br /></td></tr>
 <tr class="separator:a12a75ece42f7823a4808a3c0b7809fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a848c91ac29699639afe5a8a872059c29" id="r_a848c91ac29699639afe5a8a872059c29"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a848c91ac29699639afe5a8a872059c29">CalculateCellScore</a> (int32 BaseValue, int32 StreakMultiplier) const</td></tr>
+<tr class="memdesc:a848c91ac29699639afe5a8a872059c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a cell score without changing the current score.  <br /></td></tr>
 <tr class="separator:a848c91ac29699639afe5a8a872059c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaabdca4024924038215622651db8bc89" id="r_aaabdca4024924038215622651db8bc89"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaabdca4024924038215622651db8bc89">AddCellScore</a> (EScoreReason TypeCell, int32 StreakMultiplier)</td></tr>
+<tr class="memdesc:aaabdca4024924038215622651db8bc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and adds the score associated with a cell-scoring reason.  <br /></td></tr>
 <tr class="separator:aaabdca4024924038215622651db8bc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae123bdefbfa33db12ee764133be18e" id="r_aeae123bdefbfa33db12ee764133be18e"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeae123bdefbfa33db12ee764133be18e">CalculateTimeBonus</a> (int32 SecondsRemaining) const</td></tr>
+<tr class="memdesc:aeae123bdefbfa33db12ee764133be18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the time bonus for the remaining seconds.  <br /></td></tr>
 <tr class="separator:aeae123bdefbfa33db12ee764133be18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fafa9114649853c1f7865391ea84625" id="r_a1fafa9114649853c1f7865391ea84625"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fafa9114649853c1f7865391ea84625">CalculateStepBonus</a> (int32 Steps) const</td></tr>
+<tr class="memdesc:a1fafa9114649853c1f7865391ea84625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the step bonus for the supplied step count.  <br /></td></tr>
 <tr class="separator:a1fafa9114649853c1f7865391ea84625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3a1028cd44e8b92131dfec773e4749f" id="r_ab3a1028cd44e8b92131dfec773e4749f"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3a1028cd44e8b92131dfec773e4749f">CalculateZenBonus</a> (int32 ElapsedSeconds) const</td></tr>
+<tr class="memdesc:ab3a1028cd44e8b92131dfec773e4749f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the Zen bonus for the supplied elapsed time.  <br /></td></tr>
 <tr class="separator:ab3a1028cd44e8b92131dfec773e4749f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336834fa405ac14b156405d29f42dd42" id="r_a336834fa405ac14b156405d29f42dd42"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a336834fa405ac14b156405d29f42dd42">CalculateModeBonus</a> (ELevelType GameMode, int32 Value) const</td></tr>
+<tr class="memdesc:a336834fa405ac14b156405d29f42dd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates a mode-specific bonus without changing the current score.  <br /></td></tr>
 <tr class="separator:a336834fa405ac14b156405d29f42dd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a989e0753d4edba532bbb9b8f5e7445" id="r_a1a989e0753d4edba532bbb9b8f5e7445"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a989e0753d4edba532bbb9b8f5e7445">AddModeBonus</a> (ELevelType GameMode, int32 Value)</td></tr>
+<tr class="memdesc:a1a989e0753d4edba532bbb9b8f5e7445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and adds the bonus associated with the selected game mode.  <br /></td></tr>
 <tr class="separator:a1a989e0753d4edba532bbb9b8f5e7445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7368b00a373b6d6aced82db672211cfb" id="r_a7368b00a373b6d6aced82db672211cfb"><td class="memItemLeft" align="right" valign="top">FOnGameScoreChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7368b00a373b6d6aced82db672211cfb">OnGameScoreChanged</a></td></tr>
+<tr class="memitem:a7368b00a373b6d6aced82db672211cfb" id="r_a7368b00a373b6d6aced82db672211cfb"><td class="memItemLeft" align="right" valign="top"><a id="a7368b00a373b6d6aced82db672211cfb" name="a7368b00a373b6d6aced82db672211cfb"></a>
+FOnGameScoreChanged&#160;</td><td class="memItemRight" valign="bottom"><b>OnGameScoreChanged</b></td></tr>
+<tr class="memdesc:a7368b00a373b6d6aced82db672211cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fired when the score changes; provides the new total and signed delta. <br /></td></tr>
 <tr class="separator:a7368b00a373b6d6aced82db672211cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Owns the runtime score, score calculations, and score-change notifications for the game instance. </p>
+<div class="textblock"><p>Owns runtime score state, score calculations, and score-change notifications. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aaabdca4024924038215622651db8bc89" name="aaabdca4024924038215622651db8bc89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaabdca4024924038215622651db8bc89">&#9670;&#160;</a></span>AddCellScore()</h2>
@@ -175,7 +195,16 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Calculates and adds the score associated with a cell-scoring reason. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TypeCell</td><td>Reason that determines the cell score category. </td></tr>
+    <tr><td class="paramname">StreakMultiplier</td><td>Multiplier applied to the score. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Points added to the score. </dd></dl>
 
 </div>
 </div>
@@ -197,7 +226,16 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Calculates and adds the bonus associated with the selected game mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GameMode</td><td>Mode whose bonus rules are used. </td></tr>
+    <tr><td class="paramname">Value</td><td>Mode-specific input value for the bonus calculation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Points added to the score. </dd></dl>
 
 </div>
 </div>
@@ -215,7 +253,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Adds points to the current score. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Points</td><td>Number of points to add. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -237,7 +282,16 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates a cell score from its base value and streak multiplier without changing state. </p>
+
+<p>Calculates a cell score without changing the current score. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">BaseValue</td><td>Unmultiplied score value for the cell. </td></tr>
+    <tr><td class="paramname">StreakMultiplier</td><td>Multiplier applied to the base value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calculated cell score. </dd></dl>
 
 </div>
 </div>
@@ -259,7 +313,16 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Calculates a mode-specific bonus without changing the current score. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GameMode</td><td>Mode whose bonus rules are used. </td></tr>
+    <tr><td class="paramname">Value</td><td>Mode-specific input value for the bonus calculation. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calculated mode bonus. </dd></dl>
 
 </div>
 </div>
@@ -277,7 +340,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Calculates the step bonus for the supplied step count. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Steps</td><td>Number of steps used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calculated step bonus. </dd></dl>
 
 </div>
 </div>
@@ -295,7 +366,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Calculates the time bonus for the remaining seconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SecondsRemaining</td><td>Number of seconds remaining. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calculated time bonus. </dd></dl>
 
 </div>
 </div>
@@ -313,33 +392,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Calculates the Zen bonus for the supplied elapsed time. </p>
-
-</div>
-</div>
-<a id="a58e4dda0025f37479e40d5b5691a36cf" name="a58e4dda0025f37479e40d5b5691a36cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58e4dda0025f37479e40d5b5691a36cf">&#9670;&#160;</a></span>Deinitialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UGameScoreSubsystem::Deinitialize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Releases resources and event bindings owned by this subsystem. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ElapsedSeconds</td><td>Number of seconds elapsed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Calculated Zen bonus. </dd></dl>
 
 </div>
 </div>
@@ -357,7 +418,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the current score. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current accumulated score. </dd></dl>
 
 </div>
 </div>
@@ -383,25 +446,14 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Initializes score subsystem state and event bindings. </p>
-
-</div>
-</div>
-<a id="ac65e9289598383f1794227e169bcb1be" name="ac65e9289598383f1794227e169bcb1be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac65e9289598383f1794227e169bcb1be">&#9670;&#160;</a></span>ResetScore()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void UGameScoreSubsystem::ResetScore </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Resets the current score to zero and notifies listeners of the change. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Collection</td><td>Subsystem collection used to initialize dependencies. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -419,23 +471,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Replaces the current score with the supplied value. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7368b00a373b6d6aced82db672211cfb" name="a7368b00a373b6d6aced82db672211cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7368b00a373b6d6aced82db672211cfb">&#9670;&#160;</a></span>OnGameScoreChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnGameScoreChanged UGameScoreSubsystem::OnGameScoreChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Fired when the score changes; provides the new total and signed delta. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">NewScore</td><td>Score value to set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

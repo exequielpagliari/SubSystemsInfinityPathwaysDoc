@@ -15,59 +15,59 @@
 \DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}LevelManagerSubsystem.generated.h"{}}}
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00014\ DECLARE\_DYNAMIC\_MULTICAST\_DELEGATE(FOnLevelDataUpdated);}
-\DoxyCodeLine{00016\ UCLASS()}
-\DoxyCodeLine{00017\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300}{ULevelManagerSubsystem}}\ :\ public\ UGameInstanceSubsystem,}
-\DoxyCodeLine{00018\ \ \ \ \ public\ IGameFeatureStateChangeObserver}
-\DoxyCodeLine{00019\ \{}
-\DoxyCodeLine{00020\ \ \ \ \ GENERATED\_BODY()}
-\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300}{ULevelManagerSubsystem}}();}
-\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Override\ the\ Initialize\ method\ to\ perform\ any\ necessary\ setup\ for\ the\ subsystem}}
-\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_af1a42c80acdc9f56bc3442b0084f80e4}{Initialize}}(FSubsystemCollectionBase\&\ Collection)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Override\ the\ Deinitialize\ method\ to\ perform\ any\ necessary\ cleanup\ for\ the\ subsystem}}
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a42ee5432e49d77bff5494b37d9e02c43}{Deinitialize}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Add\ your\ custom\ methods\ and\ properties\ here}}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a52dc8ca973773d5415ad886bcfa9de67}{LoadLevelInfoAssets}}();}
+\DoxyCodeLine{00017\ UCLASS()}
+\DoxyCodeLine{00018\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300}{ULevelManagerSubsystem}}\ :\ public\ UGameInstanceSubsystem,}
+\DoxyCodeLine{00019\ \ \ \ \ public\ IGameFeatureStateChangeObserver}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_u_level_manager_subsystem_a8364b03c5ab031af009932ef80ffd300}{ULevelManagerSubsystem}}();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Override\ the\ Initialize\ method\ to\ perform\ any\ necessary\ setup\ for\ the\ subsystem}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_af1a42c80acdc9f56bc3442b0084f80e4}{Initialize}}(FSubsystemCollectionBase\&\ Collection)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Override\ the\ Deinitialize\ method\ to\ perform\ any\ necessary\ cleanup\ for\ the\ subsystem}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a42ee5432e49d77bff5494b37d9e02c43}{Deinitialize}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Add\ your\ custom\ methods\ and\ properties\ here}}
+\DoxyCodeLine{00035\ }
 \DoxyCodeLine{00036\ }
 \DoxyCodeLine{00037\ }
-\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a3f24a6a9ae0e3733c37785047d8421dc}{OnGameFeatureActivating}}(\textcolor{keyword}{const}\ UGameFeatureData*\ Data,\ \textcolor{keyword}{const}\ FString\&\ PluginName)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a8f159d27fedaecf38015d60ba3977511}{OnGameFeatureDeactivating}}(\textcolor{keyword}{const}\ UGameFeatureData*\ Data,}
-\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ FGameFeatureDeactivatingContext\&\ Ctx,\ \textcolor{keyword}{const}\ FString\&\ PluginName)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00043\ }
-\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ dentro\ de\ la\ clase}}
-\DoxyCodeLine{00046\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
-\DoxyCodeLine{00047\ \ \ \ \ TArray<TObjectPtr<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}>>\ \mbox{\hyperlink{class_u_level_manager_subsystem_ab373a67a035a7d8079a1dc5727f7ca98}{LevelInfoAssets}};\ \ \ \textcolor{comment}{//\ lista\ plana}}
-\DoxyCodeLine{00048\ }
-\DoxyCodeLine{00050\ \ \ \ \ UPROPERTY(BlueprintAssignable,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
-\DoxyCodeLine{00051\ \ \ \ \ FOnLevelDataUpdated\ \mbox{\hyperlink{class_u_level_manager_subsystem_ab5f1d456d722db11d965f3c07f7a35e8}{OnLevelDataUpdated}};}
-\DoxyCodeLine{00052\ }
-\DoxyCodeLine{00054\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
-\DoxyCodeLine{00055\ \ \ \ \ TArray<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\ \mbox{\hyperlink{class_u_level_manager_subsystem_a0e107153b8a67f955ffc957a7d53c069}{GetAllLevelData}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a52dc8ca973773d5415ad886bcfa9de67}{LoadLevelInfoAssets}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a3f24a6a9ae0e3733c37785047d8421dc}{OnGameFeatureActivating}}(\textcolor{keyword}{const}\ UGameFeatureData*\ Data,\ \textcolor{keyword}{const}\ FString\&\ PluginName)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a8f159d27fedaecf38015d60ba3977511}{OnGameFeatureDeactivating}}(\textcolor{keyword}{const}\ UGameFeatureData*\ Data,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ FGameFeatureDeactivatingContext\&\ Ctx,\ \textcolor{keyword}{const}\ FString\&\ PluginName)\ \textcolor{keyword}{override};}
 \DoxyCodeLine{00056\ }
-\DoxyCodeLine{00058\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a41b70555544a5e5f8876129fa26e37d8}{RefreshLevelList}}();}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00062\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_manager_subsystem_ac10bee5f1d63c9a015670bc413e05821}{bLevelDataReady}}\ =\ false;}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00066\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Level\ Manager"{}})}
-\DoxyCodeLine{00067\ \ \ \ \ const\ TArray<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\&\ \mbox{\hyperlink{class_u_level_manager_subsystem_a1f71dfef6972f6125b026ef3169583d4}{GetSortedLevels}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ SortedLevelsList;\ \}}
-\DoxyCodeLine{00068\ }
-\DoxyCodeLine{00069\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }FLevelManagerSubsystemTestAccess;\ \textcolor{comment}{//\ solo\ para\ tests:\ acceso\ a\ ByPlugin\ /\ LevelRegistryMap}}
-\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ LoadPluginLevelData(\textcolor{keyword}{const}\ FString\&\ PluginName);}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00073\ \ \ \ \ TMap<FString,\ TArray<TObjectPtr<ULevelInfoDataAsset>>>\ ByPlugin;}
-\DoxyCodeLine{00074\ \ \ \ \ TMap<FString,\ TSharedPtr<FStreamableHandle>>\ Handles;}
-\DoxyCodeLine{00075\ }
-\DoxyCodeLine{00077\ \ \ \ \ UPROPERTY()}
-\DoxyCodeLine{00078\ \ \ \ \ TMap<FName,\ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\ LevelRegistryMap;}
-\DoxyCodeLine{00079\ }
-\DoxyCodeLine{00081\ \ \ \ \ UPROPERTY()}
-\DoxyCodeLine{00082\ \ \ \ \ TArray<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\ SortedLevelsList;}
-\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{comment}{//\ dentro\ de\ la\ clase}}
+\DoxyCodeLine{00059\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
+\DoxyCodeLine{00060\ \ \ \ \ TArray<TObjectPtr<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}>>\ \mbox{\hyperlink{class_u_level_manager_subsystem_ab373a67a035a7d8079a1dc5727f7ca98}{LevelInfoAssets}};\ \ \ \textcolor{comment}{//\ lista\ plana}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00063\ \ \ \ \ UPROPERTY(BlueprintAssignable,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
+\DoxyCodeLine{00064\ \ \ \ \ FOnLevelDataUpdated\ \mbox{\hyperlink{class_u_level_manager_subsystem_ab5f1d456d722db11d965f3c07f7a35e8}{OnLevelDataUpdated}};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00068\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
+\DoxyCodeLine{00069\ \ \ \ \ TArray<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\ \mbox{\hyperlink{class_u_level_manager_subsystem_a0e107153b8a67f955ffc957a7d53c069}{GetAllLevelData}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00072\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_manager_subsystem_a41b70555544a5e5f8876129fa26e37d8}{RefreshLevelList}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00076\ \ \ \ \ UPROPERTY(BlueprintReadOnly,\ Category\ =\ \textcolor{stringliteral}{"{}LevelSubSystem"{}})}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_manager_subsystem_ac10bee5f1d63c9a015670bc413e05821}{bLevelDataReady}}\ =\ false;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00081\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Level\ Manager"{}})}
+\DoxyCodeLine{00082\ \ \ \ \ const\ TArray<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\&\ \mbox{\hyperlink{class_u_level_manager_subsystem_a1f71dfef6972f6125b026ef3169583d4}{GetSortedLevels}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ SortedLevelsList;\ \}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }FLevelManagerSubsystemTestAccess;\ \textcolor{comment}{//\ solo\ para\ tests:\ acceso\ a\ ByPlugin\ /\ LevelRegistryMap}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ LoadPluginLevelData(\textcolor{keyword}{const}\ FString\&\ PluginName);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ TMap<FString,\ TArray<TObjectPtr<ULevelInfoDataAsset>>>\ ByPlugin;}
+\DoxyCodeLine{00091\ \ \ \ \ TMap<FString,\ TSharedPtr<FStreamableHandle>>\ Handles;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00094\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00095\ \ \ \ \ TMap<FName,\ \mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\ LevelRegistryMap;}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00098\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00099\ \ \ \ \ TArray<\mbox{\hyperlink{class_u_level_info_data_asset}{ULevelInfoDataAsset}}*>\ SortedLevelsList;}
+\DoxyCodeLine{00100\ \};}
 
 \end{DoxyCode}

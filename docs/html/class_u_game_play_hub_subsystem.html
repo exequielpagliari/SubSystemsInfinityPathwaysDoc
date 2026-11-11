@@ -112,6 +112,9 @@ $(function(){initNavTree('class_u_game_play_hub_subsystem.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 
+<p>Game-instance service that caches gameplay HUD metrics and broadcasts updates.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_play_hub_subsystem_8h_source.html">GamePlayHubSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for UGamePlayHubSubsystem:</div>
@@ -123,78 +126,118 @@ Inheritance diagram for UGamePlayHubSubsystem:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0f4a37e6406f271f05381ab2490bc445" id="r_a0f4a37e6406f271f05381ab2490bc445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f4a37e6406f271f05381ab2490bc445">UpdateStreakData</a> (float InStreakTimeLeft, int InFirstStreak, int InSecondStreak, int InThirdStreak, uint8 InLevelType)</td></tr>
+<tr class="memdesc:a0f4a37e6406f271f05381ab2490bc445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates streak data and level type, caching the values and broadcasting the OnStreakValuesChanged event.  <br /></td></tr>
 <tr class="separator:a0f4a37e6406f271f05381ab2490bc445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c8366ff676e588ea882b98e5c064fa2" id="r_a4c8366ff676e588ea882b98e5c064fa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c8366ff676e588ea882b98e5c064fa2">UpdateScore</a> (int InScore)</td></tr>
+<tr class="memdesc:a4c8366ff676e588ea882b98e5c064fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the player score cache and broadcasts the OnScoreChanged event.  <br /></td></tr>
 <tr class="separator:a4c8366ff676e588ea882b98e5c064fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fe5a437158596b65955e82b833035f" id="r_ab6fe5a437158596b65955e82b833035f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6fe5a437158596b65955e82b833035f">UpdateCellData</a> (int InCellsConsumed, int InTotalsCellsToConsume, UMaterialInterface *InNextCell)</td></tr>
+<tr class="memdesc:ab6fe5a437158596b65955e82b833035f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates cell data metrics and next cell material, broadcasting corresponding events.  <br /></td></tr>
 <tr class="separator:ab6fe5a437158596b65955e82b833035f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6bca601c5b3d3ee87be16a3ea1393a7" id="r_af6bca601c5b3d3ee87be16a3ea1393a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6bca601c5b3d3ee87be16a3ea1393a7">UpdateTimerData</a> (int InTimerValue, int InTimerMinutesValue)</td></tr>
+<tr class="memdesc:af6bca601c5b3d3ee87be16a3ea1393a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates timer values (seconds and minutes) and broadcasts the OnTimerChanged event.  <br /></td></tr>
 <tr class="separator:af6bca601c5b3d3ee87be16a3ea1393a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a630540c390223bf54fd4d0434c86d039" id="r_a630540c390223bf54fd4d0434c86d039"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a630540c390223bf54fd4d0434c86d039">UpdateCubeStepCount</a> (int InCubeStepCount)</td></tr>
+<tr class="memdesc:a630540c390223bf54fd4d0434c86d039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the cube step count cache and broadcasts the OnStepCountChanged event.  <br /></td></tr>
 <tr class="separator:a630540c390223bf54fd4d0434c86d039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2a17eb479f0ea37e134207be99c43c9" id="r_af2a17eb479f0ea37e134207be99c43c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2a17eb479f0ea37e134207be99c43c9">UpdateLevelTypeGameMode</a> (uint8 InLevelType)</td></tr>
+<tr class="memdesc:af2a17eb479f0ea37e134207be99c43c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the game mode level type and broadcasts the OnLevelTypeGameMode event.  <br /></td></tr>
 <tr class="separator:af2a17eb479f0ea37e134207be99c43c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a097fd5869a8cc6e18d6a622659d47939" id="r_a097fd5869a8cc6e18d6a622659d47939"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a097fd5869a8cc6e18d6a622659d47939">GetCharging</a> () const</td></tr>
+<tr class="memdesc:a097fd5869a8cc6e18d6a622659d47939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and returns the charging ratio based on streak time left and total streak sum.  <br /></td></tr>
 <tr class="separator:a097fd5869a8cc6e18d6a622659d47939"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa772f084dc074dbbbf142825fb03d9ac" id="r_aa772f084dc074dbbbf142825fb03d9ac"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa772f084dc074dbbbf142825fb03d9ac">GetCombo</a> () const</td></tr>
+<tr class="memdesc:aa772f084dc074dbbbf142825fb03d9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the combo ratio (maps directly to <a class="el" href="#a097fd5869a8cc6e18d6a622659d47939" title="Calculates and returns the charging ratio based on streak time left and total streak sum.">GetCharging()</a>).  <br /></td></tr>
 <tr class="separator:aa772f084dc074dbbbf142825fb03d9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78683b8eaf2da9a615f3bf00e5a64561" id="r_a78683b8eaf2da9a615f3bf00e5a64561"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78683b8eaf2da9a615f3bf00e5a64561">GetSustained</a> () const</td></tr>
+<tr class="memdesc:a78683b8eaf2da9a615f3bf00e5a64561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and returns the sustained streak metric incorporating the first streak weight.  <br /></td></tr>
 <tr class="separator:a78683b8eaf2da9a615f3bf00e5a64561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712872f74d4aa1a579cebff3a9213150" id="r_a712872f74d4aa1a579cebff3a9213150"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a712872f74d4aa1a579cebff3a9213150">GetUltra</a> () const</td></tr>
+<tr class="memdesc:a712872f74d4aa1a579cebff3a9213150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and returns the ultra streak metric incorporating combined inner weights.  <br /></td></tr>
 <tr class="separator:a712872f74d4aa1a579cebff3a9213150"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77fe8fd2dd037212776d6a6d6ff463a5" id="r_a77fe8fd2dd037212776d6a6d6ff463a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77fe8fd2dd037212776d6a6d6ff463a5">GetStreakValue</a> (float &amp;Charging, float &amp;Combo, float &amp;Sustained, float &amp;Ultra) const</td></tr>
+<tr class="memdesc:a77fe8fd2dd037212776d6a6d6ff463a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves all calculated streak values at once by reference parameters.  <br /></td></tr>
 <tr class="separator:a77fe8fd2dd037212776d6a6d6ff463a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6d4e80474f360904e776bd4e4d39a1" id="r_aab6d4e80474f360904e776bd4e4d39a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab6d4e80474f360904e776bd4e4d39a1">GetAddStreak</a> () const</td></tr>
+<tr class="memdesc:aab6d4e80474f360904e776bd4e4d39a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sum of all three streak levels.  <br /></td></tr>
 <tr class="separator:aab6d4e80474f360904e776bd4e4d39a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecf58166261095540df47a6c1c2fe2ae" id="r_aecf58166261095540df47a6c1c2fe2ae"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecf58166261095540df47a6c1c2fe2ae">GetStreakTimeLeftValue</a> () const</td></tr>
+<tr class="memdesc:aecf58166261095540df47a6c1c2fe2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached streak time left value.  <br /></td></tr>
 <tr class="separator:aecf58166261095540df47a6c1c2fe2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae40beb48c73f2a60bc8756e828b9f0" id="r_a8ae40beb48c73f2a60bc8756e828b9f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ae40beb48c73f2a60bc8756e828b9f0">GetFirstStreakLevelTimeValue</a> () const</td></tr>
+<tr class="memdesc:a8ae40beb48c73f2a60bc8756e828b9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached first streak level time/value.  <br /></td></tr>
 <tr class="separator:a8ae40beb48c73f2a60bc8756e828b9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a806124775cfb4ac573227d44a3db7c76" id="r_a806124775cfb4ac573227d44a3db7c76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a806124775cfb4ac573227d44a3db7c76">GetSecondStreakLevelTimeValue</a> () const</td></tr>
+<tr class="memdesc:a806124775cfb4ac573227d44a3db7c76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached second streak level time/value.  <br /></td></tr>
 <tr class="separator:a806124775cfb4ac573227d44a3db7c76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5737cb6af64073bf49fd7f97e9386a67" id="r_a5737cb6af64073bf49fd7f97e9386a67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5737cb6af64073bf49fd7f97e9386a67">GetThirdStreakLevelTimeValue</a> () const</td></tr>
+<tr class="memdesc:a5737cb6af64073bf49fd7f97e9386a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached third streak level time/value.  <br /></td></tr>
 <tr class="separator:a5737cb6af64073bf49fd7f97e9386a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295500ee23b5e3b6bfd5088184b50d97" id="r_a295500ee23b5e3b6bfd5088184b50d97"><td class="memItemLeft" align="right" valign="top">UMaterialInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a295500ee23b5e3b6bfd5088184b50d97">GetHMNextToConsumeCellValue</a> () const</td></tr>
+<tr class="memdesc:a295500ee23b5e3b6bfd5088184b50d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached material interface for the next cell to consume.  <br /></td></tr>
 <tr class="separator:a295500ee23b5e3b6bfd5088184b50d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfb7a915f80ed621546b827301566457" id="r_adfb7a915f80ed621546b827301566457"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adfb7a915f80ed621546b827301566457">GetScoreValue</a> () const</td></tr>
+<tr class="memdesc:adfb7a915f80ed621546b827301566457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached player score value.  <br /></td></tr>
 <tr class="separator:adfb7a915f80ed621546b827301566457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa46c2d240b9444b4254d66724dd3ddb9" id="r_aa46c2d240b9444b4254d66724dd3ddb9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa46c2d240b9444b4254d66724dd3ddb9">GetTotalsCellsToConsumeValue</a> () const</td></tr>
+<tr class="memdesc:aa46c2d240b9444b4254d66724dd3ddb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached total cells to consume target.  <br /></td></tr>
 <tr class="separator:aa46c2d240b9444b4254d66724dd3ddb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423f8ce0fb095db4287fe7a286832ba6" id="r_a423f8ce0fb095db4287fe7a286832ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a423f8ce0fb095db4287fe7a286832ba6">GetCellsConsumedValue</a> () const</td></tr>
+<tr class="memdesc:a423f8ce0fb095db4287fe7a286832ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached number of cells consumed.  <br /></td></tr>
 <tr class="separator:a423f8ce0fb095db4287fe7a286832ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336088db05bfdedeb264b31a833ec20a" id="r_a336088db05bfdedeb264b31a833ec20a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a336088db05bfdedeb264b31a833ec20a">GetCubeStepCountValue</a> () const</td></tr>
+<tr class="memdesc:a336088db05bfdedeb264b31a833ec20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached cube step count.  <br /></td></tr>
 <tr class="separator:a336088db05bfdedeb264b31a833ec20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6d921dde33b7757e1b1ff25101e254" id="r_a4a6d921dde33b7757e1b1ff25101e254"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a6d921dde33b7757e1b1ff25101e254">GetTimerValue</a> () const</td></tr>
+<tr class="memdesc:a4a6d921dde33b7757e1b1ff25101e254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached timer seconds value.  <br /></td></tr>
 <tr class="separator:a4a6d921dde33b7757e1b1ff25101e254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5910648304f043d99c023b0e9f37d22b" id="r_a5910648304f043d99c023b0e9f37d22b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5910648304f043d99c023b0e9f37d22b">GetTimerMinutesValue</a> () const</td></tr>
+<tr class="memdesc:a5910648304f043d99c023b0e9f37d22b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached timer minutes value.  <br /></td></tr>
 <tr class="separator:a5910648304f043d99c023b0e9f37d22b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d9802ffb3590cfe5489816000e2a0b" id="r_a95d9802ffb3590cfe5489816000e2a0b"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95d9802ffb3590cfe5489816000e2a0b">GetStreakLevelValue</a> () const</td></tr>
+<tr class="memdesc:a95d9802ffb3590cfe5489816000e2a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached streak level identifier.  <br /></td></tr>
 <tr class="separator:a95d9802ffb3590cfe5489816000e2a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a57f1ad2bb43a366eab386559bfaac0" id="r_a9a57f1ad2bb43a366eab386559bfaac0"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a57f1ad2bb43a366eab386559bfaac0">GetLevelTypeValue</a> () const</td></tr>
+<tr class="memdesc:a9a57f1ad2bb43a366eab386559bfaac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached level type identifier.  <br /></td></tr>
 <tr class="separator:a9a57f1ad2bb43a366eab386559bfaac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab00a11ea408901ad03e1e505bbe9a617" id="r_ab00a11ea408901ad03e1e505bbe9a617"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab00a11ea408901ad03e1e505bbe9a617">GetLevelTypeGameModeValue</a> () const</td></tr>
+<tr class="memdesc:ab00a11ea408901ad03e1e505bbe9a617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cached game mode level type identifier.  <br /></td></tr>
 <tr class="separator:ab00a11ea408901ad03e1e505bbe9a617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acb744c16bdb106f4f88a2cb43398496f" id="r_acb744c16bdb106f4f88a2cb43398496f"><td class="memItemLeft" align="right" valign="top">FOnStreakValuesChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb744c16bdb106f4f88a2cb43398496f">OnStreakValuesChanged</a></td></tr>
+<tr class="memitem:acb744c16bdb106f4f88a2cb43398496f" id="r_acb744c16bdb106f4f88a2cb43398496f"><td class="memItemLeft" align="right" valign="top"><a id="acb744c16bdb106f4f88a2cb43398496f" name="acb744c16bdb106f4f88a2cb43398496f"></a>
+FOnStreakValuesChanged&#160;</td><td class="memItemRight" valign="bottom"><b>OnStreakValuesChanged</b></td></tr>
+<tr class="memdesc:acb744c16bdb106f4f88a2cb43398496f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate fired whenever streak values or the level type change. <br /></td></tr>
 <tr class="separator:acb744c16bdb106f4f88a2cb43398496f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dcc2d7ef8a154736d6c3072ebd6c6ae" id="r_a2dcc2d7ef8a154736d6c3072ebd6c6ae"><td class="memItemLeft" align="right" valign="top">FOnScoreChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2dcc2d7ef8a154736d6c3072ebd6c6ae">OnScoreChanged</a></td></tr>
+<tr class="memitem:a2dcc2d7ef8a154736d6c3072ebd6c6ae" id="r_a2dcc2d7ef8a154736d6c3072ebd6c6ae"><td class="memItemLeft" align="right" valign="top"><a id="a2dcc2d7ef8a154736d6c3072ebd6c6ae" name="a2dcc2d7ef8a154736d6c3072ebd6c6ae"></a>
+FOnScoreChanged&#160;</td><td class="memItemRight" valign="bottom"><b>OnScoreChanged</b></td></tr>
+<tr class="memdesc:a2dcc2d7ef8a154736d6c3072ebd6c6ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate fired whenever the score changes. <br /></td></tr>
 <tr class="separator:a2dcc2d7ef8a154736d6c3072ebd6c6ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36f02099975d7a7ceb62927082150b3f" id="r_a36f02099975d7a7ceb62927082150b3f"><td class="memItemLeft" align="right" valign="top">FOnTimerChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36f02099975d7a7ceb62927082150b3f">OnTimerChanged</a></td></tr>
+<tr class="memitem:a36f02099975d7a7ceb62927082150b3f" id="r_a36f02099975d7a7ceb62927082150b3f"><td class="memItemLeft" align="right" valign="top"><a id="a36f02099975d7a7ceb62927082150b3f" name="a36f02099975d7a7ceb62927082150b3f"></a>
+FOnTimerChanged&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimerChanged</b></td></tr>
+<tr class="memdesc:a36f02099975d7a7ceb62927082150b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate fired whenever the timer values (seconds and minutes) change. <br /></td></tr>
 <tr class="separator:a36f02099975d7a7ceb62927082150b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9cf10f75960cc13130b465eb4781099" id="r_ad9cf10f75960cc13130b465eb4781099"><td class="memItemLeft" align="right" valign="top">FOnCellsChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9cf10f75960cc13130b465eb4781099">OnCellsChanged</a></td></tr>
+<tr class="memitem:ad9cf10f75960cc13130b465eb4781099" id="r_ad9cf10f75960cc13130b465eb4781099"><td class="memItemLeft" align="right" valign="top"><a id="ad9cf10f75960cc13130b465eb4781099" name="ad9cf10f75960cc13130b465eb4781099"></a>
+FOnCellsChanged&#160;</td><td class="memItemRight" valign="bottom"><b>OnCellsChanged</b></td></tr>
+<tr class="memdesc:ad9cf10f75960cc13130b465eb4781099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate fired whenever cell consumption metrics change. <br /></td></tr>
 <tr class="separator:ad9cf10f75960cc13130b465eb4781099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57977c1b197c4ecc730f2381419afa05" id="r_a57977c1b197c4ecc730f2381419afa05"><td class="memItemLeft" align="right" valign="top">FOnNextCellChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57977c1b197c4ecc730f2381419afa05">OnNextCellChanged</a></td></tr>
+<tr class="memitem:a57977c1b197c4ecc730f2381419afa05" id="r_a57977c1b197c4ecc730f2381419afa05"><td class="memItemLeft" align="right" valign="top"><a id="a57977c1b197c4ecc730f2381419afa05" name="a57977c1b197c4ecc730f2381419afa05"></a>
+FOnNextCellChanged&#160;</td><td class="memItemRight" valign="bottom"><b>OnNextCellChanged</b></td></tr>
+<tr class="memdesc:a57977c1b197c4ecc730f2381419afa05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate fired whenever the next cell material to consume changes. <br /></td></tr>
 <tr class="separator:a57977c1b197c4ecc730f2381419afa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade5cdb23951e149ca6bfa9509085dae5" id="r_ade5cdb23951e149ca6bfa9509085dae5"><td class="memItemLeft" align="right" valign="top">FOnStepCountChanged&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade5cdb23951e149ca6bfa9509085dae5">OnStepCountChanged</a></td></tr>
+<tr class="memitem:ade5cdb23951e149ca6bfa9509085dae5" id="r_ade5cdb23951e149ca6bfa9509085dae5"><td class="memItemLeft" align="right" valign="top"><a id="ade5cdb23951e149ca6bfa9509085dae5" name="ade5cdb23951e149ca6bfa9509085dae5"></a>
+FOnStepCountChanged&#160;</td><td class="memItemRight" valign="bottom"><b>OnStepCountChanged</b></td></tr>
+<tr class="memdesc:ade5cdb23951e149ca6bfa9509085dae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate fired whenever the cube step count changes. <br /></td></tr>
 <tr class="separator:ade5cdb23951e149ca6bfa9509085dae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cadded1f501052fa2f0a21dfdb82897" id="r_a3cadded1f501052fa2f0a21dfdb82897"><td class="memItemLeft" align="right" valign="top">FOnLevelTypeGameMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cadded1f501052fa2f0a21dfdb82897">OnLevelTypeGameMode</a></td></tr>
+<tr class="memitem:a3cadded1f501052fa2f0a21dfdb82897" id="r_a3cadded1f501052fa2f0a21dfdb82897"><td class="memItemLeft" align="right" valign="top"><a id="a3cadded1f501052fa2f0a21dfdb82897" name="a3cadded1f501052fa2f0a21dfdb82897"></a>
+FOnLevelTypeGameMode&#160;</td><td class="memItemRight" valign="bottom"><b>OnLevelTypeGameMode</b></td></tr>
+<tr class="memdesc:a3cadded1f501052fa2f0a21dfdb82897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delegate fired whenever the game mode level type changes. <br /></td></tr>
 <tr class="separator:a3cadded1f501052fa2f0a21dfdb82897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_u_game_play_hub_subsystem.html">UGamePlayHubSubsystem</a></p>
-<p>A game instance subsystem redesigned under an Event-Driven architecture. It manages and caches gameplay HUD metrics, streaks, timers, and cells data, providing direct getters and multicast delegates to instantly update UI elements and systems without per-frame interface overhead. </p>
+<div class="textblock"><p>Game-instance service that caches gameplay HUD metrics and broadcasts updates. </p>
+<p>It manages streaks, timers, score, and cell data, exposing getters and multicast delegates so UI and gameplay systems can react to changes without polling. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aab6d4e80474f360904e776bd4e4d39a1" name="aab6d4e80474f360904e776bd4e4d39a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab6d4e80474f360904e776bd4e4d39a1">&#9670;&#160;</a></span>GetAddStreak()</h2>
@@ -210,7 +253,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the sum of all three streak levels. </p><dl class="section return"><dt>Returns</dt><dd>Total combined integer streak value. </dd></dl>
+
+<p>Returns the sum of all three streak levels. </p>
+<dl class="section return"><dt>Returns</dt><dd>Total combined integer streak value. </dd></dl>
 
 </div>
 </div>
@@ -236,7 +281,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached number of cells consumed. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of cells consumed. </dd></dl>
 
 </div>
 </div>
@@ -254,7 +301,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates and returns the charging ratio based on streak time left and total streak sum. </p><dl class="section return"><dt>Returns</dt><dd>The normalized charging value (0.0f to 1.0f+). </dd></dl>
+
+<p>Calculates and returns the charging ratio based on streak time left and total streak sum. </p>
+<dl class="section return"><dt>Returns</dt><dd>The normalized charging value (0.0f to 1.0f+). </dd></dl>
 
 </div>
 </div>
@@ -272,7 +321,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the combo ratio (maps directly to <a class="el" href="#a097fd5869a8cc6e18d6a622659d47939">GetCharging()</a>). </p><dl class="section return"><dt>Returns</dt><dd>The normalized combo value. </dd></dl>
+
+<p>Returns the combo ratio (maps directly to <a class="el" href="#a097fd5869a8cc6e18d6a622659d47939" title="Calculates and returns the charging ratio based on streak time left and total streak sum.">GetCharging()</a>). </p>
+<dl class="section return"><dt>Returns</dt><dd>The normalized combo value. </dd></dl>
 
 </div>
 </div>
@@ -298,7 +349,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached cube step count. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached cube step count. </dd></dl>
 
 </div>
 </div>
@@ -324,7 +377,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached first streak level time/value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached first streak value. </dd></dl>
 
 </div>
 </div>
@@ -350,7 +405,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached material interface for the next cell to consume. </p>
+<dl class="section return"><dt>Returns</dt><dd>Material for the next cell, or null when unavailable. </dd></dl>
 
 </div>
 </div>
@@ -376,7 +433,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached game mode level type identifier. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached game mode level type. </dd></dl>
 
 </div>
 </div>
@@ -402,7 +461,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached level type identifier. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached level type. </dd></dl>
 
 </div>
 </div>
@@ -428,7 +489,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached player score value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached score. </dd></dl>
 
 </div>
 </div>
@@ -454,7 +517,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached second streak level time/value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached second streak value. </dd></dl>
 
 </div>
 </div>
@@ -480,7 +545,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached streak level identifier. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached streak tier. </dd></dl>
 
 </div>
 </div>
@@ -506,7 +573,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached streak time left value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached remaining streak time. </dd></dl>
 
 </div>
 </div>
@@ -538,7 +607,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Retrieves all calculated streak values at once by reference parameters. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Retrieves all calculated streak values at once by reference parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Charging</td><td>[out] Output charging value. </td></tr>
     <tr><td class="paramname">Combo</td><td>[out] Output combo value. </td></tr>
@@ -564,7 +635,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates and returns the sustained streak metric incorporating the first streak weight. </p><dl class="section return"><dt>Returns</dt><dd>The calculated sustained value. </dd></dl>
+
+<p>Calculates and returns the sustained streak metric incorporating the first streak weight. </p>
+<dl class="section return"><dt>Returns</dt><dd>The calculated sustained value. </dd></dl>
 
 </div>
 </div>
@@ -590,7 +663,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached third streak level time/value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached third streak value. </dd></dl>
 
 </div>
 </div>
@@ -616,7 +691,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached timer minutes value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached timer minutes. </dd></dl>
 
 </div>
 </div>
@@ -642,7 +719,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached timer seconds value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Cached timer seconds. </dd></dl>
 
 </div>
 </div>
@@ -668,7 +747,9 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Gets the cached total cells to consume target. </p>
+<dl class="section return"><dt>Returns</dt><dd>Target cell count. </dd></dl>
 
 </div>
 </div>
@@ -686,7 +767,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculates and returns the ultra streak metric incorporating combined inner weights. </p><dl class="section return"><dt>Returns</dt><dd>The calculated ultra value. </dd></dl>
+
+<p>Calculates and returns the ultra streak metric incorporating combined inner weights. </p>
+<dl class="section return"><dt>Returns</dt><dd>The calculated ultra value. </dd></dl>
 
 </div>
 </div>
@@ -713,7 +796,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates cell data metrics and next cell material, broadcasting corresponding events. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Updates cell data metrics and next cell material, broadcasting corresponding events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">InCellsConsumed</td><td>The number of cells consumed. </td></tr>
     <tr><td class="paramname">InTotalsCellsToConsume</td><td>The total number of cells targeted for consumption. </td></tr>
@@ -738,7 +823,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates the cube step count cache and broadcasts the OnStepCountChanged event. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Updates the cube step count cache and broadcasts the OnStepCountChanged event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">InCubeStepCount</td><td>The new step count value. </td></tr>
   </table>
@@ -761,7 +848,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates the game mode level type and broadcasts the OnLevelTypeGameMode event. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Updates the game mode level type and broadcasts the OnLevelTypeGameMode event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">InLevelType</td><td>The new level type identifier. </td></tr>
   </table>
@@ -784,7 +873,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates the player score cache and broadcasts the OnScoreChanged event. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Updates the player score cache and broadcasts the OnScoreChanged event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">InScore</td><td>The new score value. </td></tr>
   </table>
@@ -826,7 +917,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates streak data and level type, caching the values and broadcasting the OnStreakValuesChanged event. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Updates streak data and level type, caching the values and broadcasting the OnStreakValuesChanged event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">InStreakTimeLeft</td><td>The remaining time for the current streak. </td></tr>
     <tr><td class="paramname">InFirstStreak</td><td>The first streak level metric. </td></tr>
@@ -857,119 +950,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Updates timer values (seconds and minutes) and broadcasts the OnTimerChanged event. </p><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Updates timer values (seconds and minutes) and broadcasts the OnTimerChanged event. </p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">InTimerValue</td><td>The new timer seconds value. </td></tr>
     <tr><td class="paramname">InTimerMinutesValue</td><td>The new timer minutes value. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad9cf10f75960cc13130b465eb4781099" name="ad9cf10f75960cc13130b465eb4781099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9cf10f75960cc13130b465eb4781099">&#9670;&#160;</a></span>OnCellsChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnCellsChanged UGamePlayHubSubsystem::OnCellsChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delegate fired whenever cell consumption metrics change. </p>
-
-</div>
-</div>
-<a id="a3cadded1f501052fa2f0a21dfdb82897" name="a3cadded1f501052fa2f0a21dfdb82897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cadded1f501052fa2f0a21dfdb82897">&#9670;&#160;</a></span>OnLevelTypeGameMode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnLevelTypeGameMode UGamePlayHubSubsystem::OnLevelTypeGameMode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delegate fired whenever the game mode level type changes. </p>
-
-</div>
-</div>
-<a id="a57977c1b197c4ecc730f2381419afa05" name="a57977c1b197c4ecc730f2381419afa05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57977c1b197c4ecc730f2381419afa05">&#9670;&#160;</a></span>OnNextCellChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnNextCellChanged UGamePlayHubSubsystem::OnNextCellChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delegate fired whenever the next cell material to consume changes. </p>
-
-</div>
-</div>
-<a id="a2dcc2d7ef8a154736d6c3072ebd6c6ae" name="a2dcc2d7ef8a154736d6c3072ebd6c6ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dcc2d7ef8a154736d6c3072ebd6c6ae">&#9670;&#160;</a></span>OnScoreChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnScoreChanged UGamePlayHubSubsystem::OnScoreChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delegate fired whenever the score changes. </p>
-
-</div>
-</div>
-<a id="ade5cdb23951e149ca6bfa9509085dae5" name="ade5cdb23951e149ca6bfa9509085dae5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade5cdb23951e149ca6bfa9509085dae5">&#9670;&#160;</a></span>OnStepCountChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnStepCountChanged UGamePlayHubSubsystem::OnStepCountChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delegate fired whenever the cube step count changes. </p>
-
-</div>
-</div>
-<a id="acb744c16bdb106f4f88a2cb43398496f" name="acb744c16bdb106f4f88a2cb43398496f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb744c16bdb106f4f88a2cb43398496f">&#9670;&#160;</a></span>OnStreakValuesChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnStreakValuesChanged UGamePlayHubSubsystem::OnStreakValuesChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delegate fired whenever streak values or the level type change. </p>
-
-</div>
-</div>
-<a id="a36f02099975d7a7ceb62927082150b3f" name="a36f02099975d7a7ceb62927082150b3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36f02099975d7a7ceb62927082150b3f">&#9670;&#160;</a></span>OnTimerChanged</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">FOnTimerChanged UGamePlayHubSubsystem::OnTimerChanged</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Delegate fired whenever the timer values (seconds and minutes) change. </p>
 
 </div>
 </div>

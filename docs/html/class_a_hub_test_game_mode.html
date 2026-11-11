@@ -112,6 +112,9 @@ $(function(){initNavTree('class_a_hub_test_game_mode.html',''); initResizable(tr
 </div><!--header-->
 <div class="contents">
 
+<p>GameMode falso solo para tests. Implementa las dos interfaces que consume <a class="el" href="class_u_game_play_hub_subsystem.html" title="Game-instance service that caches gameplay HUD metrics and broadcasts updates.">UGamePlayHubSubsystem</a> y devuelve valores fijos y modificables desde el test.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_hub_test_game_mode_8h_source.html">HubTestGameMode.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AHubTestGameMode:</div>
@@ -119,8 +122,8 @@ Inheritance diagram for AHubTestGameMode:</div>
  <div class="center">
   <img src="class_a_hub_test_game_mode.png" usemap="#AHubTestGameMode_map" alt=""/>
   <map id="AHubTestGameMode_map" name="AHubTestGameMode_map">
-<area href="class_i_challenge_progress_bar.html" alt="IChallengeProgressBar" shape="rect" coords="156,0,302,24"/>
-<area href="class_i_game_mode_data_source.html" alt="IGameModeDataSource" shape="rect" coords="312,0,458,24"/>
+<area href="class_i_challenge_progress_bar.html" title="Blueprint-native contract for exposing streak progress and the next cell material." alt="IChallengeProgressBar" shape="rect" coords="156,0,302,24"/>
+<area href="class_i_game_mode_data_source.html" title="Blueprint-native contract for reading gameplay values displayed by the HUD." alt="IGameModeDataSource" shape="rect" coords="312,0,458,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -167,31 +170,44 @@ virtual uint8&#160;</td><td class="memItemRight" valign="bottom"><b>GetLevelType
 <tr class="separator:ac34acb43b4a176fb256f280a9bd71446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i_challenge_progress_bar"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_challenge_progress_bar')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_challenge_progress_bar.html">IChallengeProgressBar</a></td></tr>
 <tr class="memitem:a9145483e235b7daf3d769e15183c65b3 inherit pub_methods_class_i_challenge_progress_bar" id="r_a9145483e235b7daf3d769e15183c65b3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_challenge_progress_bar.html#a9145483e235b7daf3d769e15183c65b3">GetStreakTimeLeft</a> ()</td></tr>
+<tr class="memdesc:a9145483e235b7daf3d769e15183c65b3 inherit pub_methods_class_i_challenge_progress_bar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the remaining time for the active streak.  <br /></td></tr>
 <tr class="separator:a9145483e235b7daf3d769e15183c65b3 inherit pub_methods_class_i_challenge_progress_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b2e6de365cc2c2934afedfb17ed151 inherit pub_methods_class_i_challenge_progress_bar" id="r_aa6b2e6de365cc2c2934afedfb17ed151"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_challenge_progress_bar.html#aa6b2e6de365cc2c2934afedfb17ed151">GetFirstStreakLevelTime</a> ()</td></tr>
+<tr class="memdesc:aa6b2e6de365cc2c2934afedfb17ed151 inherit pub_methods_class_i_challenge_progress_bar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first streak threshold or value used by the progress bar.  <br /></td></tr>
 <tr class="separator:aa6b2e6de365cc2c2934afedfb17ed151 inherit pub_methods_class_i_challenge_progress_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fbc1fbda7597488cf32ffc553b9bafc inherit pub_methods_class_i_challenge_progress_bar" id="r_a2fbc1fbda7597488cf32ffc553b9bafc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_challenge_progress_bar.html#a2fbc1fbda7597488cf32ffc553b9bafc">GetSecondStreakLevelTime</a> ()</td></tr>
+<tr class="memdesc:a2fbc1fbda7597488cf32ffc553b9bafc inherit pub_methods_class_i_challenge_progress_bar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the second streak threshold or value used by the progress bar.  <br /></td></tr>
 <tr class="separator:a2fbc1fbda7597488cf32ffc553b9bafc inherit pub_methods_class_i_challenge_progress_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ea622a94b7c3d8450a9e81aba3cb155 inherit pub_methods_class_i_challenge_progress_bar" id="r_a5ea622a94b7c3d8450a9e81aba3cb155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_challenge_progress_bar.html#a5ea622a94b7c3d8450a9e81aba3cb155">GetThirdStreakLevelTime</a> ()</td></tr>
+<tr class="memdesc:a5ea622a94b7c3d8450a9e81aba3cb155 inherit pub_methods_class_i_challenge_progress_bar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the third streak threshold or value used by the progress bar.  <br /></td></tr>
 <tr class="separator:a5ea622a94b7c3d8450a9e81aba3cb155 inherit pub_methods_class_i_challenge_progress_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73aeca0820fe83dbb7e794db59320fa5 inherit pub_methods_class_i_challenge_progress_bar" id="r_a73aeca0820fe83dbb7e794db59320fa5"><td class="memItemLeft" align="right" valign="top">UMaterialInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_challenge_progress_bar.html#a73aeca0820fe83dbb7e794db59320fa5">GetHMNextToConsumeCell</a> ()</td></tr>
+<tr class="memdesc:a73aeca0820fe83dbb7e794db59320fa5 inherit pub_methods_class_i_challenge_progress_bar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the material for the next cell that will be consumed.  <br /></td></tr>
 <tr class="separator:a73aeca0820fe83dbb7e794db59320fa5 inherit pub_methods_class_i_challenge_progress_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbdd00ca2e5b5b3e80ab6562eba5bf22 inherit pub_methods_class_i_challenge_progress_bar" id="r_abbdd00ca2e5b5b3e80ab6562eba5bf22"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_challenge_progress_bar.html#abbdd00ca2e5b5b3e80ab6562eba5bf22">GetStreakLevel</a> ()</td></tr>
+<tr class="memdesc:abbdd00ca2e5b5b3e80ab6562eba5bf22 inherit pub_methods_class_i_challenge_progress_bar"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current streak tier as its project-defined byte value.  <br /></td></tr>
 <tr class="separator:abbdd00ca2e5b5b3e80ab6562eba5bf22 inherit pub_methods_class_i_challenge_progress_bar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i_game_mode_data_source"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_i_game_mode_data_source')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_game_mode_data_source.html">IGameModeDataSource</a></td></tr>
 <tr class="memitem:a12300246d74ff05f27ecef58732db6c0 inherit pub_methods_class_i_game_mode_data_source" id="r_a12300246d74ff05f27ecef58732db6c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game_mode_data_source.html#a12300246d74ff05f27ecef58732db6c0">GetScore</a> ()</td></tr>
+<tr class="memdesc:a12300246d74ff05f27ecef58732db6c0 inherit pub_methods_class_i_game_mode_data_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current player score.  <br /></td></tr>
 <tr class="separator:a12300246d74ff05f27ecef58732db6c0 inherit pub_methods_class_i_game_mode_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9172d897fdec50985e1cd7638e636353 inherit pub_methods_class_i_game_mode_data_source" id="r_a9172d897fdec50985e1cd7638e636353"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game_mode_data_source.html#a9172d897fdec50985e1cd7638e636353">GetTotalsCellsToConsume</a> ()</td></tr>
+<tr class="memdesc:a9172d897fdec50985e1cd7638e636353 inherit pub_methods_class_i_game_mode_data_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the target number of cells as display-ready text.  <br /></td></tr>
 <tr class="separator:a9172d897fdec50985e1cd7638e636353 inherit pub_methods_class_i_game_mode_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7c2ab79c2919db4057692dc19a0bcb7 inherit pub_methods_class_i_game_mode_data_source" id="r_ac7c2ab79c2919db4057692dc19a0bcb7"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game_mode_data_source.html#ac7c2ab79c2919db4057692dc19a0bcb7">GetCellsConsumed</a> ()</td></tr>
+<tr class="memdesc:ac7c2ab79c2919db4057692dc19a0bcb7 inherit pub_methods_class_i_game_mode_data_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of consumed cells as display-ready text.  <br /></td></tr>
 <tr class="separator:ac7c2ab79c2919db4057692dc19a0bcb7 inherit pub_methods_class_i_game_mode_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d2ef862156e5cad395410b1820b591 inherit pub_methods_class_i_game_mode_data_source" id="r_ad7d2ef862156e5cad395410b1820b591"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game_mode_data_source.html#ad7d2ef862156e5cad395410b1820b591">GetCubeStepCount</a> ()</td></tr>
+<tr class="memdesc:ad7d2ef862156e5cad395410b1820b591 inherit pub_methods_class_i_game_mode_data_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current cube step count.  <br /></td></tr>
 <tr class="separator:ad7d2ef862156e5cad395410b1820b591 inherit pub_methods_class_i_game_mode_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a761cd5fffbd0f738a69a4a6c4dd53824 inherit pub_methods_class_i_game_mode_data_source" id="r_a761cd5fffbd0f738a69a4a6c4dd53824"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game_mode_data_source.html#a761cd5fffbd0f738a69a4a6c4dd53824">GetTimerValue</a> ()</td></tr>
+<tr class="memdesc:a761cd5fffbd0f738a69a4a6c4dd53824 inherit pub_methods_class_i_game_mode_data_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timer seconds component as display-ready text.  <br /></td></tr>
 <tr class="separator:a761cd5fffbd0f738a69a4a6c4dd53824 inherit pub_methods_class_i_game_mode_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10200b0b05a74bc2c39f9ef2a3e2306f inherit pub_methods_class_i_game_mode_data_source" id="r_a10200b0b05a74bc2c39f9ef2a3e2306f"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game_mode_data_source.html#a10200b0b05a74bc2c39f9ef2a3e2306f">GetTimerMinutesValue</a> ()</td></tr>
+<tr class="memdesc:a10200b0b05a74bc2c39f9ef2a3e2306f inherit pub_methods_class_i_game_mode_data_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timer minutes component as display-ready text.  <br /></td></tr>
 <tr class="separator:a10200b0b05a74bc2c39f9ef2a3e2306f inherit pub_methods_class_i_game_mode_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39366d453225a02b454f441de570854e inherit pub_methods_class_i_game_mode_data_source" id="r_a39366d453225a02b454f441de570854e"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_game_mode_data_source.html#a39366d453225a02b454f441de570854e">GetLevelTypeValue</a> ()</td></tr>
+<tr class="memdesc:a39366d453225a02b454f441de570854e inherit pub_methods_class_i_game_mode_data_source"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current level type as its project-defined byte value.  <br /></td></tr>
 <tr class="separator:a39366d453225a02b454f441de570854e inherit pub_methods_class_i_game_mode_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -234,7 +250,7 @@ uint8&#160;</td><td class="memItemRight" valign="bottom"><b>LevelType</b> = 1</t
 <tr class="separator:a98a130819e61ae1903a22e95c17b13e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GameMode falso solo para tests. Implementa las dos interfaces que consume <a class="el" href="class_u_game_play_hub_subsystem.html">UGamePlayHubSubsystem</a> y devuelve valores fijos y modificables desde el test.</p>
+<div class="textblock"><p>GameMode falso solo para tests. Implementa las dos interfaces que consume <a class="el" href="class_u_game_play_hub_subsystem.html" title="Game-instance service that caches gameplay HUD metrics and broadcasts updates.">UGamePlayHubSubsystem</a> y devuelve valores fijos y modificables desde el test. </p>
 <p>SUPUESTOS (si el compilador se queja en los override, revisar esto en las interfaces):</p><ul>
 <li>Todas las funciones son BlueprintNativeEvent (si alguna es BlueprintImplementableEvent no existe _Implementation y este mock tendria que ser un Blueprint).</li>
 <li>Ninguna es const (si lo son, agregar const a los override).</li>

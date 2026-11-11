@@ -110,32 +110,45 @@ $(function(){initNavTree('class_i_challenge_progress_bar.html',''); initResizabl
   <div class="headertitle"><div class="title">IChallengeProgressBar Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Blueprint-native contract for exposing streak progress and the next cell material.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_i_challenge_progress_bar_8h_source.html">IChallengeProgressBar.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for IChallengeProgressBar:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_i_challenge_progress_bar.png" usemap="#IChallengeProgressBar_map" alt=""/>
   <map id="IChallengeProgressBar_map" name="IChallengeProgressBar_map">
-<area href="class_a_hub_test_game_mode.html" alt="AHubTestGameMode" shape="rect" coords="0,56,143,80"/>
+<area href="class_a_hub_test_game_mode.html" title="GameMode falso solo para tests. Implementa las dos interfaces que consume UGamePlayHubSubsystem y dev..." alt="AHubTestGameMode" shape="rect" coords="0,56,143,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9145483e235b7daf3d769e15183c65b3" id="r_a9145483e235b7daf3d769e15183c65b3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9145483e235b7daf3d769e15183c65b3">GetStreakTimeLeft</a> ()</td></tr>
+<tr class="memdesc:a9145483e235b7daf3d769e15183c65b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the remaining time for the active streak.  <br /></td></tr>
 <tr class="separator:a9145483e235b7daf3d769e15183c65b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b2e6de365cc2c2934afedfb17ed151" id="r_aa6b2e6de365cc2c2934afedfb17ed151"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6b2e6de365cc2c2934afedfb17ed151">GetFirstStreakLevelTime</a> ()</td></tr>
+<tr class="memdesc:aa6b2e6de365cc2c2934afedfb17ed151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first streak threshold or value used by the progress bar.  <br /></td></tr>
 <tr class="separator:aa6b2e6de365cc2c2934afedfb17ed151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fbc1fbda7597488cf32ffc553b9bafc" id="r_a2fbc1fbda7597488cf32ffc553b9bafc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fbc1fbda7597488cf32ffc553b9bafc">GetSecondStreakLevelTime</a> ()</td></tr>
+<tr class="memdesc:a2fbc1fbda7597488cf32ffc553b9bafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the second streak threshold or value used by the progress bar.  <br /></td></tr>
 <tr class="separator:a2fbc1fbda7597488cf32ffc553b9bafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ea622a94b7c3d8450a9e81aba3cb155" id="r_a5ea622a94b7c3d8450a9e81aba3cb155"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ea622a94b7c3d8450a9e81aba3cb155">GetThirdStreakLevelTime</a> ()</td></tr>
+<tr class="memdesc:a5ea622a94b7c3d8450a9e81aba3cb155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the third streak threshold or value used by the progress bar.  <br /></td></tr>
 <tr class="separator:a5ea622a94b7c3d8450a9e81aba3cb155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73aeca0820fe83dbb7e794db59320fa5" id="r_a73aeca0820fe83dbb7e794db59320fa5"><td class="memItemLeft" align="right" valign="top">UMaterialInterface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73aeca0820fe83dbb7e794db59320fa5">GetHMNextToConsumeCell</a> ()</td></tr>
+<tr class="memdesc:a73aeca0820fe83dbb7e794db59320fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the material for the next cell that will be consumed.  <br /></td></tr>
 <tr class="separator:a73aeca0820fe83dbb7e794db59320fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbdd00ca2e5b5b3e80ab6562eba5bf22" id="r_abbdd00ca2e5b5b3e80ab6562eba5bf22"><td class="memItemLeft" align="right" valign="top">uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbdd00ca2e5b5b3e80ab6562eba5bf22">GetStreakLevel</a> ()</td></tr>
+<tr class="memdesc:abbdd00ca2e5b5b3e80ab6562eba5bf22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current streak tier as its project-defined byte value.  <br /></td></tr>
 <tr class="separator:abbdd00ca2e5b5b3e80ab6562eba5bf22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Blueprint-native contract for exposing streak progress and the next cell material. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa6b2e6de365cc2c2934afedfb17ed151" name="aa6b2e6de365cc2c2934afedfb17ed151"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6b2e6de365cc2c2934afedfb17ed151">&#9670;&#160;</a></span>GetFirstStreakLevelTime()</h2>
 
@@ -150,7 +163,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the first streak threshold or value used by the progress bar. </p>
+<dl class="section return"><dt>Returns</dt><dd>First streak threshold or value. </dd></dl>
 
 </div>
 </div>
@@ -168,7 +183,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the material for the next cell that will be consumed. </p>
+<dl class="section return"><dt>Returns</dt><dd>Material interface for the next cell, or null when unavailable. </dd></dl>
 
 </div>
 </div>
@@ -186,7 +203,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the second streak threshold or value used by the progress bar. </p>
+<dl class="section return"><dt>Returns</dt><dd>Second streak threshold or value. </dd></dl>
 
 </div>
 </div>
@@ -204,7 +223,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the current streak tier as its project-defined byte value. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current streak tier. </dd></dl>
 
 </div>
 </div>
@@ -222,7 +243,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the remaining time for the active streak. </p>
+<dl class="section return"><dt>Returns</dt><dd>Remaining streak time. </dd></dl>
 
 </div>
 </div>
@@ -240,7 +263,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the third streak threshold or value used by the progress bar. </p>
+<dl class="section return"><dt>Returns</dt><dd>Third streak threshold or value. </dd></dl>
 
 </div>
 </div>

@@ -111,6 +111,9 @@ $(function(){initNavTree('class_f_sub_systems_infinity_pathways_module.html','')
 </div><!--header-->
 <div class="contents">
 
+<p>Implements startup and shutdown hooks for the <a class="el" href="class_sub_systems_infinity_pathways.html">SubSystemsInfinityPathways</a> module.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_sub_systems_infinity_pathways_8h_source.html">SubSystemsInfinityPathways.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for FSubSystemsInfinityPathwaysModule:</div>
@@ -121,67 +124,18 @@ Inheritance diagram for FSubSystemsInfinityPathwaysModule:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4c9129e2d1d13ea724f1084967bcade5" id="r_a4c9129e2d1d13ea724f1084967bcade5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c9129e2d1d13ea724f1084967bcade5">StartupModule</a> () override</td></tr>
+<tr class="memitem:a4c9129e2d1d13ea724f1084967bcade5" id="r_a4c9129e2d1d13ea724f1084967bcade5"><td class="memItemLeft" align="right" valign="top"><a id="a4c9129e2d1d13ea724f1084967bcade5" name="a4c9129e2d1d13ea724f1084967bcade5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>StartupModule</b> () override</td></tr>
+<tr class="memdesc:a4c9129e2d1d13ea724f1084967bcade5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers module-level startup behavior. <br /></td></tr>
 <tr class="separator:a4c9129e2d1d13ea724f1084967bcade5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cab0a33ff4429e1226c397148898865" id="r_a0cab0a33ff4429e1226c397148898865"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cab0a33ff4429e1226c397148898865">ShutdownModule</a> () override</td></tr>
+<tr class="memitem:a0cab0a33ff4429e1226c397148898865" id="r_a0cab0a33ff4429e1226c397148898865"><td class="memItemLeft" align="right" valign="top"><a id="a0cab0a33ff4429e1226c397148898865" name="a0cab0a33ff4429e1226c397148898865"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ShutdownModule</b> () override</td></tr>
+<tr class="memdesc:a0cab0a33ff4429e1226c397148898865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases module-level resources during shutdown. <br /></td></tr>
 <tr class="separator:a0cab0a33ff4429e1226c397148898865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implements startup and shutdown hooks for the <a class="el" href="class_sub_systems_infinity_pathways.html">SubSystemsInfinityPathways</a> module. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0cab0a33ff4429e1226c397148898865" name="a0cab0a33ff4429e1226c397148898865"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cab0a33ff4429e1226c397148898865">&#9670;&#160;</a></span>ShutdownModule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FSubSystemsInfinityPathwaysModule::ShutdownModule </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Releases module-level resources during shutdown. </p>
-
-</div>
-</div>
-<a id="a4c9129e2d1d13ea724f1084967bcade5" name="a4c9129e2d1d13ea724f1084967bcade5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c9129e2d1d13ea724f1084967bcade5">&#9670;&#160;</a></span>StartupModule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void FSubSystemsInfinityPathwaysModule::StartupModule </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Registers module-level startup behavior. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Public/<a class="el" href="_sub_systems_infinity_pathways_8h_source.html">SubSystemsInfinityPathways.h</a></li>
 <li>C:/Dev/Plugins/SubSystemsInfinityPathways/Source/SubSystemsInfinityPathways/Private/<b>SubSystemsInfinityPathways.cpp</b></li>
 </ul>

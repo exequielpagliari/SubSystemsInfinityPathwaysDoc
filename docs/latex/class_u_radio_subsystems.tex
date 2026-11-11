@@ -2,6 +2,11 @@
 \hypertarget{class_u_radio_subsystems}{}\label{class_u_radio_subsystems}\index{URadioSubsystems@{URadioSubsystems}}
 
 
+Abstract game-\/instance service for loading stations and controlling radio playback.  
+
+
+
+
 {\ttfamily \#include $<$Radio\+Subsystems.\+h$>$}
 
 Inheritance diagram for URadio\+Subsystems\+:\begin{figure}[H]
@@ -13,51 +18,61 @@ Inheritance diagram for URadio\+Subsystems\+:\begin{figure}[H]
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918}{URadio\+Subsystems}} ()
-\item 
+\Hypertarget{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918}\label{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918} 
+{\bfseries URadio\+Subsystems} ()
+\begin{DoxyCompactList}\small\item\em Creates the radio subsystem and its playback state. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_u_radio_subsystems_a866ee4a936d6eef1023eb0279ce44948}{Initialize}} (FSubsystem\+Collection\+Base \&Collection) override
-\item 
-virtual void \mbox{\hyperlink{class_u_radio_subsystems_a40ff6b226a94f9dfadaa0807c5b36050}{Deinitialize}} () override
-\item 
-void \mbox{\hyperlink{class_u_radio_subsystems_a21d25637b529c0c968247cd93625de24}{Init}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes radio playback resources for the game instance. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_a40ff6b226a94f9dfadaa0807c5b36050}\label{class_u_radio_subsystems_a40ff6b226a94f9dfadaa0807c5b36050} 
+virtual void {\bfseries Deinitialize} () override
+\begin{DoxyCompactList}\small\item\em Stops playback and releases resources owned by the subsystem. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_a21d25637b529c0c968247cd93625de24}\label{class_u_radio_subsystems_a21d25637b529c0c968247cd93625de24} 
+void {\bfseries Init} ()
+\begin{DoxyCompactList}\small\item\em Initializes station data and selects the initial playback state. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_radio_subsystems_ab7c26aa60658260922303e6796602e17}{Play\+Sound}} (USound\+Wave \texorpdfstring{$\ast$}{*}Sound)
-\item 
+\begin{DoxyCompactList}\small\item\em Plays the supplied sound wave through the radio audio component. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_u_radio_subsystems_ae7f5d9523d751c3ea365380e3c9cfd75}{Get\+Radio\+Index}} ()
-\item 
-void \mbox{\hyperlink{class_u_radio_subsystems_ac7a3ba2b771c1255f70bdaed7e3c5df8}{Next}} ()
-\item 
-void \mbox{\hyperlink{class_u_radio_subsystems_afebdffda51df63056fffba8956602d42}{Previous}} ()
-\item 
-void \mbox{\hyperlink{class_u_radio_subsystems_a19a9e554390087670e1429dec2e198d8}{On\+Song\+Finished}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the index of the currently selected radio station. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_ac7a3ba2b771c1255f70bdaed7e3c5df8}\label{class_u_radio_subsystems_ac7a3ba2b771c1255f70bdaed7e3c5df8} 
+void {\bfseries Next} ()
+\begin{DoxyCompactList}\small\item\em Advances playback to the next available station or track. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_afebdffda51df63056fffba8956602d42}\label{class_u_radio_subsystems_afebdffda51df63056fffba8956602d42} 
+void {\bfseries Previous} ()
+\begin{DoxyCompactList}\small\item\em Moves playback to the previous available station or track. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_a19a9e554390087670e1429dec2e198d8}\label{class_u_radio_subsystems_a19a9e554390087670e1429dec2e198d8} 
+void {\bfseries On\+Song\+Finished} ()
+\begin{DoxyCompactList}\small\item\em Handles completion of the current song and advances playback. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_radio_subsystems_aa09e527ef8836d57959b13863d099e53}{Mute\+Audio}} (bool b\+Mute)
-\item 
-\Hypertarget{class_u_radio_subsystems_a2de78ac731ef81cec46e1a331c2ff161}\label{class_u_radio_subsystems_a2de78ac731ef81cec46e1a331c2ff161} 
-void {\bfseries Set\+Radio} (int Radio\+Index)
-\item 
+\begin{DoxyCompactList}\small\item\em Mutes or unmutes radio output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_radio_subsystems_a2de78ac731ef81cec46e1a331c2ff161}{Set\+Radio}} (int Radio\+Index)
+\begin{DoxyCompactList}\small\item\em Selects the station at the specified index. \end{DoxyCompactList}\item 
 \Hypertarget{class_u_radio_subsystems_a2c905db61685bdae1debbd22925ec3e6}\label{class_u_radio_subsystems_a2c905db61685bdae1debbd22925ec3e6} 
 void {\bfseries Set\+Random\+Song} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Selects a random song from the current station. \end{DoxyCompactList}\item 
 \Hypertarget{class_u_radio_subsystems_aa190fe16b258303f3358f3858054dfbc}\label{class_u_radio_subsystems_aa190fe16b258303f3358f3858054dfbc} 
 void {\bfseries Set\+Radio\+Wave\+Parameter} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the Meta\+Sound radio-\/wave parameter for the current station. \end{DoxyCompactList}\item 
 \Hypertarget{class_u_radio_subsystems_adde572f64398b9f77a1bbae2a1f1f22a}\label{class_u_radio_subsystems_adde572f64398b9f77a1bbae2a1f1f22a} 
 void {\bfseries Set\+Default\+Radio\+Song} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Selects the configured default radio song. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-TSoft\+Object\+Ptr$<$ USound\+Wave $>$ \mbox{\hyperlink{class_u_radio_subsystems_a17158c8b5ccc6e3fd0f19e84c2175116}{Initial\+Music}}
-\item 
-TObject\+Ptr$<$ UAudio\+Component $>$ \mbox{\hyperlink{class_u_radio_subsystems_a3092021274485a2a54f7b0b3907c6e91}{Audio\+Comp}}
-\item 
-TArray$<$ TObject\+Ptr$<$ \mbox{\hyperlink{class_u_radio_data_asset}{URadio\+Data\+Asset}} $>$ $>$ \mbox{\hyperlink{class_u_radio_subsystems_a4821eba47bd5f04ef14c03d42d1f813c}{Radio\+List\+Loaded}}
-\item 
-TArray$<$ TObject\+Ptr$<$ USound\+Wave $>$ $>$ \mbox{\hyperlink{class_u_radio_subsystems_a23c262ae170a4cf82ca8893a8e3ef1c3}{Radio\+Songs}}
-\item 
-TObject\+Ptr$<$ USound\+Base $>$ \mbox{\hyperlink{class_u_radio_subsystems_af06827cd24a697889a1408f25e814e08}{MS\+\_\+\+Soundtracks}}
-\item 
+\Hypertarget{class_u_radio_subsystems_a17158c8b5ccc6e3fd0f19e84c2175116}\label{class_u_radio_subsystems_a17158c8b5ccc6e3fd0f19e84c2175116} 
+TSoft\+Object\+Ptr$<$ USound\+Wave $>$ {\bfseries Initial\+Music}
+\begin{DoxyCompactList}\small\item\em Optional sound wave selected as the initial music asset. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_a3092021274485a2a54f7b0b3907c6e91}\label{class_u_radio_subsystems_a3092021274485a2a54f7b0b3907c6e91} 
+TObject\+Ptr$<$ UAudio\+Component $>$ {\bfseries Audio\+Comp}
+\begin{DoxyCompactList}\small\item\em Audio component that plays the currently selected radio track. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_a4821eba47bd5f04ef14c03d42d1f813c}\label{class_u_radio_subsystems_a4821eba47bd5f04ef14c03d42d1f813c} 
+TArray$<$ TObject\+Ptr$<$ \mbox{\hyperlink{class_u_radio_data_asset}{URadio\+Data\+Asset}} $>$ $>$ {\bfseries Radio\+List\+Loaded}
+\begin{DoxyCompactList}\small\item\em Station assets discovered or assigned for this subsystem. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_a23c262ae170a4cf82ca8893a8e3ef1c3}\label{class_u_radio_subsystems_a23c262ae170a4cf82ca8893a8e3ef1c3} 
+TArray$<$ TObject\+Ptr$<$ USound\+Wave $>$ $>$ {\bfseries Radio\+Songs}
+\begin{DoxyCompactList}\small\item\em Tracks currently available to the radio playback logic. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_radio_subsystems_af06827cd24a697889a1408f25e814e08}\label{class_u_radio_subsystems_af06827cd24a697889a1408f25e814e08} 
+TObject\+Ptr$<$ USound\+Base $>$ {\bfseries MS\+\_\+\+Soundtracks}
+\begin{DoxyCompactList}\small\item\em Meta\+Sound asset used for radio soundtrack output and parameters. \end{DoxyCompactList}\item 
 \Hypertarget{class_u_radio_subsystems_a1778d3d95a6499b08e57511b07a812db}\label{class_u_radio_subsystems_a1778d3d95a6499b08e57511b07a812db} 
 int {\bfseries Current\+Radio\+Index} = 0
 \item 
@@ -75,104 +90,81 @@ int {\bfseries Min\+Index\+Radio} = 0
 \doxysubsection{Detailed Description}
 Abstract game-\/instance service for loading stations and controlling radio playback. 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918}\index{URadioSubsystems@{URadioSubsystems}!URadioSubsystems@{URadioSubsystems}}
-\index{URadioSubsystems@{URadioSubsystems}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{URadioSubsystems()}{URadioSubsystems()}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_ad0cb142556ea77891512a53982685918} 
-URadio\+Subsystems\+::\+URadio\+Subsystems (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
-
-Creates the radio subsystem and its playback state. 
-
 \doxysubsection{Member Function Documentation}
-\Hypertarget{class_u_radio_subsystems_a40ff6b226a94f9dfadaa0807c5b36050}\index{URadioSubsystems@{URadioSubsystems}!Deinitialize@{Deinitialize}}
-\index{Deinitialize@{Deinitialize}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{Deinitialize()}{Deinitialize()}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_a40ff6b226a94f9dfadaa0807c5b36050} 
-void URadio\+Subsystems\+::\+Deinitialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-Stops playback and releases resources owned by the subsystem. \Hypertarget{class_u_radio_subsystems_ae7f5d9523d751c3ea365380e3c9cfd75}\index{URadioSubsystems@{URadioSubsystems}!GetRadioIndex@{GetRadioIndex}}
+\Hypertarget{class_u_radio_subsystems_ae7f5d9523d751c3ea365380e3c9cfd75}\index{URadioSubsystems@{URadioSubsystems}!GetRadioIndex@{GetRadioIndex}}
 \index{GetRadioIndex@{GetRadioIndex}!URadioSubsystems@{URadioSubsystems}}
 \doxysubsubsection{\texorpdfstring{GetRadioIndex()}{GetRadioIndex()}}
 {\footnotesize\ttfamily \label{class_u_radio_subsystems_ae7f5d9523d751c3ea365380e3c9cfd75} 
 int URadio\+Subsystems\+::\+Get\+Radio\+Index (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Returns the index of the currently selected radio station. \Hypertarget{class_u_radio_subsystems_a21d25637b529c0c968247cd93625de24}\index{URadioSubsystems@{URadioSubsystems}!Init@{Init}}
-\index{Init@{Init}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_a21d25637b529c0c968247cd93625de24} 
-void URadio\+Subsystems\+::\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Initializes station data and selects the initial playback state. \Hypertarget{class_u_radio_subsystems_a866ee4a936d6eef1023eb0279ce44948}\index{URadioSubsystems@{URadioSubsystems}!Initialize@{Initialize}}
+
+Returns the index of the currently selected radio station. 
+
+\begin{DoxyReturn}{Returns}
+Current station index. 
+\end{DoxyReturn}
+\Hypertarget{class_u_radio_subsystems_a866ee4a936d6eef1023eb0279ce44948}\index{URadioSubsystems@{URadioSubsystems}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!URadioSubsystems@{URadioSubsystems}}
 \doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
 {\footnotesize\ttfamily \label{class_u_radio_subsystems_a866ee4a936d6eef1023eb0279ce44948} 
 void URadio\+Subsystems\+::\+Initialize (\begin{DoxyParamCaption}\item[{FSubsystem\+Collection\+Base \&}]{Collection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Initializes radio playback resources for the game instance. \Hypertarget{class_u_radio_subsystems_aa09e527ef8836d57959b13863d099e53}\index{URadioSubsystems@{URadioSubsystems}!MuteAudio@{MuteAudio}}
+
+
+Initializes radio playback resources for the game instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection} & Subsystem collection used to initialize dependencies. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_radio_subsystems_aa09e527ef8836d57959b13863d099e53}\index{URadioSubsystems@{URadioSubsystems}!MuteAudio@{MuteAudio}}
 \index{MuteAudio@{MuteAudio}!URadioSubsystems@{URadioSubsystems}}
 \doxysubsubsection{\texorpdfstring{MuteAudio()}{MuteAudio()}}
 {\footnotesize\ttfamily \label{class_u_radio_subsystems_aa09e527ef8836d57959b13863d099e53} 
 void URadio\+Subsystems\+::\+Mute\+Audio (\begin{DoxyParamCaption}\item[{bool}]{b\+Mute}{}\end{DoxyParamCaption})}
 
-Mutes or unmutes radio output. \Hypertarget{class_u_radio_subsystems_ac7a3ba2b771c1255f70bdaed7e3c5df8}\index{URadioSubsystems@{URadioSubsystems}!Next@{Next}}
-\index{Next@{Next}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{Next()}{Next()}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_ac7a3ba2b771c1255f70bdaed7e3c5df8} 
-void URadio\+Subsystems\+::\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Advances playback to the next available station or track. \Hypertarget{class_u_radio_subsystems_a19a9e554390087670e1429dec2e198d8}\index{URadioSubsystems@{URadioSubsystems}!OnSongFinished@{OnSongFinished}}
-\index{OnSongFinished@{OnSongFinished}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{OnSongFinished()}{OnSongFinished()}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_a19a9e554390087670e1429dec2e198d8} 
-void URadio\+Subsystems\+::\+On\+Song\+Finished (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Handles completion of the current song and advances playback. \Hypertarget{class_u_radio_subsystems_ab7c26aa60658260922303e6796602e17}\index{URadioSubsystems@{URadioSubsystems}!PlaySound@{PlaySound}}
+Mutes or unmutes radio output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b\+Mute} & True to mute the radio; false to restore audio. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_radio_subsystems_ab7c26aa60658260922303e6796602e17}\index{URadioSubsystems@{URadioSubsystems}!PlaySound@{PlaySound}}
 \index{PlaySound@{PlaySound}!URadioSubsystems@{URadioSubsystems}}
 \doxysubsubsection{\texorpdfstring{PlaySound()}{PlaySound()}}
 {\footnotesize\ttfamily \label{class_u_radio_subsystems_ab7c26aa60658260922303e6796602e17} 
 void URadio\+Subsystems\+::\+Play\+Sound (\begin{DoxyParamCaption}\item[{USound\+Wave \texorpdfstring{$\ast$}{*}}]{Sound}{}\end{DoxyParamCaption})}
 
-Plays the supplied sound wave through the radio audio component. \Hypertarget{class_u_radio_subsystems_afebdffda51df63056fffba8956602d42}\index{URadioSubsystems@{URadioSubsystems}!Previous@{Previous}}
-\index{Previous@{Previous}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{Previous()}{Previous()}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_afebdffda51df63056fffba8956602d42} 
-void URadio\+Subsystems\+::\+Previous (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Moves playback to the previous available station or track. 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_u_radio_subsystems_a3092021274485a2a54f7b0b3907c6e91}\index{URadioSubsystems@{URadioSubsystems}!AudioComp@{AudioComp}}
-\index{AudioComp@{AudioComp}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{AudioComp}{AudioComp}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_a3092021274485a2a54f7b0b3907c6e91} 
-TObject\+Ptr$<$UAudio\+Component$>$ URadio\+Subsystems\+::\+Audio\+Comp}
+Plays the supplied sound wave through the radio audio component. 
 
-Audio component that plays the currently selected radio track. \Hypertarget{class_u_radio_subsystems_a17158c8b5ccc6e3fd0f19e84c2175116}\index{URadioSubsystems@{URadioSubsystems}!InitialMusic@{InitialMusic}}
-\index{InitialMusic@{InitialMusic}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{InitialMusic}{InitialMusic}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_a17158c8b5ccc6e3fd0f19e84c2175116} 
-TSoft\+Object\+Ptr$<$USound\+Wave$>$ URadio\+Subsystems\+::\+Initial\+Music}
 
-Optional sound wave selected as the initial music asset. \Hypertarget{class_u_radio_subsystems_af06827cd24a697889a1408f25e814e08}\index{URadioSubsystems@{URadioSubsystems}!MS\_Soundtracks@{MS\_Soundtracks}}
-\index{MS\_Soundtracks@{MS\_Soundtracks}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{MS\_Soundtracks}{MS\_Soundtracks}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_af06827cd24a697889a1408f25e814e08} 
-TObject\+Ptr$<$USound\+Base$>$ URadio\+Subsystems\+::\+MS\+\_\+\+Soundtracks}
+\begin{DoxyParams}{Parameters}
+{\em Sound} & Sound wave to play. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_radio_subsystems_a2de78ac731ef81cec46e1a331c2ff161}\index{URadioSubsystems@{URadioSubsystems}!SetRadio@{SetRadio}}
+\index{SetRadio@{SetRadio}!URadioSubsystems@{URadioSubsystems}}
+\doxysubsubsection{\texorpdfstring{SetRadio()}{SetRadio()}}
+{\footnotesize\ttfamily \label{class_u_radio_subsystems_a2de78ac731ef81cec46e1a331c2ff161} 
+void URadio\+Subsystems\+::\+Set\+Radio (\begin{DoxyParamCaption}\item[{int}]{Radio\+Index}{}\end{DoxyParamCaption})}
 
-Meta\+Sound asset used for radio soundtrack output and parameters. \Hypertarget{class_u_radio_subsystems_a4821eba47bd5f04ef14c03d42d1f813c}\index{URadioSubsystems@{URadioSubsystems}!RadioListLoaded@{RadioListLoaded}}
-\index{RadioListLoaded@{RadioListLoaded}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{RadioListLoaded}{RadioListLoaded}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_a4821eba47bd5f04ef14c03d42d1f813c} 
-TArray$<$TObject\+Ptr$<$\mbox{\hyperlink{class_u_radio_data_asset}{URadio\+Data\+Asset}}$>$ $>$ URadio\+Subsystems\+::\+Radio\+List\+Loaded}
 
-Station assets discovered or assigned for this subsystem. \Hypertarget{class_u_radio_subsystems_a23c262ae170a4cf82ca8893a8e3ef1c3}\index{URadioSubsystems@{URadioSubsystems}!RadioSongs@{RadioSongs}}
-\index{RadioSongs@{RadioSongs}!URadioSubsystems@{URadioSubsystems}}
-\doxysubsubsection{\texorpdfstring{RadioSongs}{RadioSongs}}
-{\footnotesize\ttfamily \label{class_u_radio_subsystems_a23c262ae170a4cf82ca8893a8e3ef1c3} 
-TArray$<$TObject\+Ptr$<$USound\+Wave$>$ $>$ URadio\+Subsystems\+::\+Radio\+Songs}
 
-Tracks currently available to the radio playback logic. 
+Selects the station at the specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Radio\+Index} & Index of the station to select. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

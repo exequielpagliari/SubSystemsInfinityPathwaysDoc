@@ -2,6 +2,11 @@
 \hypertarget{class_f_sub_systems_infinity_pathways_module}{}\label{class_f_sub_systems_infinity_pathways_module}\index{FSubSystemsInfinityPathwaysModule@{FSubSystemsInfinityPathwaysModule}}
 
 
+Implements startup and shutdown hooks for the \doxylink{class_sub_systems_infinity_pathways}{Sub\+Systems\+Infinity\+Pathways} module.  
+
+
+
+
 {\ttfamily \#include $<$Sub\+Systems\+Infinity\+Pathways.\+h$>$}
 
 Inheritance diagram for FSub\+Systems\+Infinity\+Pathways\+Module\+:\begin{figure}[H]
@@ -13,29 +18,16 @@ Inheritance diagram for FSub\+Systems\+Infinity\+Pathways\+Module\+:\begin{figur
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{class_f_sub_systems_infinity_pathways_module_a4c9129e2d1d13ea724f1084967bcade5}{Startup\+Module}} () override
-\item 
-virtual void \mbox{\hyperlink{class_f_sub_systems_infinity_pathways_module_a0cab0a33ff4429e1226c397148898865}{Shutdown\+Module}} () override
-\end{DoxyCompactItemize}
+\Hypertarget{class_f_sub_systems_infinity_pathways_module_a4c9129e2d1d13ea724f1084967bcade5}\label{class_f_sub_systems_infinity_pathways_module_a4c9129e2d1d13ea724f1084967bcade5} 
+virtual void {\bfseries Startup\+Module} () override
+\begin{DoxyCompactList}\small\item\em Registers module-\/level startup behavior. \end{DoxyCompactList}\item 
+\Hypertarget{class_f_sub_systems_infinity_pathways_module_a0cab0a33ff4429e1226c397148898865}\label{class_f_sub_systems_infinity_pathways_module_a0cab0a33ff4429e1226c397148898865} 
+virtual void {\bfseries Shutdown\+Module} () override
+\begin{DoxyCompactList}\small\item\em Releases module-\/level resources during shutdown. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Implements startup and shutdown hooks for the \doxylink{class_sub_systems_infinity_pathways}{Sub\+Systems\+Infinity\+Pathways} module. 
-
-\doxysubsection{Member Function Documentation}
-\Hypertarget{class_f_sub_systems_infinity_pathways_module_a0cab0a33ff4429e1226c397148898865}\index{FSubSystemsInfinityPathwaysModule@{FSubSystemsInfinityPathwaysModule}!ShutdownModule@{ShutdownModule}}
-\index{ShutdownModule@{ShutdownModule}!FSubSystemsInfinityPathwaysModule@{FSubSystemsInfinityPathwaysModule}}
-\doxysubsubsection{\texorpdfstring{ShutdownModule()}{ShutdownModule()}}
-{\footnotesize\ttfamily \label{class_f_sub_systems_infinity_pathways_module_a0cab0a33ff4429e1226c397148898865} 
-void FSub\+Systems\+Infinity\+Pathways\+Module\+::\+Shutdown\+Module (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-Releases module-\/level resources during shutdown. \Hypertarget{class_f_sub_systems_infinity_pathways_module_a4c9129e2d1d13ea724f1084967bcade5}\index{FSubSystemsInfinityPathwaysModule@{FSubSystemsInfinityPathwaysModule}!StartupModule@{StartupModule}}
-\index{StartupModule@{StartupModule}!FSubSystemsInfinityPathwaysModule@{FSubSystemsInfinityPathwaysModule}}
-\doxysubsubsection{\texorpdfstring{StartupModule()}{StartupModule()}}
-{\footnotesize\ttfamily \label{class_f_sub_systems_infinity_pathways_module_a4c9129e2d1d13ea724f1084967bcade5} 
-void FSub\+Systems\+Infinity\+Pathways\+Module\+::\+Startup\+Module (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
-
-Registers module-\/level startup behavior. 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

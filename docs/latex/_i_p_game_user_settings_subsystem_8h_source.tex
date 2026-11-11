@@ -14,73 +14,73 @@
 \DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem}{UIPGameUserSettingsSubsystem}};}
 \DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_u_i_p_game_user_settings}{UIPGameUserSettings}};}
 \DoxyCodeLine{00012\ }
-\DoxyCodeLine{00017\ UCLASS()}
-\DoxyCodeLine{00018\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem}{UIPGameUserSettingsSubsystem}}\ :\ public\ UGameInstanceSubsystem}
-\DoxyCodeLine{00019\ \{}
-\DoxyCodeLine{00020\ \ \ \ \ GENERATED\_BODY()}
-\DoxyCodeLine{00021\ }
-\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_adfda2b86c14ed1c5dbec46c002e2a4c3}{Initialize}}(FSubsystemCollectionBase\&\ Collection)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00033\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
-\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a843997bd4e2f09c19733e9c731e76334}{GetMasterVolume}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00040\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
-\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ad8c0b621e665b8a828db434996d4a6e0}{SetMasterVolume}}(\textcolor{keywordtype}{float}\ Value);}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00047\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
-\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa305b54ef75ceae00758677833bb7bb4}{GetSFXVolume}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00049\ }
-\DoxyCodeLine{00054\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
-\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a7108598f8a69a2ee5d6e1ede6d31e983}{SetSFXVolume}}(\textcolor{keywordtype}{float}\ Value);}
-\DoxyCodeLine{00056\ }
-\DoxyCodeLine{00061\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
-\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa3fbe6a0002bf3462bf437804fecb7d0}{GetMusicVolume}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00063\ }
-\DoxyCodeLine{00068\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
-\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ac1682e075f8795eeec8ad44a9b9b61ea}{SetMusicVolume}}(\textcolor{keywordtype}{float}\ Value);}
-\DoxyCodeLine{00070\ }
-\DoxyCodeLine{00075\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00076\ \ \ \ \ int32\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a07e746cd589383566c727fe6ad045856}{GetGraphicsQuality}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00082\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a9a8027b2453c7c6e01dde804ed34eace}{SetGraphicsQuality}}(int32\ Quality);}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00089\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00090\ \ \ \ \ TArray<FString>\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a9984bbff3b8647f69e82cc989b68554d}{GetSupportedResolutions}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00091\ }
-\DoxyCodeLine{00096\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00097\ \ \ \ \ FString\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a3ae8f047c2ac0652f3598adecab22693}{GetResolution}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00103\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ab9084ceccad04213a60d39a95ea598a1}{SetResolution}}(FIntPoint\ Resolution);}
-\DoxyCodeLine{00105\ }
-\DoxyCodeLine{00110\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00111\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a81bad9801cab6251f694d39c33a0e171}{GetSupportedFrameRates}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00112\ }
-\DoxyCodeLine{00117\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00118\ \ \ \ \ int32\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a5b63c64175d5a04bb710abee78399bbc}{GetFrameRate}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00119\ }
-\DoxyCodeLine{00124\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ad363bcf9fcb382b565b1c12d5b45a1aa}{SetFrameRate}}(int32\ FrameRate);}
-\DoxyCodeLine{00126\ }
-\DoxyCodeLine{00131\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aef8fdb715defea0479711d529820d817}{IsVSyncEnabled}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00133\ }
-\DoxyCodeLine{00138\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
-\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a294d73f8b8b3218347b91b32ede2bf7f}{SetVSyncEnabled}}(\textcolor{keywordtype}{bool}\ bEnabled);}
-\DoxyCodeLine{00140\ }
-\DoxyCodeLine{00144\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings"{}})\ }
-\DoxyCodeLine{00145\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa63a6a5aaf1c86b978f4296bfb22f28b}{ApplyAndSaveSettings}}();}
-\DoxyCodeLine{00146\ }
-\DoxyCodeLine{00151\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}Settings|Graphics"{}})}
-\DoxyCodeLine{00152\ \ \ \ \ EWindowMode::Type\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aef60f1304004ab1cbb66c7a413e1a3f3}{GetWindowMode}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00153\ }
-\DoxyCodeLine{00158\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Settings|Graphics"{}})}
-\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aeac83e053a434cbd99ef9ec4034811ec}{SetWindowMode}}(EWindowMode::Type\ InWindowMode);}
-\DoxyCodeLine{00160\ }
-\DoxyCodeLine{00161\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00166\ \ \ \ \ \mbox{\hyperlink{class_u_i_p_game_user_settings}{UIPGameUserSettings}}*\ GetProjectSettings()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00167\ \};}
+\DoxyCodeLine{00018\ UCLASS()}
+\DoxyCodeLine{00019\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem}{UIPGameUserSettingsSubsystem}}\ :\ public\ UGameInstanceSubsystem}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_adfda2b86c14ed1c5dbec46c002e2a4c3}{Initialize}}(FSubsystemCollectionBase\&\ Collection)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a843997bd4e2f09c19733e9c731e76334}{GetMasterVolume}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00041\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ad8c0b621e665b8a828db434996d4a6e0}{SetMasterVolume}}(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa305b54ef75ceae00758677833bb7bb4}{GetSFXVolume}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a7108598f8a69a2ee5d6e1ede6d31e983}{SetSFXVolume}}(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00062\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa3fbe6a0002bf3462bf437804fecb7d0}{GetMusicVolume}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Audio"{}})\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ac1682e075f8795eeec8ad44a9b9b61ea}{SetMusicVolume}}(\textcolor{keywordtype}{float}\ Value);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00077\ \ \ \ \ int32\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a07e746cd589383566c727fe6ad045856}{GetGraphicsQuality}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a9a8027b2453c7c6e01dde804ed34eace}{SetGraphicsQuality}}(int32\ Quality);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00090\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00091\ \ \ \ \ TArray<FString>\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a9984bbff3b8647f69e82cc989b68554d}{GetSupportedResolutions}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00097\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00098\ \ \ \ \ FString\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a3ae8f047c2ac0652f3598adecab22693}{GetResolution}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ab9084ceccad04213a60d39a95ea598a1}{SetResolution}}(FIntPoint\ Resolution);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00111\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00112\ \ \ \ \ TArray<int32>\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a81bad9801cab6251f694d39c33a0e171}{GetSupportedFrameRates}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00118\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00119\ \ \ \ \ int32\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a5b63c64175d5a04bb710abee78399bbc}{GetFrameRate}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00125\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_ad363bcf9fcb382b565b1c12d5b45a1aa}{SetFrameRate}}(int32\ FrameRate);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00132\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aef8fdb715defea0479711d529820d817}{IsVSyncEnabled}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00139\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings|Graphics"{}})\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_a294d73f8b8b3218347b91b32ede2bf7f}{SetVSyncEnabled}}(\textcolor{keywordtype}{bool}\ bEnabled);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00143\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category=\textcolor{stringliteral}{"{}Game\ User\ Settings"{}})\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aa63a6a5aaf1c86b978f4296bfb22f28b}{ApplyAndSaveSettings}}();}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00150\ \ \ \ \ UFUNCTION(BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}Settings|Graphics"{}})}
+\DoxyCodeLine{00151\ \ \ \ \ EWindowMode::Type\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aef60f1304004ab1cbb66c7a413e1a3f3}{GetWindowMode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00157\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}Settings|Graphics"{}})}
+\DoxyCodeLine{00158\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_i_p_game_user_settings_subsystem_aeac83e053a434cbd99ef9ec4034811ec}{SetWindowMode}}(EWindowMode::Type\ InWindowMode);}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00165\ \ \ \ \ \mbox{\hyperlink{class_u_i_p_game_user_settings}{UIPGameUserSettings}}*\ GetProjectSettings()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00166\ \};}
 
 \end{DoxyCode}

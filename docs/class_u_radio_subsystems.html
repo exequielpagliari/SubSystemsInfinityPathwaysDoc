@@ -112,6 +112,9 @@ $(function(){initNavTree('class_u_radio_subsystems.html',''); initResizable(true
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract game-instance service for loading stations and controlling radio playback.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_radio_subsystems_8h_source.html">RadioSubsystems.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for URadioSubsystems:</div>
@@ -119,56 +122,85 @@ Inheritance diagram for URadioSubsystems:</div>
  <div class="center">
   <img src="class_u_radio_subsystems.png" usemap="#URadioSubsystems_map" alt=""/>
   <map id="URadioSubsystems_map" name="URadioSubsystems_map">
-<area href="class_u_test_radio_subsystem.html" alt="UTestRadioSubsystem" shape="rect" coords="0,112,159,136"/>
+<area href="class_u_test_radio_subsystem.html" title="Subclase concreta de URadioSubsystems (que es Abstract) solo para tests. Los miembros que usan los te..." alt="UTestRadioSubsystem" shape="rect" coords="0,112,159,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0cb142556ea77891512a53982685918" id="r_ad0cb142556ea77891512a53982685918"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0cb142556ea77891512a53982685918">URadioSubsystems</a> ()</td></tr>
+<tr class="memitem:ad0cb142556ea77891512a53982685918" id="r_ad0cb142556ea77891512a53982685918"><td class="memItemLeft" align="right" valign="top"><a id="ad0cb142556ea77891512a53982685918" name="ad0cb142556ea77891512a53982685918"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>URadioSubsystems</b> ()</td></tr>
+<tr class="memdesc:ad0cb142556ea77891512a53982685918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the radio subsystem and its playback state. <br /></td></tr>
 <tr class="separator:ad0cb142556ea77891512a53982685918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a866ee4a936d6eef1023eb0279ce44948" id="r_a866ee4a936d6eef1023eb0279ce44948"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a866ee4a936d6eef1023eb0279ce44948">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="memdesc:a866ee4a936d6eef1023eb0279ce44948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes radio playback resources for the game instance.  <br /></td></tr>
 <tr class="separator:a866ee4a936d6eef1023eb0279ce44948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40ff6b226a94f9dfadaa0807c5b36050" id="r_a40ff6b226a94f9dfadaa0807c5b36050"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40ff6b226a94f9dfadaa0807c5b36050">Deinitialize</a> () override</td></tr>
+<tr class="memitem:a40ff6b226a94f9dfadaa0807c5b36050" id="r_a40ff6b226a94f9dfadaa0807c5b36050"><td class="memItemLeft" align="right" valign="top"><a id="a40ff6b226a94f9dfadaa0807c5b36050" name="a40ff6b226a94f9dfadaa0807c5b36050"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deinitialize</b> () override</td></tr>
+<tr class="memdesc:a40ff6b226a94f9dfadaa0807c5b36050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops playback and releases resources owned by the subsystem. <br /></td></tr>
 <tr class="separator:a40ff6b226a94f9dfadaa0807c5b36050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d25637b529c0c968247cd93625de24" id="r_a21d25637b529c0c968247cd93625de24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21d25637b529c0c968247cd93625de24">Init</a> ()</td></tr>
+<tr class="memitem:a21d25637b529c0c968247cd93625de24" id="r_a21d25637b529c0c968247cd93625de24"><td class="memItemLeft" align="right" valign="top"><a id="a21d25637b529c0c968247cd93625de24" name="a21d25637b529c0c968247cd93625de24"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> ()</td></tr>
+<tr class="memdesc:a21d25637b529c0c968247cd93625de24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes station data and selects the initial playback state. <br /></td></tr>
 <tr class="separator:a21d25637b529c0c968247cd93625de24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c26aa60658260922303e6796602e17" id="r_ab7c26aa60658260922303e6796602e17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7c26aa60658260922303e6796602e17">PlaySound</a> (USoundWave *Sound)</td></tr>
+<tr class="memdesc:ab7c26aa60658260922303e6796602e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the supplied sound wave through the radio audio component.  <br /></td></tr>
 <tr class="separator:ab7c26aa60658260922303e6796602e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f5d9523d751c3ea365380e3c9cfd75" id="r_ae7f5d9523d751c3ea365380e3c9cfd75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7f5d9523d751c3ea365380e3c9cfd75">GetRadioIndex</a> ()</td></tr>
+<tr class="memdesc:ae7f5d9523d751c3ea365380e3c9cfd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the index of the currently selected radio station.  <br /></td></tr>
 <tr class="separator:ae7f5d9523d751c3ea365380e3c9cfd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7a3ba2b771c1255f70bdaed7e3c5df8" id="r_ac7a3ba2b771c1255f70bdaed7e3c5df8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7a3ba2b771c1255f70bdaed7e3c5df8">Next</a> ()</td></tr>
+<tr class="memitem:ac7a3ba2b771c1255f70bdaed7e3c5df8" id="r_ac7a3ba2b771c1255f70bdaed7e3c5df8"><td class="memItemLeft" align="right" valign="top"><a id="ac7a3ba2b771c1255f70bdaed7e3c5df8" name="ac7a3ba2b771c1255f70bdaed7e3c5df8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Next</b> ()</td></tr>
+<tr class="memdesc:ac7a3ba2b771c1255f70bdaed7e3c5df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances playback to the next available station or track. <br /></td></tr>
 <tr class="separator:ac7a3ba2b771c1255f70bdaed7e3c5df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afebdffda51df63056fffba8956602d42" id="r_afebdffda51df63056fffba8956602d42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afebdffda51df63056fffba8956602d42">Previous</a> ()</td></tr>
+<tr class="memitem:afebdffda51df63056fffba8956602d42" id="r_afebdffda51df63056fffba8956602d42"><td class="memItemLeft" align="right" valign="top"><a id="afebdffda51df63056fffba8956602d42" name="afebdffda51df63056fffba8956602d42"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Previous</b> ()</td></tr>
+<tr class="memdesc:afebdffda51df63056fffba8956602d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves playback to the previous available station or track. <br /></td></tr>
 <tr class="separator:afebdffda51df63056fffba8956602d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a9e554390087670e1429dec2e198d8" id="r_a19a9e554390087670e1429dec2e198d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19a9e554390087670e1429dec2e198d8">OnSongFinished</a> ()</td></tr>
+<tr class="memitem:a19a9e554390087670e1429dec2e198d8" id="r_a19a9e554390087670e1429dec2e198d8"><td class="memItemLeft" align="right" valign="top"><a id="a19a9e554390087670e1429dec2e198d8" name="a19a9e554390087670e1429dec2e198d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSongFinished</b> ()</td></tr>
+<tr class="memdesc:a19a9e554390087670e1429dec2e198d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles completion of the current song and advances playback. <br /></td></tr>
 <tr class="separator:a19a9e554390087670e1429dec2e198d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa09e527ef8836d57959b13863d099e53" id="r_aa09e527ef8836d57959b13863d099e53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa09e527ef8836d57959b13863d099e53">MuteAudio</a> (bool bMute)</td></tr>
+<tr class="memdesc:aa09e527ef8836d57959b13863d099e53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutes or unmutes radio output.  <br /></td></tr>
 <tr class="separator:aa09e527ef8836d57959b13863d099e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2de78ac731ef81cec46e1a331c2ff161" id="r_a2de78ac731ef81cec46e1a331c2ff161"><td class="memItemLeft" align="right" valign="top"><a id="a2de78ac731ef81cec46e1a331c2ff161" name="a2de78ac731ef81cec46e1a331c2ff161"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRadio</b> (int RadioIndex)</td></tr>
+<tr class="memitem:a2de78ac731ef81cec46e1a331c2ff161" id="r_a2de78ac731ef81cec46e1a331c2ff161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2de78ac731ef81cec46e1a331c2ff161">SetRadio</a> (int RadioIndex)</td></tr>
+<tr class="memdesc:a2de78ac731ef81cec46e1a331c2ff161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the station at the specified index.  <br /></td></tr>
 <tr class="separator:a2de78ac731ef81cec46e1a331c2ff161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c905db61685bdae1debbd22925ec3e6" id="r_a2c905db61685bdae1debbd22925ec3e6"><td class="memItemLeft" align="right" valign="top"><a id="a2c905db61685bdae1debbd22925ec3e6" name="a2c905db61685bdae1debbd22925ec3e6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRandomSong</b> ()</td></tr>
+<tr class="memdesc:a2c905db61685bdae1debbd22925ec3e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects a random song from the current station. <br /></td></tr>
 <tr class="separator:a2c905db61685bdae1debbd22925ec3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa190fe16b258303f3358f3858054dfbc" id="r_aa190fe16b258303f3358f3858054dfbc"><td class="memItemLeft" align="right" valign="top"><a id="aa190fe16b258303f3358f3858054dfbc" name="aa190fe16b258303f3358f3858054dfbc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRadioWaveParameter</b> ()</td></tr>
+<tr class="memdesc:aa190fe16b258303f3358f3858054dfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the MetaSound radio-wave parameter for the current station. <br /></td></tr>
 <tr class="separator:aa190fe16b258303f3358f3858054dfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde572f64398b9f77a1bbae2a1f1f22a" id="r_adde572f64398b9f77a1bbae2a1f1f22a"><td class="memItemLeft" align="right" valign="top"><a id="adde572f64398b9f77a1bbae2a1f1f22a" name="adde572f64398b9f77a1bbae2a1f1f22a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultRadioSong</b> ()</td></tr>
+<tr class="memdesc:adde572f64398b9f77a1bbae2a1f1f22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the configured default radio song. <br /></td></tr>
 <tr class="separator:adde572f64398b9f77a1bbae2a1f1f22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a17158c8b5ccc6e3fd0f19e84c2175116" id="r_a17158c8b5ccc6e3fd0f19e84c2175116"><td class="memItemLeft" align="right" valign="top">TSoftObjectPtr&lt; USoundWave &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17158c8b5ccc6e3fd0f19e84c2175116">InitialMusic</a></td></tr>
+<tr class="memitem:a17158c8b5ccc6e3fd0f19e84c2175116" id="r_a17158c8b5ccc6e3fd0f19e84c2175116"><td class="memItemLeft" align="right" valign="top"><a id="a17158c8b5ccc6e3fd0f19e84c2175116" name="a17158c8b5ccc6e3fd0f19e84c2175116"></a>
+TSoftObjectPtr&lt; USoundWave &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InitialMusic</b></td></tr>
+<tr class="memdesc:a17158c8b5ccc6e3fd0f19e84c2175116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional sound wave selected as the initial music asset. <br /></td></tr>
 <tr class="separator:a17158c8b5ccc6e3fd0f19e84c2175116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3092021274485a2a54f7b0b3907c6e91" id="r_a3092021274485a2a54f7b0b3907c6e91"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; UAudioComponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3092021274485a2a54f7b0b3907c6e91">AudioComp</a></td></tr>
+<tr class="memitem:a3092021274485a2a54f7b0b3907c6e91" id="r_a3092021274485a2a54f7b0b3907c6e91"><td class="memItemLeft" align="right" valign="top"><a id="a3092021274485a2a54f7b0b3907c6e91" name="a3092021274485a2a54f7b0b3907c6e91"></a>
+TObjectPtr&lt; UAudioComponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>AudioComp</b></td></tr>
+<tr class="memdesc:a3092021274485a2a54f7b0b3907c6e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio component that plays the currently selected radio track. <br /></td></tr>
 <tr class="separator:a3092021274485a2a54f7b0b3907c6e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4821eba47bd5f04ef14c03d42d1f813c" id="r_a4821eba47bd5f04ef14c03d42d1f813c"><td class="memItemLeft" align="right" valign="top">TArray&lt; TObjectPtr&lt; <a class="el" href="class_u_radio_data_asset.html">URadioDataAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4821eba47bd5f04ef14c03d42d1f813c">RadioListLoaded</a></td></tr>
+<tr class="memitem:a4821eba47bd5f04ef14c03d42d1f813c" id="r_a4821eba47bd5f04ef14c03d42d1f813c"><td class="memItemLeft" align="right" valign="top"><a id="a4821eba47bd5f04ef14c03d42d1f813c" name="a4821eba47bd5f04ef14c03d42d1f813c"></a>
+TArray&lt; TObjectPtr&lt; <a class="el" href="class_u_radio_data_asset.html">URadioDataAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RadioListLoaded</b></td></tr>
+<tr class="memdesc:a4821eba47bd5f04ef14c03d42d1f813c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Station assets discovered or assigned for this subsystem. <br /></td></tr>
 <tr class="separator:a4821eba47bd5f04ef14c03d42d1f813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23c262ae170a4cf82ca8893a8e3ef1c3" id="r_a23c262ae170a4cf82ca8893a8e3ef1c3"><td class="memItemLeft" align="right" valign="top">TArray&lt; TObjectPtr&lt; USoundWave &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23c262ae170a4cf82ca8893a8e3ef1c3">RadioSongs</a></td></tr>
+<tr class="memitem:a23c262ae170a4cf82ca8893a8e3ef1c3" id="r_a23c262ae170a4cf82ca8893a8e3ef1c3"><td class="memItemLeft" align="right" valign="top"><a id="a23c262ae170a4cf82ca8893a8e3ef1c3" name="a23c262ae170a4cf82ca8893a8e3ef1c3"></a>
+TArray&lt; TObjectPtr&lt; USoundWave &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RadioSongs</b></td></tr>
+<tr class="memdesc:a23c262ae170a4cf82ca8893a8e3ef1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tracks currently available to the radio playback logic. <br /></td></tr>
 <tr class="separator:a23c262ae170a4cf82ca8893a8e3ef1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06827cd24a697889a1408f25e814e08" id="r_af06827cd24a697889a1408f25e814e08"><td class="memItemLeft" align="right" valign="top">TObjectPtr&lt; USoundBase &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af06827cd24a697889a1408f25e814e08">MS_Soundtracks</a></td></tr>
+<tr class="memitem:af06827cd24a697889a1408f25e814e08" id="r_af06827cd24a697889a1408f25e814e08"><td class="memItemLeft" align="right" valign="top"><a id="af06827cd24a697889a1408f25e814e08" name="af06827cd24a697889a1408f25e814e08"></a>
+TObjectPtr&lt; USoundBase &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MS_Soundtracks</b></td></tr>
+<tr class="memdesc:af06827cd24a697889a1408f25e814e08"><td class="mdescLeft">&#160;</td><td class="mdescRight">MetaSound asset used for radio soundtrack output and parameters. <br /></td></tr>
 <tr class="separator:af06827cd24a697889a1408f25e814e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1778d3d95a6499b08e57511b07a812db" id="r_a1778d3d95a6499b08e57511b07a812db"><td class="memItemLeft" align="right" valign="top"><a id="a1778d3d95a6499b08e57511b07a812db" name="a1778d3d95a6499b08e57511b07a812db"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentRadioIndex</b> = 0</td></tr>
@@ -185,52 +217,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MinIndexRadio</b> = 0<
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract game-instance service for loading stations and controlling radio playback. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad0cb142556ea77891512a53982685918" name="ad0cb142556ea77891512a53982685918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0cb142556ea77891512a53982685918">&#9670;&#160;</a></span>URadioSubsystems()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">URadioSubsystems::URadioSubsystems </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Creates the radio subsystem and its playback state. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a40ff6b226a94f9dfadaa0807c5b36050" name="a40ff6b226a94f9dfadaa0807c5b36050"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40ff6b226a94f9dfadaa0807c5b36050">&#9670;&#160;</a></span>Deinitialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void URadioSubsystems::Deinitialize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Stops playback and releases resources owned by the subsystem. </p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae7f5d9523d751c3ea365380e3c9cfd75" name="ae7f5d9523d751c3ea365380e3c9cfd75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7f5d9523d751c3ea365380e3c9cfd75">&#9670;&#160;</a></span>GetRadioIndex()</h2>
 
@@ -245,25 +232,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MinIndexRadio</b> = 0<
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Returns the index of the currently selected radio station. </p>
-
-</div>
-</div>
-<a id="a21d25637b529c0c968247cd93625de24" name="a21d25637b529c0c968247cd93625de24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d25637b529c0c968247cd93625de24">&#9670;&#160;</a></span>Init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void URadioSubsystems::Init </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Initializes station data and selects the initial playback state. </p>
+<dl class="section return"><dt>Returns</dt><dd>Current station index. </dd></dl>
 
 </div>
 </div>
@@ -289,7 +260,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MinIndexRadio</b> = 0<
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Initializes radio playback resources for the game instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Collection</td><td>Subsystem collection used to initialize dependencies. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -307,43 +285,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MinIndexRadio</b> = 0<
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Mutes or unmutes radio output. </p>
-
-</div>
-</div>
-<a id="ac7a3ba2b771c1255f70bdaed7e3c5df8" name="ac7a3ba2b771c1255f70bdaed7e3c5df8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7a3ba2b771c1255f70bdaed7e3c5df8">&#9670;&#160;</a></span>Next()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void URadioSubsystems::Next </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Advances playback to the next available station or track. </p>
-
-</div>
-</div>
-<a id="a19a9e554390087670e1429dec2e198d8" name="a19a9e554390087670e1429dec2e198d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19a9e554390087670e1429dec2e198d8">&#9670;&#160;</a></span>OnSongFinished()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void URadioSubsystems::OnSongFinished </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Handles completion of the current song and advances playback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bMute</td><td>True to mute the radio; false to restore audio. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -361,101 +310,39 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MinIndexRadio</b> = 0<
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Plays the supplied sound wave through the radio audio component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Sound</td><td>Sound wave to play. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="afebdffda51df63056fffba8956602d42" name="afebdffda51df63056fffba8956602d42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afebdffda51df63056fffba8956602d42">&#9670;&#160;</a></span>Previous()</h2>
+<a id="a2de78ac731ef81cec46e1a331c2ff161" name="a2de78ac731ef81cec46e1a331c2ff161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2de78ac731ef81cec46e1a331c2ff161">&#9670;&#160;</a></span>SetRadio()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void URadioSubsystems::Previous </td>
+          <td class="memname">void URadioSubsystems::SetRadio </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>RadioIndex</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Moves playback to the previous available station or track. </p>
 
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a3092021274485a2a54f7b0b3907c6e91" name="a3092021274485a2a54f7b0b3907c6e91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3092021274485a2a54f7b0b3907c6e91">&#9670;&#160;</a></span>AudioComp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TObjectPtr&lt;UAudioComponent&gt; URadioSubsystems::AudioComp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Audio component that plays the currently selected radio track. </p>
-
-</div>
-</div>
-<a id="a17158c8b5ccc6e3fd0f19e84c2175116" name="a17158c8b5ccc6e3fd0f19e84c2175116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17158c8b5ccc6e3fd0f19e84c2175116">&#9670;&#160;</a></span>InitialMusic</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TSoftObjectPtr&lt;USoundWave&gt; URadioSubsystems::InitialMusic</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Optional sound wave selected as the initial music asset. </p>
-
-</div>
-</div>
-<a id="af06827cd24a697889a1408f25e814e08" name="af06827cd24a697889a1408f25e814e08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af06827cd24a697889a1408f25e814e08">&#9670;&#160;</a></span>MS_Soundtracks</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TObjectPtr&lt;USoundBase&gt; URadioSubsystems::MS_Soundtracks</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>MetaSound asset used for radio soundtrack output and parameters. </p>
-
-</div>
-</div>
-<a id="a4821eba47bd5f04ef14c03d42d1f813c" name="a4821eba47bd5f04ef14c03d42d1f813c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4821eba47bd5f04ef14c03d42d1f813c">&#9670;&#160;</a></span>RadioListLoaded</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;TObjectPtr&lt;<a class="el" href="class_u_radio_data_asset.html">URadioDataAsset</a>&gt; &gt; URadioSubsystems::RadioListLoaded</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Station assets discovered or assigned for this subsystem. </p>
-
-</div>
-</div>
-<a id="a23c262ae170a4cf82ca8893a8e3ef1c3" name="a23c262ae170a4cf82ca8893a8e3ef1c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23c262ae170a4cf82ca8893a8e3ef1c3">&#9670;&#160;</a></span>RadioSongs</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TArray&lt;TObjectPtr&lt;USoundWave&gt; &gt; URadioSubsystems::RadioSongs</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Tracks currently available to the radio playback logic. </p>
+<p>Selects the station at the specified index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">RadioIndex</td><td>Index of the station to select. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

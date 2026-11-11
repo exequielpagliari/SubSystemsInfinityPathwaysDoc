@@ -2,6 +2,11 @@
 \hypertarget{class_u_game_score_subsystem}{}\label{class_u_game_score_subsystem}\index{UGameScoreSubsystem@{UGameScoreSubsystem}}
 
 
+Owns runtime score state, score calculations, and score-\/change notifications.  
+
+
+
+
 {\ttfamily \#include $<$Game\+Score\+Subsystem.\+h$>$}
 
 Inheritance diagram for UGame\+Score\+Subsystem\+:\begin{figure}[H]
@@ -14,40 +19,43 @@ Inheritance diagram for UGame\+Score\+Subsystem\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{class_u_game_score_subsystem_ab448e0c37e61e8d793865c353aa17e88}{Initialize}} (FSubsystem\+Collection\+Base \&Collection) override
-\item 
-virtual void \mbox{\hyperlink{class_u_game_score_subsystem_a58e4dda0025f37479e40d5b5691a36cf}{Deinitialize}} () override
-\item 
-void \mbox{\hyperlink{class_u_game_score_subsystem_ac65e9289598383f1794227e169bcb1be}{Reset\+Score}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes score subsystem state and event bindings. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_score_subsystem_a58e4dda0025f37479e40d5b5691a36cf}\label{class_u_game_score_subsystem_a58e4dda0025f37479e40d5b5691a36cf} 
+virtual void {\bfseries Deinitialize} () override
+\begin{DoxyCompactList}\small\item\em Releases resources and event bindings owned by this subsystem. \end{DoxyCompactList}\item 
+\Hypertarget{class_u_game_score_subsystem_ac65e9289598383f1794227e169bcb1be}\label{class_u_game_score_subsystem_ac65e9289598383f1794227e169bcb1be} 
+void {\bfseries Reset\+Score} ()
+\begin{DoxyCompactList}\small\item\em Resets the current score to zero and notifies listeners of the change. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_score_subsystem_a087c1a96bd3dd5f86df4c0806515d485}{Set\+Score}} (int32 New\+Score)
-\item 
+\begin{DoxyCompactList}\small\item\em Replaces the current score with the supplied value. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_u_game_score_subsystem_adf918e5947bdb0b7873645123b8e551b}{Add\+Score}} (int32 Points)
-\item 
+\begin{DoxyCompactList}\small\item\em Adds points to the current score. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_a12a75ece42f7823a4808a3c0b7809fe4}{Get\+Score}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the current score. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_a848c91ac29699639afe5a8a872059c29}{Calculate\+Cell\+Score}} (int32 Base\+Value, int32 Streak\+Multiplier) const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates a cell score without changing the current score. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_aaabdca4024924038215622651db8bc89}{Add\+Cell\+Score}} (EScore\+Reason Type\+Cell, int32 Streak\+Multiplier)
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates and adds the score associated with a cell-\/scoring reason. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_aeae123bdefbfa33db12ee764133be18e}{Calculate\+Time\+Bonus}} (int32 Seconds\+Remaining) const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates the time bonus for the remaining seconds. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_a1fafa9114649853c1f7865391ea84625}{Calculate\+Step\+Bonus}} (int32 Steps) const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates the step bonus for the supplied step count. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_ab3a1028cd44e8b92131dfec773e4749f}{Calculate\+Zen\+Bonus}} (int32 Elapsed\+Seconds) const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates the Zen bonus for the supplied elapsed time. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_a336834fa405ac14b156405d29f42dd42}{Calculate\+Mode\+Bonus}} (ELevel\+Type Game\+Mode, int32 Value) const
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates a mode-\/specific bonus without changing the current score. \end{DoxyCompactList}\item 
 int32 \mbox{\hyperlink{class_u_game_score_subsystem_a1a989e0753d4edba532bbb9b8f5e7445}{Add\+Mode\+Bonus}} (ELevel\+Type Game\+Mode, int32 Value)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates and adds the bonus associated with the selected game mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-FOn\+Game\+Score\+Changed \mbox{\hyperlink{class_u_game_score_subsystem_a7368b00a373b6d6aced82db672211cfb}{On\+Game\+Score\+Changed}}
-\end{DoxyCompactItemize}
+\Hypertarget{class_u_game_score_subsystem_a7368b00a373b6d6aced82db672211cfb}\label{class_u_game_score_subsystem_a7368b00a373b6d6aced82db672211cfb} 
+FOn\+Game\+Score\+Changed {\bfseries On\+Game\+Score\+Changed}
+\begin{DoxyCompactList}\small\item\em Fired when the score changes; provides the new total and signed delta. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Owns the runtime score, score calculations, and score-\/change notifications for the game instance. 
+Owns runtime score state, score calculations, and score-\/change notifications. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{class_u_game_score_subsystem_aaabdca4024924038215622651db8bc89}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!AddCellScore@{AddCellScore}}
@@ -56,88 +64,193 @@ Owns the runtime score, score calculations, and score-\/change notifications for
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_aaabdca4024924038215622651db8bc89} 
 int32 UGame\+Score\+Subsystem\+::\+Add\+Cell\+Score (\begin{DoxyParamCaption}\item[{EScore\+Reason}]{Type\+Cell}{, }\item[{int32}]{Streak\+Multiplier}{}\end{DoxyParamCaption})}
 
-Calculates and adds the score associated with a cell-\/scoring reason. \Hypertarget{class_u_game_score_subsystem_a1a989e0753d4edba532bbb9b8f5e7445}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!AddModeBonus@{AddModeBonus}}
+
+
+Calculates and adds the score associated with a cell-\/scoring reason. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type\+Cell} & Reason that determines the cell score category. \\
+\hline
+{\em Streak\+Multiplier} & Multiplier applied to the score. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Points added to the score. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_a1a989e0753d4edba532bbb9b8f5e7445}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!AddModeBonus@{AddModeBonus}}
 \index{AddModeBonus@{AddModeBonus}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{AddModeBonus()}{AddModeBonus()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_a1a989e0753d4edba532bbb9b8f5e7445} 
 int32 UGame\+Score\+Subsystem\+::\+Add\+Mode\+Bonus (\begin{DoxyParamCaption}\item[{ELevel\+Type}]{Game\+Mode}{, }\item[{int32}]{Value}{}\end{DoxyParamCaption})}
 
-Calculates and adds the bonus associated with the selected game mode. \Hypertarget{class_u_game_score_subsystem_adf918e5947bdb0b7873645123b8e551b}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!AddScore@{AddScore}}
+
+
+Calculates and adds the bonus associated with the selected game mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game\+Mode} & Mode whose bonus rules are used. \\
+\hline
+{\em Value} & Mode-\/specific input value for the bonus calculation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Points added to the score. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_adf918e5947bdb0b7873645123b8e551b}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!AddScore@{AddScore}}
 \index{AddScore@{AddScore}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{AddScore()}{AddScore()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_adf918e5947bdb0b7873645123b8e551b} 
 void UGame\+Score\+Subsystem\+::\+Add\+Score (\begin{DoxyParamCaption}\item[{int32}]{Points}{}\end{DoxyParamCaption})}
 
-Adds points to the current score. \Hypertarget{class_u_game_score_subsystem_a848c91ac29699639afe5a8a872059c29}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateCellScore@{CalculateCellScore}}
+
+
+Adds points to the current score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Points} & Number of points to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_game_score_subsystem_a848c91ac29699639afe5a8a872059c29}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateCellScore@{CalculateCellScore}}
 \index{CalculateCellScore@{CalculateCellScore}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{CalculateCellScore()}{CalculateCellScore()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_a848c91ac29699639afe5a8a872059c29} 
 int32 UGame\+Score\+Subsystem\+::\+Calculate\+Cell\+Score (\begin{DoxyParamCaption}\item[{int32}]{Base\+Value}{, }\item[{int32}]{Streak\+Multiplier}{}\end{DoxyParamCaption}) const}
 
-Calculates a cell score from its base value and streak multiplier without changing state. \Hypertarget{class_u_game_score_subsystem_a336834fa405ac14b156405d29f42dd42}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateModeBonus@{CalculateModeBonus}}
+
+
+Calculates a cell score without changing the current score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Base\+Value} & Unmultiplied score value for the cell. \\
+\hline
+{\em Streak\+Multiplier} & Multiplier applied to the base value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Calculated cell score. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_a336834fa405ac14b156405d29f42dd42}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateModeBonus@{CalculateModeBonus}}
 \index{CalculateModeBonus@{CalculateModeBonus}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{CalculateModeBonus()}{CalculateModeBonus()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_a336834fa405ac14b156405d29f42dd42} 
 int32 UGame\+Score\+Subsystem\+::\+Calculate\+Mode\+Bonus (\begin{DoxyParamCaption}\item[{ELevel\+Type}]{Game\+Mode}{, }\item[{int32}]{Value}{}\end{DoxyParamCaption}) const}
 
-Calculates a mode-\/specific bonus without changing the current score. \Hypertarget{class_u_game_score_subsystem_a1fafa9114649853c1f7865391ea84625}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateStepBonus@{CalculateStepBonus}}
+
+
+Calculates a mode-\/specific bonus without changing the current score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Game\+Mode} & Mode whose bonus rules are used. \\
+\hline
+{\em Value} & Mode-\/specific input value for the bonus calculation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Calculated mode bonus. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_a1fafa9114649853c1f7865391ea84625}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateStepBonus@{CalculateStepBonus}}
 \index{CalculateStepBonus@{CalculateStepBonus}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{CalculateStepBonus()}{CalculateStepBonus()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_a1fafa9114649853c1f7865391ea84625} 
 int32 UGame\+Score\+Subsystem\+::\+Calculate\+Step\+Bonus (\begin{DoxyParamCaption}\item[{int32}]{Steps}{}\end{DoxyParamCaption}) const}
 
-Calculates the step bonus for the supplied step count. \Hypertarget{class_u_game_score_subsystem_aeae123bdefbfa33db12ee764133be18e}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateTimeBonus@{CalculateTimeBonus}}
+
+
+Calculates the step bonus for the supplied step count. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Steps} & Number of steps used. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Calculated step bonus. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_aeae123bdefbfa33db12ee764133be18e}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateTimeBonus@{CalculateTimeBonus}}
 \index{CalculateTimeBonus@{CalculateTimeBonus}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{CalculateTimeBonus()}{CalculateTimeBonus()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_aeae123bdefbfa33db12ee764133be18e} 
 int32 UGame\+Score\+Subsystem\+::\+Calculate\+Time\+Bonus (\begin{DoxyParamCaption}\item[{int32}]{Seconds\+Remaining}{}\end{DoxyParamCaption}) const}
 
-Calculates the time bonus for the remaining seconds. \Hypertarget{class_u_game_score_subsystem_ab3a1028cd44e8b92131dfec773e4749f}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateZenBonus@{CalculateZenBonus}}
+
+
+Calculates the time bonus for the remaining seconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Seconds\+Remaining} & Number of seconds remaining. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Calculated time bonus. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_ab3a1028cd44e8b92131dfec773e4749f}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!CalculateZenBonus@{CalculateZenBonus}}
 \index{CalculateZenBonus@{CalculateZenBonus}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{CalculateZenBonus()}{CalculateZenBonus()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_ab3a1028cd44e8b92131dfec773e4749f} 
 int32 UGame\+Score\+Subsystem\+::\+Calculate\+Zen\+Bonus (\begin{DoxyParamCaption}\item[{int32}]{Elapsed\+Seconds}{}\end{DoxyParamCaption}) const}
 
-Calculates the Zen bonus for the supplied elapsed time. \Hypertarget{class_u_game_score_subsystem_a58e4dda0025f37479e40d5b5691a36cf}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!Deinitialize@{Deinitialize}}
-\index{Deinitialize@{Deinitialize}!UGameScoreSubsystem@{UGameScoreSubsystem}}
-\doxysubsubsection{\texorpdfstring{Deinitialize()}{Deinitialize()}}
-{\footnotesize\ttfamily \label{class_u_game_score_subsystem_a58e4dda0025f37479e40d5b5691a36cf} 
-void UGame\+Score\+Subsystem\+::\+Deinitialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Releases resources and event bindings owned by this subsystem. \Hypertarget{class_u_game_score_subsystem_a12a75ece42f7823a4808a3c0b7809fe4}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!GetScore@{GetScore}}
+
+Calculates the Zen bonus for the supplied elapsed time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Elapsed\+Seconds} & Number of seconds elapsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Calculated Zen bonus. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_a12a75ece42f7823a4808a3c0b7809fe4}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!GetScore@{GetScore}}
 \index{GetScore@{GetScore}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{GetScore()}{GetScore()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_a12a75ece42f7823a4808a3c0b7809fe4} 
 int32 UGame\+Score\+Subsystem\+::\+Get\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Returns the current score. \Hypertarget{class_u_game_score_subsystem_ab448e0c37e61e8d793865c353aa17e88}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!Initialize@{Initialize}}
+
+
+Returns the current score. 
+
+\begin{DoxyReturn}{Returns}
+Current accumulated score. 
+\end{DoxyReturn}
+\Hypertarget{class_u_game_score_subsystem_ab448e0c37e61e8d793865c353aa17e88}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_ab448e0c37e61e8d793865c353aa17e88} 
 void UGame\+Score\+Subsystem\+::\+Initialize (\begin{DoxyParamCaption}\item[{FSubsystem\+Collection\+Base \&}]{Collection}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Initializes score subsystem state and event bindings. \Hypertarget{class_u_game_score_subsystem_ac65e9289598383f1794227e169bcb1be}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!ResetScore@{ResetScore}}
-\index{ResetScore@{ResetScore}!UGameScoreSubsystem@{UGameScoreSubsystem}}
-\doxysubsubsection{\texorpdfstring{ResetScore()}{ResetScore()}}
-{\footnotesize\ttfamily \label{class_u_game_score_subsystem_ac65e9289598383f1794227e169bcb1be} 
-void UGame\+Score\+Subsystem\+::\+Reset\+Score (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-Resets the current score to zero and notifies listeners of the change. \Hypertarget{class_u_game_score_subsystem_a087c1a96bd3dd5f86df4c0806515d485}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!SetScore@{SetScore}}
+
+Initializes score subsystem state and event bindings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Collection} & Subsystem collection used to initialize dependencies. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_u_game_score_subsystem_a087c1a96bd3dd5f86df4c0806515d485}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!SetScore@{SetScore}}
 \index{SetScore@{SetScore}!UGameScoreSubsystem@{UGameScoreSubsystem}}
 \doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
 {\footnotesize\ttfamily \label{class_u_game_score_subsystem_a087c1a96bd3dd5f86df4c0806515d485} 
 void UGame\+Score\+Subsystem\+::\+Set\+Score (\begin{DoxyParamCaption}\item[{int32}]{New\+Score}{}\end{DoxyParamCaption})}
 
+
+
 Replaces the current score with the supplied value. 
 
-\doxysubsection{Member Data Documentation}
-\Hypertarget{class_u_game_score_subsystem_a7368b00a373b6d6aced82db672211cfb}\index{UGameScoreSubsystem@{UGameScoreSubsystem}!OnGameScoreChanged@{OnGameScoreChanged}}
-\index{OnGameScoreChanged@{OnGameScoreChanged}!UGameScoreSubsystem@{UGameScoreSubsystem}}
-\doxysubsubsection{\texorpdfstring{OnGameScoreChanged}{OnGameScoreChanged}}
-{\footnotesize\ttfamily \label{class_u_game_score_subsystem_a7368b00a373b6d6aced82db672211cfb} 
-FOn\+Game\+Score\+Changed UGame\+Score\+Subsystem\+::\+On\+Game\+Score\+Changed}
 
-Fired when the score changes; provides the new total and signed delta. 
+\begin{DoxyParams}{Parameters}
+{\em New\+Score} & Score value to set. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

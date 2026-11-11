@@ -111,6 +111,9 @@ $(function(){initNavTree('class_u_level_selection_subsystem.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
+<p>Game-instance service for querying level descriptions and progression state.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_level_selection_subsystem_8h_source.html">LevelSelectionSubsystem.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ULevelSelectionSubsystem:</div>
@@ -121,54 +124,39 @@ Inheritance diagram for ULevelSelectionSubsystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada2c4132c4a2423522fc58a27819bfa0" id="r_ada2c4132c4a2423522fc58a27819bfa0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada2c4132c4a2423522fc58a27819bfa0">Initialize</a> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="memitem:ada2c4132c4a2423522fc58a27819bfa0" id="r_ada2c4132c4a2423522fc58a27819bfa0"><td class="memItemLeft" align="right" valign="top"><a id="ada2c4132c4a2423522fc58a27819bfa0" name="ada2c4132c4a2423522fc58a27819bfa0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (FSubsystemCollectionBase &amp;Collection) override</td></tr>
+<tr class="memdesc:ada2c4132c4a2423522fc58a27819bfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads saved level state and configured data tables. <br /></td></tr>
 <tr class="separator:ada2c4132c4a2423522fc58a27819bfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43e4e7c69c0e22b2a8af7f1c2b45e04" id="r_ae43e4e7c69c0e22b2a8af7f1c2b45e04"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae43e4e7c69c0e22b2a8af7f1c2b45e04">Deinitialize</a> () override</td></tr>
+<tr class="memitem:ae43e4e7c69c0e22b2a8af7f1c2b45e04" id="r_ae43e4e7c69c0e22b2a8af7f1c2b45e04"><td class="memItemLeft" align="right" valign="top"><a id="ae43e4e7c69c0e22b2a8af7f1c2b45e04" name="ae43e4e7c69c0e22b2a8af7f1c2b45e04"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deinitialize</b> () override</td></tr>
+<tr class="memdesc:ae43e4e7c69c0e22b2a8af7f1c2b45e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases resources held by this subsystem. <br /></td></tr>
 <tr class="separator:ae43e4e7c69c0e22b2a8af7f1c2b45e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6ba26c15eaad534e65870ab69eb3d2" id="r_acf6ba26c15eaad534e65870ab69eb3d2"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf6ba26c15eaad534e65870ab69eb3d2">GetLevelNameText</a> (const FString &amp;LevelKey) const</td></tr>
+<tr class="memdesc:acf6ba26c15eaad534e65870ab69eb3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the formatted level name for a data-table key.  <br /></td></tr>
 <tr class="separator:acf6ba26c15eaad534e65870ab69eb3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a443e94cf4eca8b4ee99052624a4f3008" id="r_a443e94cf4eca8b4ee99052624a4f3008"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a443e94cf4eca8b4ee99052624a4f3008">GetLevelTextInformation</a> (ELevelDifficultType LevelType) const</td></tr>
+<tr class="memdesc:a443e94cf4eca8b4ee99052624a4f3008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the level description for the selected difficulty.  <br /></td></tr>
 <tr class="separator:a443e94cf4eca8b4ee99052624a4f3008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53771be2996072bc4e3016671cea6ce0" id="r_a53771be2996072bc4e3016671cea6ce0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53771be2996072bc4e3016671cea6ce0">GetLevelInformation</a> (const FString &amp;LevelNameInput, <a class="el" href="struct_f_level_info_structure.html">FLevelInfoStructure</a> &amp;OutLevelInfo) const</td></tr>
+<tr class="memdesc:a53771be2996072bc4e3016671cea6ce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves saved progression information for a level.  <br /></td></tr>
 <tr class="separator:a53771be2996072bc4e3016671cea6ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa766d6f70fc65f491fd164d415de351" id="r_afa766d6f70fc65f491fd164d415de351"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa766d6f70fc65f491fd164d415de351">SetterLevelUnlocked</a> (int32 CurrentLevelIndex) const</td></tr>
+<tr class="memdesc:afa766d6f70fc65f491fd164d415de351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the level at the specified index is unlocked.  <br /></td></tr>
 <tr class="separator:afa766d6f70fc65f491fd164d415de351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad9e0adc6bf284f6a740a396b15ea98a" id="r_aad9e0adc6bf284f6a740a396b15ea98a"><td class="memItemLeft" align="right" valign="top">FText&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad9e0adc6bf284f6a740a396b15ea98a">Get_HighestScore</a> (const FString &amp;LevelNameInput) const</td></tr>
+<tr class="memdesc:aad9e0adc6bf284f6a740a396b15ea98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the highest recorded score for a level.  <br /></td></tr>
 <tr class="separator:aad9e0adc6bf284f6a740a396b15ea98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3489d60e1293ad950b4df140640d79e4" id="r_a3489d60e1293ad950b4df140640d79e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3489d60e1293ad950b4df140640d79e4">GetHardCoreModeActive</a> () const</td></tr>
+<tr class="memdesc:a3489d60e1293ad950b4df140640d79e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether hardcore mode is active.  <br /></td></tr>
 <tr class="separator:a3489d60e1293ad950b4df140640d79e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e1d49a7ee0172235d75c23f496cb118" id="r_a5e1d49a7ee0172235d75c23f496cb118"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e1d49a7ee0172235d75c23f496cb118">SetHardCoreModeActive</a> (bool bIsActive)</td></tr>
+<tr class="memdesc:a5e1d49a7ee0172235d75c23f496cb118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables hardcore mode.  <br /></td></tr>
 <tr class="separator:a5e1d49a7ee0172235d75c23f496cb118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Game-instance service for querying level descriptions and progression state. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae43e4e7c69c0e22b2a8af7f1c2b45e04" name="ae43e4e7c69c0e22b2a8af7f1c2b45e04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae43e4e7c69c0e22b2a8af7f1c2b45e04">&#9670;&#160;</a></span>Deinitialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ULevelSelectionSubsystem::Deinitialize </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Releases resources held by this subsystem. </p>
-
-</div>
-</div>
 <a id="aad9e0adc6bf284f6a740a396b15ea98a" name="aad9e0adc6bf284f6a740a396b15ea98a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad9e0adc6bf284f6a740a396b15ea98a">&#9670;&#160;</a></span>Get_HighestScore()</h2>
 
@@ -183,7 +171,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Recupera la puntuación más alta histórica del nivel seleccionado </p>
+
+<p>Retrieves the highest recorded score for a level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LevelNameInput</td><td>Name or key of the level to query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Highest score formatted as text. </dd></dl>
 
 </div>
 </div>
@@ -201,7 +197,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Comprueba si el Modo Hardcore se encuentra activo </p>
+
+<p>Checks whether hardcore mode is active. </p>
+<dl class="section return"><dt>Returns</dt><dd>True when hardcore mode is active. </dd></dl>
 
 </div>
 </div>
@@ -223,7 +221,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Recupera la información guardada del nivel actual desde el sistema de guardado </p>
+
+<p>Retrieves saved progression information for a level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LevelNameInput</td><td>Name or key of the level to query. </td></tr>
+    <tr><td class="paramname">OutLevelInfo</td><td>Receives the saved level information when found. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True when saved information is available for the level. </dd></dl>
 
 </div>
 </div>
@@ -241,7 +248,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtiene el nombre del nivel formateado en Text desde una DataTable usando una clave FString </p>
+
+<p>Returns the formatted level name for a data-table key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LevelKey</td><td>Key used to find the level name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Formatted level name text. </dd></dl>
 
 </div>
 </div>
@@ -259,33 +274,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Obtiene la información descriptiva del nivel alternando entre Modo Normal y Hardcore </p>
 
-</div>
-</div>
-<a id="ada2c4132c4a2423522fc58a27819bfa0" name="ada2c4132c4a2423522fc58a27819bfa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada2c4132c4a2423522fc58a27819bfa0">&#9670;&#160;</a></span>Initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ULevelSelectionSubsystem::Initialize </td>
-          <td>(</td>
-          <td class="paramtype">FSubsystemCollectionBase &amp;</td>          <td class="paramname"><span class="paramname"><em>Collection</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Loads saved level state and configured data tables. </p>
+<p>Returns the level description for the selected difficulty. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">LevelType</td><td>Difficulty variant whose description is requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Description text for the selected difficulty. </dd></dl>
 
 </div>
 </div>
@@ -303,7 +300,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Establece el estado del Modo Hardcore </p>
+
+<p>Enables or disables hardcore mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bIsActive</td><td>True to enable hardcore mode; false to disable it. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -321,7 +325,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Comprueba si el nivel actual está desbloqueado según su índice </p>
+
+<p>Checks whether the level at the specified index is unlocked. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CurrentLevelIndex</td><td>Index of the level to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True when the level is unlocked. </dd></dl>
 
 </div>
 </div>

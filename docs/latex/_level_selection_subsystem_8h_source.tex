@@ -48,53 +48,53 @@
 \DoxyCodeLine{00050\ \};}
 \DoxyCodeLine{00051\ }
 \DoxyCodeLine{00052\ }
-\DoxyCodeLine{00054\ UCLASS()}
-\DoxyCodeLine{00055\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_level_selection_subsystem}{ULevelSelectionSubsystem}}\ :\ public\ UGameInstanceSubsystem}
-\DoxyCodeLine{00056\ \{}
-\DoxyCodeLine{00057\ \ \ \ \ GENERATED\_BODY()}
-\DoxyCodeLine{00058\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ Inicialización del\ subsistema}}
-\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_selection_subsystem_ada2c4132c4a2423522fc58a27819bfa0}{Initialize}}(FSubsystemCollectionBase\&\ Collection)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_selection_subsystem_ae43e4e7c69c0e22b2a8af7f1c2b45e04}{Deinitialize}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00064\ }
-\DoxyCodeLine{00066\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|UI"{}})}
-\DoxyCodeLine{00067\ \ \ \ \ FText\ \mbox{\hyperlink{class_u_level_selection_subsystem_acf6ba26c15eaad534e65870ab69eb3d2}{GetLevelNameText}}(\textcolor{keyword}{const}\ FString\&\ LevelKey)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00055\ UCLASS()}
+\DoxyCodeLine{00056\ class\ SUBSYSTEMSINFINITYPATHWAYS\_API\ \mbox{\hyperlink{class_u_level_selection_subsystem}{ULevelSelectionSubsystem}}\ :\ public\ UGameInstanceSubsystem}
+\DoxyCodeLine{00057\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ GENERATED\_BODY()}
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ Inicialización del\ subsistema}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_selection_subsystem_ada2c4132c4a2423522fc58a27819bfa0}{Initialize}}(FSubsystemCollectionBase\&\ Collection)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_selection_subsystem_ae43e4e7c69c0e22b2a8af7f1c2b45e04}{Deinitialize}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00065\ }
 \DoxyCodeLine{00070\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|UI"{}})}
-\DoxyCodeLine{00071\ \ \ \ \ FText\ \mbox{\hyperlink{class_u_level_selection_subsystem_a443e94cf4eca8b4ee99052624a4f3008}{GetLevelTextInformation}}(ELevelDifficultType\ LevelType)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ \ \ \ \ FText\ \mbox{\hyperlink{class_u_level_selection_subsystem_acf6ba26c15eaad534e65870ab69eb3d2}{GetLevelNameText}}(\textcolor{keyword}{const}\ FString\&\ LevelKey)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00072\ }
-\DoxyCodeLine{00074\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|Data"{}})}
-\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_selection_subsystem_a53771be2996072bc4e3016671cea6ce0}{GetLevelInformation}}(\textcolor{keyword}{const}\ FString\&\ LevelNameInput,\ \mbox{\hyperlink{struct_f_level_info_structure}{FLevelInfoStructure}}\&\ OutLevelInfo)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00076\ }
-\DoxyCodeLine{00078\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|Progression"{}})}
-\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_selection_subsystem_afa766d6f70fc65f491fd164d415de351}{SetterLevelUnlocked}}(int32\ CurrentLevelIndex)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00080\ }
-\DoxyCodeLine{00082\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|Score"{}})}
-\DoxyCodeLine{00083\ \ \ \ \ FText\ \mbox{\hyperlink{class_u_level_selection_subsystem_aad9e0adc6bf284f6a740a396b15ea98a}{Get\_HighestScore}}(\textcolor{keyword}{const}\ FString\&\ LevelNameInput)\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00084\ }
-\DoxyCodeLine{00086\ \ \ \ \ UFUNCTION(BlueprintCallable,\ BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|State"{}})}
-\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_selection_subsystem_a3489d60e1293ad950b4df140640d79e4}{GetHardCoreModeActive}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00090\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|State"{}})}
-\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_selection_subsystem_a5e1d49a7ee0172235d75c23f496cb118}{SetHardCoreModeActive}}(\textcolor{keywordtype}{bool}\ bIsActive);}
-\DoxyCodeLine{00092\ }
-\DoxyCodeLine{00093\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//\ Variables\ de\ estado\ interno\ del\ subsistema}}
-\DoxyCodeLine{00096\ \ \ \ \ UPROPERTY()}
-\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{bool}\ bHardcoreModeActive\ =\ \textcolor{keyword}{false};}
-\DoxyCodeLine{00098\ }
-\DoxyCodeLine{00100\ \ \ \ \ UPROPERTY()}
-\DoxyCodeLine{00101\ \ \ \ \ TArray<bool>\ UnlockedLevelsList;}
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00104\ \ \ \ \ UPROPERTY()}
-\DoxyCodeLine{00105\ \ \ \ \ TArray<FLevelInfoStructure>\ LevelInfosSave;}
-\DoxyCodeLine{00106\ }
-\DoxyCodeLine{00107\ \ \ \ \ \textcolor{comment}{//\ Referencias\ a\ DataTables\ (pueden\ cargarse\ por\ configuración o\ ruta\ por\ defecto)}}
-\DoxyCodeLine{00109\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ \textcolor{stringliteral}{"{}Data"{}})}
-\DoxyCodeLine{00110\ \ \ \ \ UDataTable*\ LevelNamesDataTable;}
-\DoxyCodeLine{00111\ }
-\DoxyCodeLine{00113\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ \textcolor{stringliteral}{"{}Data"{}})}
-\DoxyCodeLine{00114\ \ \ \ \ UDataTable*\ LevelTextInfoDataTable;}
-\DoxyCodeLine{00115\ \};}
+\DoxyCodeLine{00077\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|UI"{}})}
+\DoxyCodeLine{00078\ \ \ \ \ FText\ \mbox{\hyperlink{class_u_level_selection_subsystem_a443e94cf4eca8b4ee99052624a4f3008}{GetLevelTextInformation}}(ELevelDifficultType\ LevelType)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|Data"{}})}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_selection_subsystem_a53771be2996072bc4e3016671cea6ce0}{GetLevelInformation}}(\textcolor{keyword}{const}\ FString\&\ LevelNameInput,\ \mbox{\hyperlink{struct_f_level_info_structure}{FLevelInfoStructure}}\&\ OutLevelInfo)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|Progression"{}})}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_selection_subsystem_afa766d6f70fc65f491fd164d415de351}{SetterLevelUnlocked}}(int32\ CurrentLevelIndex)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|Score"{}})}
+\DoxyCodeLine{00100\ \ \ \ \ FText\ \mbox{\hyperlink{class_u_level_selection_subsystem_aad9e0adc6bf284f6a740a396b15ea98a}{Get\_HighestScore}}(\textcolor{keyword}{const}\ FString\&\ LevelNameInput)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00105\ \ \ \ \ UFUNCTION(BlueprintCallable,\ BlueprintPure,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|State"{}})}
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_u_level_selection_subsystem_a3489d60e1293ad950b4df140640d79e4}{GetHardCoreModeActive}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00111\ \ \ \ \ UFUNCTION(BlueprintCallable,\ Category\ =\ \textcolor{stringliteral}{"{}InfinityPathways|State"{}})}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_u_level_selection_subsystem_a5e1d49a7ee0172235d75c23f496cb118}{SetHardCoreModeActive}}(\textcolor{keywordtype}{bool}\ bIsActive);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{comment}{//\ Variables\ de\ estado\ interno\ del\ subsistema}}
+\DoxyCodeLine{00117\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{bool}\ bHardcoreModeActive\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00121\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00122\ \ \ \ \ TArray<bool>\ UnlockedLevelsList;}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00125\ \ \ \ \ UPROPERTY()}
+\DoxyCodeLine{00126\ \ \ \ \ TArray<FLevelInfoStructure>\ LevelInfosSave;}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \ \ \ \ \textcolor{comment}{//\ Referencias\ a\ DataTables\ (pueden\ cargarse\ por\ configuración o\ ruta\ por\ defecto)}}
+\DoxyCodeLine{00130\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ \textcolor{stringliteral}{"{}Data"{}})}
+\DoxyCodeLine{00131\ \ \ \ \ UDataTable*\ LevelNamesDataTable;}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00134\ \ \ \ \ UPROPERTY(EditDefaultsOnly,\ Category\ =\ \textcolor{stringliteral}{"{}Data"{}})}
+\DoxyCodeLine{00135\ \ \ \ \ UDataTable*\ LevelTextInfoDataTable;}
+\DoxyCodeLine{00136\ \};}
 
 \end{DoxyCode}
